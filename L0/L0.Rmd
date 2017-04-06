@@ -30,12 +30,12 @@ English.
 # Course contents
 
 - R tips
-- Collect and deal with text data
+- Collecting and dealing with text data
     + Text processing, web scraping and text mining
-- Build the model
+- Building models
     + Unsupervised learning
     + Supervised learning
-- Present results 
+- Delivering results 
     + Graphics
     + Documents
 
