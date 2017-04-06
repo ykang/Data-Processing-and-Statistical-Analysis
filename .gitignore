@@ -1,8 +1,8 @@
 References/*
 L6/*
 2017*
-*.Rproj.user
-*.Rhistory
+*/.Rproj.user/*
+.Rhistory
 .DS_Store
 *cache/*
 *files/*
