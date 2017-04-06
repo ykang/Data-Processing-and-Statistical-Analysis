@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: 'Lecture 1: R Basics'\nauthor: \"<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn\"\ndate: \"School of Economics and Management <br> Beihang University\"\noutput:\n  slidy_presentation:\n    footer: \"Lecture 1: R Basics (Jan 18, 2017)\"\n    css: styles/ykstyle.css\nlogo: buaalogo.png\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n# Getting and Installing R\n\n- Mained by a team of developers around the world.\n- Totally free!\n- Download R on its [official website](https://www.r-project.org).\n\n\n\n# R User Interface\n\n- Direct **R**\n- Rstudio\n    - One of the most popular ways to run R.\n    - Free, open-source integrated development environment (IDE) for R.\n    - Many additional fantastic features.\n- Command line in Linux and Unix.\n\n\n\n# R Basics | Basic Operations in R\n\n```{r basicOperations, eval = FALSE}\n# Evaluate expressions\n4 + 5 + 7\n(12 + 11) * 10\n\n# Vectors\nc(0, 1, 1, 2, 3, 5, 8)\n2:6\nc(1, 2, 3, 4) + c(10, 20, 30, 40)\nc(1, 2, 3, 4) + 1\nc(1, 2, 3, 4) + c(1, 2)\nc(1, 2, 3, 4) + c(1, 2, 3)\n```\n\n\n\n# R Basics | Functions\n```{r functions, eval = FALSE}\n# \n```",
+    "created" : 1484669670095.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "476712674",
+    "id" : "386F7B3D",
+    "lastKnownWriteTime" : 1484669680,
+    "last_content_update" : 1484669680466,
+    "path" : "~/Documents/北航/教学/2017春/数据处理与统计分析/L1/L1.Rmd",
+    "project_path" : "L1.Rmd",
+    "properties" : {
+        "last_setup_crc32" : ""
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

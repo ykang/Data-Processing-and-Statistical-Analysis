@@ -1,0 +1,43 @@
+---
+title: 'Lecture 0: Course Introduction'
+author: "<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn"
+date: "School of Economics and Management <br> Beihang University"
+output:
+  slidy_presentation:
+    footer: "Lecture 0: Course Introduction (Mar 6, 2017)"
+    css: ../styles/ykstyle.css
+logo: buaalogo.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# General Information
+
+- **Lecturer: ** Yanfei Kang 
+- **Language: **The course is taught in Chinese. Materials are in
+English.
+- **Reception hours: **Questions concerned with this course can be asked during or after each lecture or via email.
+- **Lecture notes** available [here]().
+- **Working load: **Depending on your own situation and you ambition, you decide how much time you want to input. 
+- **Course references: ** No specific reference books. References will be given for each lecture.
+- **Examinations: **To pass the final exam you have to have at least 60p in a scientific report, the topic of which can be chosen by yourselves.
+
+
+
+
+# Course contents
+
+- R tips
+- Collect and deal with text data
+    + Text processing, web scraping and text mining
+- Build the model
+    + Unsupervised learning
+    + Supervised learning
+- Present results 
+    + Graphics
+    + Documents
+
+
+

@@ -1,0 +1,428 @@
+---
+title: 'Lecture 2: Text Processing and Web Scraping with R'
+author: "<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn"
+date: "School of Economics and Management <br> Beihang University"
+output:
+  slidy_presentation:
+    css: ../styles/ykstyle.css
+    footer: 'Lecture 2: Text Processing and Web Scraping with R (Mar 6, 2017)'
+logo: buaalogo.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, message = FALSE)
+```
+
+
+## {.alert}
+<br>
+<br>
+Text Processing
+
+## Read and write text data into R
+
+
+```{r readlines}
+# read text data into R
+wmt.news <- readLines("WMTnews.txt") 
+length(wmt.news)
+wmt.news[1]
+
+# write text data into R
+cat(wmt.news, file = "WMTnews.txt", sep = "\n")
+```
+
+## Length of strings
+
+```{r nchar}
+# number of characters in each news article
+nchar(wmt.news)
+library(stringr); str_length(wmt.news)
+# number of articles
+length(wmt.news)
+```
+
+## Concatenate strings
+
+### Concatenate two strings
+```{r paste}
+# concatenate characters 
+paste('2015', '06-04', sep = '-')
+paste('2015', c('06-04', '06-05'), sep = '-')
+paste('http://sou.zhaopin.com/jobs/searchresult.ashx?jl=北京&kw=', 
+      '阿里巴巴', sep = '')
+# str_c() in stringr
+library(stringr)
+str_c('2015', '06-04', '00:00', sep = '-')
+```
+
+### Combine text and variable values
+```{r sprintf}
+# combine text and variable values
+sprintf('http://sou.zhaopin.com/jobs/searchresult.ashx?jl=北京&kw=%s', '阿里巴巴')
+sprintf('http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%s&kw=阿里巴巴', '上海')
+```
+
+##Split strings
+```{r strsplit}
+# split characters
+dates <- c('2015-06-04', '2015-06-05')
+strsplit(dates, "-")
+strsplit('2015-06-04', '-')
+
+# another way
+library(stringr)
+str_split(dates, '-')
+str_split('2015-06-04', '-')
+```
+
+
+## Pattern Matching
+```{r strmatch}
+# search for matches
+mySentences <- c('沃尔玛还系统借此适应用户行为的变化趋势', 'Walmart Pay移动支付应用已经部署在其全美4,600家超市中')
+grep('沃尔玛', mySentences)
+grepl('沃尔玛', mySentences)
+library(stringr); str_detect(mySentences, '沃尔玛')
+regexpr('沃尔玛', mySentences)
+sub('沃尔玛', 'Walmart', mySentences)
+gsub('沃尔玛', 'Walmart', mySentences)
+match('沃尔玛', mySentences)
+charmatch('沃尔玛', mySentences)
+```
+
+
+## Pattern Replacement
+```{r sub}
+# patten replacement
+# sub(pattern, replacement, x, ...)
+sub('沃尔玛', 'Walmart', mySentences)
+
+# gsub(pattern, replacement, x, ...)
+messySentences <- c('沃尔玛还 系统借此适应用户行为的变化趋势', 'Walmart Pay移动支付应用已经部署在其 全美4,600家超市中')
+gsub(' ', '', messySentences)
+```
+
+## Extract substrings in a character vector
+
+```{r substr}
+# extract substrings: substr(x, start, stop)
+x <- c('月薪：5000元', '月薪：8000元')
+substr(x,4,7)
+```
+
+## Further reading 
+
+Please see [Text processing on Wiki](https://en.wikibooks.org/wiki/R_Programming/Text_Processing) for more details, examples, **R** packages and **R** functions used for text processing in **R**.
+
+
+
+## {.alert}
+<br>
+<br>
+Web Scraping
+
+
+## We need data
+
+- Data is messy!
+
+<img src="./douban.png" width="1000px" height="800px" />
+
+- But we want a tidy format of data!
+    + rows == observations 
+    + columns == attributes
+    
+
+| Movie         | Score          |Length (mins)   |Language         |
+| ------------- |:-------------: |:-------------: | :-------------: | 
+| 爱乐之城      | 8.4            | 128            |English          |
+| 看不见的客人  | 8.7            | 106            |Spanish          |
+| ...           | ...            |...             |  ...            | 
+
+## Get familiar with the structure of a html (tags)
+
+- When we do web scraping, we deal with html tags to find the path of the information we want to extract.
+
+- A simple html source code: tree structure of html tags. HTML tags normally come in pairs like <tagname>content</tagname>. 
+    
+```
+<!DOCTYPE html>
+<html>
+  <title> My title
+  </title>
+  <body>
+    <h1> My first heading </h1>
+      <p> My first paragraph </p>
+  </body>
+</html>
+```
+
+
+- XPath: path used to select nodes and info in html. Here are some examples of XPath expressions and their meanings:
+    - **`/html/title`**: selects the `<title>` element of an HTML document 
+    - **`//p`**: selects all the `<p>` elements
+
+
+##  Another example
+```
+<html> 
+  <head>
+    <base href='http://example.com/' />
+    <title>Example website</title> 
+  </head>
+  <body>
+    <div id='images'>
+      <a href='image1.html'>Name: My image 1 <br /><img src='image1_thumb.jpg'/></a> 
+      <a href='image2.html'>Name: My image 2 <br /><img src='image2_thumb.jpg'/></a> 
+      <a href='image3.html'>Name: My image 3 <br /><img src='image3_thumb.jpg'/></a> 
+      <a href='image4.html'>Name: My image 4 <br /><img src='image4_thumb.jpg'/></a> 
+      <a href='image5.html'>Name: My image 5 <br /><img src='image5_thumb.jpg'/></a>
+    </div> 
+  </body>
+</html>
+```
+
+- Xpath
+    - **`//div[@id="images"]`**: selects all the `<div>` elements which contain an attribute `id="images"`.
+    - **`//div[@id="images"]/a/`**: selects all the `<a>` elements inside the aforementioned element.
+
+
+## Your turn 💓
+
+
+```
+<td class="zwmc" style="width: 250px;">
+  <div style="width: 224px;*width: 218px; _width:200px; float: left">
+    <a style="font-weight: bold">金融分析师</a>
+  </div>
+</td>
+```
+
+> - Q: Please extract the `<a>` element from the source above.
+> - A: `//td[@class="zwmc"]/div/a`
+
+
+
+
+
+## Let's do it!
+
+Scrape job information from http://sou.zhaopin.com of jobs related to '阿里巴巴'.
+
+- Inspect a web page (easily found in Chrome).
+<center><img src="./zhilian.png" width="1000px" height="600px"/></center>
+
+- Find the xpath for the elements you want to extract
+    - xpath for job titles: `//td[@class="zwmc"]/div/a`.
+    - Can you find xpath for companies, salaries, locations and links?
+<center><img src="./zhilian_element.png" width="1000px" height="600px"/></center>
+
+## *rvest* package in **R**
+
+
+- `read_html()`: read html from its url.
+
+- `html_nodes()`: select parts of an html document using XPath.
+
+- `html_tag()`: extract components with html_tag() (the name of the tag), html_text() (all text inside the tag), html_attr() (contents of a single attribute) and html_attrs() (all attributes). These are done after using html_nodes().
+
+```{r zhilian0, cache=TRUE}
+library(rvest)
+url = 'http://sou.zhaopin.com/jobs/searchresult.ashx?jl=北京&kw=阿里巴巴'
+web = read_html(url, encoding = "utf-8")
+job_title_nodes = html_nodes(web, xpath = '//td[@class="zwmc"]/div/a')
+job_title = html_text(job_title_nodes)
+job_title[1:5]
+```
+
+## Pipeable!
+
+```{r zhilian1, cache=TRUE}
+library(rvest)
+url = 'http://sou.zhaopin.com/jobs/searchresult.ashx?jl=北京&kw=阿里巴巴'
+web = read_html(url, encoding = "utf-8")
+job_title = web %>%
+  html_nodes(xpath = '//td[@class="zwmc"]/div/a') %>%
+  html_text()
+link = web %>%
+  html_nodes(xpath = '//td[@class="zwmc"]/div/a') %>%
+  html_attr('href')
+# link = paste('[Link](', link, sep='')
+# link <- paste(link, ')', sep='')
+company = web %>%
+  html_nodes(xpath = '//td[@class="gsmc"]') %>%
+  html_text()
+salary = web %>%
+  html_nodes(xpath = '//td[@class="zwyx"]') %>%
+  html_text()
+location = web %>%
+  html_nodes(xpath = '//td[@class="gzdd"]') %>%
+  html_text()
+alibaba_jobs = data.frame(job_title, company, salary, location, link)
+library(knitr)
+kable(subset(alibaba_jobs, select = -link), format = "html")
+```
+
+
+
+## Job details
+
+```{r zhilian2, cache=TRUE}
+library(stringr)
+get_job_detail <- 
+  function(link){
+    link = as.character(link)
+    web = read_html(link)
+    experience = web %>%
+      html_nodes(xpath = '//ul[@class="terminal-ul clearfix"]/li[5]/strong') %>%
+      html_text()
+    degree = web %>%
+      html_nodes(xpath = '//ul[@class="terminal-ul clearfix"]/li[6]/strong') %>%
+      html_text()
+    number = web %>%
+      html_nodes(xpath = '//ul[@class="terminal-ul clearfix"]/li[7]/strong') %>%
+      html_text()
+    description = web %>%
+      html_nodes(xpath = '//div[@class="terminalpage-main clearfix"]/div/div[1]')%>%
+      html_text()
+    description = sub('查看职位地图', '', description)
+    description = sub('工作地址：', '', description)
+    description = sub('北京', '', description)
+    description = str_trim(description)
+    link_details = data.frame(experience, degree, number, description)
+    return(link_details)
+  }
+
+job_details <- data.frame()
+for (i in 1:nrow(alibaba_jobs)){
+  job_details = rbind(job_details, get_job_detail(alibaba_jobs$link[i]))
+}
+alibaba_job_details <- cbind(alibaba_jobs, job_details)
+kable(subset(alibaba_job_details, select = -description), format = "html")
+```
+
+
+
+## Your turn 💓
+
+- Extract names, research interests, emails and links  of all [BUAA SEM Professors](http://sem.buaa.edu.cn/szdw/jsbd.htm)
+
+- Extract at least 5 attributes of the movies listed [here](https://movie.douban.com/top250)
+
+
+##{.alert}
+<br>
+<br>
+Text Mining
+
+## What is text mining?
+
+### Raw human written text $\Rightarrow$ Structured information
+
+- Word frequency and wordcloud
+- Text clustering
+- Text classification
+- Topic models
+
+
+## Read data into R
+
+```{r loaddata}
+# read text data into R
+alibaba_job_description <- as.character(alibaba_job_details$description)
+```
+
+## Preprocessing
+
+### Word segment
+
+```{r segment, cache=TRUE}
+# word segment
+library(jiebaR)
+engine1 <- worker(stop_word = 'stopwords.txt')
+new_user_word(engine1, c("新技术", '新媒体'))
+Words = c()
+for(i in 1:length(alibaba_job_description)){
+  Words=c(Words,c(segment(alibaba_job_description[i], engine1)))
+}
+myStopwords <- c('工作', '地址', '公司', '岗位', '描述', 
+                 '负责', '职位', '年', '优先', '具备',
+                 '熟悉','相关')
+Words=Words[-which(Words %in% myStopwords)]
+Words<-gsub("[0-9]+?",'', Words)
+Words <- Words[nchar(Words) > 1]
+Words = toupper(Words)
+head(Words)
+```
+
+## Word frequencies and wordcloud
+```{r wordfreq}
+# word frequencies
+wordsNum <- table(unlist(Words))  
+wordsNum <- sort(wordsNum, decreasing = TRUE)   
+library(wordcloud) 
+words.top150 <- head(wordsNum,150) 
+colors=brewer.pal(8,"Dark2")  
+# Sys.setlocale("LC_CTYPE")
+library(wordcloud2)
+wordcloud2(words.top150, color = "random-dark", shape = 'circle', backgroundColor = 'white')
+# letterCloud(words.top150, word= "A", color = "random-light",
+#             backgroundColor = "white",size = 0.3)
+```
+
+## What tools are required?
+```{r tools}
+toolsNum=wordsNum[substr(names(wordsNum),1,1)%in%  c("A","B","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z")]
+tools.top50 <- head(toolsNum,50) 
+wordcloud2(tools.top50, color = "random-dark", shape = 'circle', backgroundColor = 'white')
+```
+
+## Clustering
+```{r clustering, cache=TRUE}
+library(tm)
+library(slam)
+wmt.news <- readLines("WMTnews.txt") 
+mixseg = worker(stop_word = "stopwords.txt")
+mixseg$bylines = TRUE
+word_list = mixseg[wmt.news]
+f <- function(x){
+  x = gsub("[0-9]+?",'', x)
+  x[x == '号店'] = '1号店'
+  x = paste(x[nchar(x)>1], collapse = ' ')
+  return(x)
+  }
+d.vec = lapply(word_list,f)
+corpus = Corpus(VectorSource(d.vec))
+myStopwords <- c('新浪', '沃尔玛', '年',  '月', '日','公司', '中国', '有限公司')
+stopwords=readLines('stopwords.txt')
+mycorpus=tm_map(corpus,removeWords,c(stopwords, myStopwords))
+
+control=list(removePunctuation=T, 
+             wordLengths = c(2, Inf), 
+             # weighting = weightTfIdf,
+             stopwords = c(stopwords, myStopwords))
+d.dtm <- DocumentTermMatrix(mycorpus, control)
+d.dtm <- d.dtm[row_sums(d.dtm)!=0, ]
+d.dtm.sub <- removeSparseTerms(d.dtm, sparse=0.99)
+library(proxy)
+d.dist <- proxy::dist(as.matrix(d.dtm.sub), method='cosine')
+fit <- hclust(d.dist, method="ward.D")
+memb <- cutree(fit, k = 2)
+plot(fit)
+```
+
+## Clustering
+```{r clustering2, cache=TRUE}
+findFreqTerms(d.dtm.sub[memb==1,], 300)
+findFreqTerms(d.dtm.sub[memb==2,], 300)
+```
+
+## Topic models
+```{r topicmodeling, cache=TRUE}
+library(topicmodels)
+ctm <- CTM(d.dtm.sub, k = 2)
+terms(ctm, 2, 0.01)
+```
+
+
