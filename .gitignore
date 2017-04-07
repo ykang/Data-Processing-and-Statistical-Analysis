@@ -2,6 +2,6 @@ References/*
 2017*
 */.Rproj.user/*
 .Rhistory
-*/.DS_Store
-*cache/*
-*files/*
+**/.DS_Store
+**/*cache/*
+**/*files/*

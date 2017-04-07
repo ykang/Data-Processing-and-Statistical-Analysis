@@ -1,0 +1,51 @@
+---
+title: 'Lecture 3: Unsupervised Methods'
+author: "<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn"
+date: "School of Economics and Management <br> Beihang University"
+output:
+  slidy_presentation:
+    footer: "Lecture 3: Unsupervised Method"
+    css: ../styles/ykstyle.css
+logo: buaalogo.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 
+
+- PCA
+- Cluster analysis
+- Association rules
+
+
+# PCA
+
+```{r pca}
+library(mlbench)
+data("BreastCancer")
+breast.cancer.raw = BreastCancer[complete.cases(BreastCancer),]
+breast.cancer.data = subset(breast.cancer.raw, select = -c(Id, Class))
+scaled.breast.cancer.data = scale(sapply(breast.cancer.data, as.numeric))
+breast.cancer.pc.cr <- princomp(scaled.breast.cancer.data)
+breast.cancer.PC1 <- breast.cancer.pc.cr$scores[, 1]
+breast.cancer.PC2 <- breast.cancer.pc.cr$scores[, 2]
+summary(breast.cancer.pc.cr)
+library(ggplot2)
+qplot(breast.cancer.PC1, breast.cancer.PC2)
+```
+
+# Cluster analysis
+
+- In cancer research for classifying patients into subgroups according their gene expression profile. This can be useful for identifying the molecular profile of patients with good or bad prognostic, as well as for understanding the disease.
+
+- In marketing for market segmentation by identifying subgroups of customers with similar profiles and who might be receptive to a particular form of advertising.
+
+- In City-planning for identifying groups of houses according to their type, value and location.
+
+# Breast cancer data again
+
+```{r clustering}
+
+```
