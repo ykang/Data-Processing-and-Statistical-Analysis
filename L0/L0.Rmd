@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 - **Language: **The course is taught in Chinese. Materials are in
 English.
 - **Reception hours: **Questions concerned with this course can be asked during or after each lecture or via email.
-- **Lecture notes: ** available [here](https://yanfei.site/teaching/data-processing-and-statistical-analysis/). Their source codes can be found [here](https://github.com/ykang/Data-Processing-and-Statistical-Analysis).
+- **Lecture notes: ** available [here](). Their source codes can be found on  [Github](https://github.com/ykang/Data-Processing-and-Statistical-Analysis).
 - **Working load: **Depending on your own situation and you ambition, you decide how much time you want to input. 
 - **Course references: ** No specific reference books. References will be given for each lecture.
 - **Examinations: **To pass the final exam you have to have at least 60p in a scientific report, the topic of which can be chosen by yourselves.
@@ -29,15 +29,17 @@ English.
 
 # Course contents
 
-- R tips
+- **R** tips
 - Collecting and dealing with text data
     + Text processing, web scraping and text mining
 - Building models
-    + Unsupervised learning
-    + Supervised learning
+    + Unsupervised methods
+    + Supervised methods
+    + Time series forecasting
+- Parallel Computation with **R**
 - Delivering results 
     + Graphics
-    + Documents
+    + Dynamic Documents
 
 
 

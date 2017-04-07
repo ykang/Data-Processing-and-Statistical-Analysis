@@ -14,12 +14,12 @@ knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, message = FALSE)
 ```
 
 
-## {.alert}
+# {.alert}
 <br>
 <br>
 Text Processing
 
-## Read and write text data into R
+# Read and write text data into R
 
 
 ```{r readlines}
@@ -32,7 +32,7 @@ wmt.news[1]
 cat(wmt.news, file = "WMTnews.txt", sep = "\n")
 ```
 
-## Length of strings
+# Length of strings
 
 ```{r nchar}
 # number of characters in each news article
@@ -42,9 +42,9 @@ library(stringr); str_length(wmt.news)
 length(wmt.news)
 ```
 
-## Concatenate strings
+# Concatenate strings
 
-### Concatenate two strings
+## Concatenate two strings
 ```{r paste}
 # concatenate characters 
 paste('2015', '06-04', sep = '-')
@@ -56,14 +56,14 @@ library(stringr)
 str_c('2015', '06-04', '00:00', sep = '-')
 ```
 
-### Combine text and variable values
+## Combine text and variable values
 ```{r sprintf}
 # combine text and variable values
 sprintf('http://sou.zhaopin.com/jobs/searchresult.ashx?jl=北京&kw=%s', '阿里巴巴')
 sprintf('http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%s&kw=阿里巴巴', '上海')
 ```
 
-##Split strings
+# Split strings
 ```{r strsplit}
 # split characters
 dates <- c('2015-06-04', '2015-06-05')
@@ -77,7 +77,7 @@ str_split('2015-06-04', '-')
 ```
 
 
-## Pattern Matching
+# Pattern Matching
 ```{r strmatch}
 # search for matches
 mySentences <- c('沃尔玛还系统借此适应用户行为的变化趋势', 'Walmart Pay移动支付应用已经部署在其全美4,600家超市中')
@@ -92,7 +92,7 @@ charmatch('沃尔玛', mySentences)
 ```
 
 
-## Pattern Replacement
+# Pattern Replacement
 ```{r sub}
 # patten replacement
 # sub(pattern, replacement, x, ...)
@@ -103,7 +103,7 @@ messySentences <- c('沃尔玛还 系统借此适应用户行为的变化趋势'
 gsub(' ', '', messySentences)
 ```
 
-## Extract substrings in a character vector
+# Extract substrings in a character vector
 
 ```{r substr}
 # extract substrings: substr(x, start, stop)
@@ -111,19 +111,19 @@ x <- c('月薪：5000元', '月薪：8000元')
 substr(x,4,7)
 ```
 
-## Further reading 
+# Further reading 
 
 Please see [Text processing on Wiki](https://en.wikibooks.org/wiki/R_Programming/Text_Processing) for more details, examples, **R** packages and **R** functions used for text processing in **R**.
 
 
 
-## {.alert}
+# {.alert}
 <br>
 <br>
 Web Scraping
 
 
-## We need data
+# We need data
 
 - Data is messy!
 
@@ -140,7 +140,7 @@ Web Scraping
 | 看不见的客人  | 8.7            | 106            |Spanish          |
 | ...           | ...            |...             |  ...            | 
 
-## Get familiar with the structure of a html (tags)
+# Get familiar with the structure of a html (tags)
 
 - When we do web scraping, we deal with html tags to find the path of the information we want to extract.
 
@@ -164,7 +164,7 @@ Web Scraping
     - **`//p`**: selects all the `<p>` elements
 
 
-##  Another example
+#  Another example
 ```
 <html> 
   <head>
@@ -188,7 +188,7 @@ Web Scraping
     - **`//div[@id="images"]/a/`**: selects all the `<a>` elements inside the aforementioned element.
 
 
-## Your turn 💓
+# Your turn 💓
 
 
 ```
@@ -206,7 +206,7 @@ Web Scraping
 
 
 
-## Let's do it!
+# Let's do it!
 
 Scrape job information from http://sou.zhaopin.com of jobs related to '阿里巴巴'.
 
@@ -218,7 +218,7 @@ Scrape job information from http://sou.zhaopin.com of jobs related to '阿里巴
     - Can you find xpath for companies, salaries, locations and links?
 <center><img src="./zhilian_element.png" width="1000px" height="600px"/></center>
 
-## *rvest* package in **R**
+# *rvest* package in **R**
 
 
 - `read_html()`: read html from its url.
@@ -236,7 +236,7 @@ job_title = html_text(job_title_nodes)
 job_title[1:5]
 ```
 
-## Pipeable!
+# Pipeable!
 
 ```{r zhilian1, cache=TRUE}
 library(rvest)
@@ -266,7 +266,7 @@ kable(subset(alibaba_jobs, select = -link), format = "html")
 
 
 
-## Job details
+# Job details
 
 ```{r zhilian2, cache=TRUE}
 library(stringr)
@@ -304,21 +304,22 @@ kable(subset(alibaba_job_details, select = -description), format = "html")
 
 
 
-## Your turn 💓
+# Your turn 💓
 
 - Extract names, research interests, emails and links  of all [BUAA SEM Professors](http://sem.buaa.edu.cn/szdw/jsbd.htm)
 
 - Extract at least 5 attributes of the movies listed [here](https://movie.douban.com/top250)
 
 
-##{.alert}
+
+#{.alert}
 <br>
 <br>
 Text Mining
 
-## What is text mining?
+# What is text mining?
 
-### Raw human written text $\Rightarrow$ Structured information
+## Raw human written text $\Rightarrow$ Structured information
 
 - Word frequency and wordcloud
 - Text clustering
@@ -326,16 +327,16 @@ Text Mining
 - Topic models
 
 
-## Read data into R
+# Read data into R
 
 ```{r loaddata}
 # read text data into R
 alibaba_job_description <- as.character(alibaba_job_details$description)
 ```
 
-## Preprocessing
+# Preprocessing
 
-### Word segment
+## Word segment
 
 ```{r segment, cache=TRUE}
 # word segment
@@ -356,7 +357,7 @@ Words = toupper(Words)
 head(Words)
 ```
 
-## Word frequencies and wordcloud
+# Word frequencies and wordcloud
 ```{r wordfreq}
 # word frequencies
 wordsNum <- table(unlist(Words))  
@@ -371,14 +372,14 @@ wordcloud2(words.top150, color = "random-dark", shape = 'circle', backgroundColo
 #             backgroundColor = "white",size = 0.3)
 ```
 
-## What tools are required?
+# What tools are required?
 ```{r tools}
 toolsNum=wordsNum[substr(names(wordsNum),1,1)%in%  c("A","B","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z")]
 tools.top50 <- head(toolsNum,50) 
 wordcloud2(tools.top50, color = "random-dark", shape = 'circle', backgroundColor = 'white')
 ```
 
-## Clustering
+# Clustering
 ```{r clustering, cache=TRUE}
 library(tm)
 library(slam)
@@ -412,17 +413,26 @@ memb <- cutree(fit, k = 2)
 plot(fit)
 ```
 
-## Clustering
+# Clustering
 ```{r clustering2, cache=TRUE}
-findFreqTerms(d.dtm.sub[memb==1,], 300)
-findFreqTerms(d.dtm.sub[memb==2,], 300)
+findFreqTerms(d.dtm.sub[memb==1, ], 300)
+findFreqTerms(d.dtm.sub[memb==2, ], 300)
 ```
 
-## Topic models
+# Topic models
 ```{r topicmodeling, cache=TRUE}
 library(topicmodels)
-ctm <- CTM(d.dtm.sub, k = 2)
+ctm <- topicmodels::CTM(d.dtm.sub, k = 2)
 terms(ctm, 2, 0.01)
 ```
 
+# References 
 
+- [Wikibooks on text processing](https://en.wikibooks.org/wiki/R_Programming/Text_Processing)
+- [`rvest` package documentation](https://cran.r-project.org/web/packages/rvest/rvest.pdf)
+- [`jiebaR` tutorial](https://jiebar.qinwf.com)
+
+# Further readings
+
+- Other **R** packages like `XML`, `RCurl` and `scrapeR` are also used for web scraping.
+- Other packages for text mining can be found [here](https://cran.r-project.org/web/views/NaturalLanguageProcessing.html)

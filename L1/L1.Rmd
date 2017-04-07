@@ -1,5 +1,5 @@
 ---
-title: 'Lecture 1: R tips, tricks & tools'
+title: 'Lecture 1: R tips'
 author: "<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn"
 date: "School of Economics and Management <br> Beihang University"
 output:
@@ -55,10 +55,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Choose a consistent naming style for objects and functions
 
-- someObject (lowerCamelCase)
-- SomeObject (UpperCamelCase)
-- some_object (underscore separation)
-- some.object (dot separation)
+- someObject
+- SomeObject
+- some_object 
+- some.object 
 
 Avoid using names of standard R objects
 
@@ -209,7 +209,7 @@ Basic idea
 # How to find the right function 
 
 - Functions in installed packages
-  `help.search("neural")` or `??neural`
+  `help.search("forecast")` or `??forecast`
 - Functions in other CRAN packages
  
 ```
@@ -255,7 +255,11 @@ It takes time to develop your own style. Once it is developed, it is really hard
 
 
 
-# Suggested reading
+# References
 
-- [Google R style guide](https://google-styleguide.googlecode.com/svn/ trunk/Rguide.xml).
-- [Hadley's style](http://adv-r.had.co.nz/Style.html)
+- [Google R style guide](https://google.github.io/styleguide/Rguide.xml)
+- [Rob's tips](http://robjhyndman.com/hyndsight/simpler/)
+
+# Further readings
+
+- -Hadley's style](http://adv-r.had.co.nz/Style.html)

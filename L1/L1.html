@@ -7,7 +7,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="author" content="   Yanfei Kang   yanfeikang@buaa.edu.cn" />
   <meta name="copyright" content="Lecture 1: R Basics (Mar 6, 2017)" />
-  <title>Lecture 1: R tips, tricks &amp; tools</title>
+  <title>Lecture 1: R tips</title>
   <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 div.sourceCode { overflow-x: auto; }
@@ -52,7 +52,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </head>
 <body>
 <div class="slide titlepage">
-  <h1 class="title">Lecture 1: R tips, tricks &amp; tools</h1>
+  <h1 class="title">Lecture 1: R tips</h1>
   <p class="author">
 <br> <br>Yanfei Kang <br> <a href="mailto:yanfeikang@buaa.edu.cn">yanfeikang@buaa.edu.cn</a>
   </p>
@@ -105,10 +105,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1>Choose the names of variables carefully</h1>
 <p>Choose a consistent naming style for objects and functions</p>
 <ul>
-<li>someObject (lowerCamelCase)</li>
-<li>SomeObject (UpperCamelCase)</li>
-<li>some_object (underscore separation)</li>
-<li>some.object (dot separation)</li>
+<li>someObject</li>
+<li>SomeObject</li>
+<li>some_object</li>
+<li>some.object</li>
 </ul>
 <p>Avoid using names of standard R objects</p>
 <ul>
@@ -222,7 +222,7 @@ x.var =<span class="st"> </span><span class="kw">var</span>(x)</code></pre></div
 <div id="how-to-find-the-right-function" class="slide section level1">
 <h1>How to find the right function</h1>
 <ul>
-<li>Functions in installed packages <code>help.search(&quot;neural&quot;)</code> or <code>??neural</code></li>
+<li>Functions in installed packages <code>help.search(&quot;forecast&quot;)</code> or <code>??forecast</code></li>
 <li>Functions in other CRAN packages</li>
 </ul>
 <pre><code>library(sos)
@@ -267,11 +267,12 @@ RSitesearch(&quot;neural&quot;)</code></pre>
 <li><p>Keep in mind the tips we have learnt.</p></li>
 </ul>
 </div>
-<div id="suggested-reading" class="slide section level1">
-<h1>Suggested reading</h1>
+<div id="references" class="slide section level1">
+<h1>References</h1>
 <ul>
-<li><a href="https://google-styleguide.googlecode.com/svn/%20trunk/Rguide.xml">Google R style guide</a>.</li>
+<li><a href="https://google.github.io/styleguide/Rguide.xml">Google R style guide</a></li>
 <li><a href="http://adv-r.had.co.nz/Style.html">Hadley’s style</a></li>
+<li><a href="http://robjhyndman.com/hyndsight/simpler/">Rob’s tips</a></li>
 </ul>
 </div>
 
