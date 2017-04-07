@@ -1,11 +1,11 @@
 ---
-title: 'Lecture 2: Text Processing and Web Scraping with R'
+title: 'Lecture 2: Text Processing, Web Scraping and Text Mining'
 author: "<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn"
 date: "School of Economics and Management <br> Beihang University"
 output:
   slidy_presentation:
     css: ../styles/ykstyle.css
-    footer: 'Lecture 2: Text Processing and Web Scraping with R (Mar 6, 2017)'
+    footer: 'Lecture 2: Text Processing, Web Scraping and Text Mining'
 logo: buaalogo.png
 ---
 

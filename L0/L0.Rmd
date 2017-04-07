@@ -4,7 +4,7 @@ author: "<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn"
 date: "School of Economics and Management <br> Beihang University"
 output:
   slidy_presentation:
-    footer: "Lecture 0: Course Introduction (Mar 6, 2017)"
+    footer: "Lecture 0: Course Introduction"
     css: ../styles/ykstyle.css
 logo: buaalogo.png
 ---
@@ -18,6 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 - **Lecturer: ** Yanfei Kang 
 - **Language: **The course is taught in Chinese. Materials are in
 English.
+- **Computer language: R**
 - **Reception hours: **Questions concerned with this course can be asked during or after each lecture or via email.
 - **Lecture notes: ** available [here](https://yanfei.site/teaching/data-processing-and-statistical-analysis/). Their source codes can be found on  [Github](https://github.com/ykang/Data-Processing-and-Statistical-Analysis).
 - **Working load: **Depending on your own situation and you ambition, you decide how much time you want to input. 
@@ -29,17 +30,17 @@ English.
 
 # Course contents
 
-- **R** tips
+- L1: **R** tips
 - Collecting and dealing with text data
-    + Text processing, web scraping and text mining
+    + L2: Text processing, web scraping and text mining
 - Building models
-    + Unsupervised methods
-    + Supervised methods
-    + Time series forecasting
-- Parallel Computation with **R**
+    + L3: Unsupervised methods
+    + L4: Supervised methods
+    + L5: Time series forecasting
+- L6: Parallel computation with **R**
 - Delivering results 
-    + Graphics
-    + Dynamic Documents
+    + L7: Graphics
+    + L8: Dynamic Documents
 
 
 

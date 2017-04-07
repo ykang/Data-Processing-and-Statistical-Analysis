@@ -1,10 +1,10 @@
 ---
-title: 'Lecture 1: R tips'
+title: 'Lecture 1: R Tips'
 author: "<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn"
 date: "School of Economics and Management <br> Beihang University"
 output:
   slidy_presentation:
-    footer: "Lecture 1: R Basics (Mar 6, 2017)"
+    footer: "Lecture 1: R Tips"
     css: ../styles/ykstyle.css
 logo: buaalogo.png
 ---
@@ -262,4 +262,4 @@ It takes time to develop your own style. Once it is developed, it is really hard
 
 # Further readings
 
-- -Hadley's style](http://adv-r.had.co.nz/Style.html)
+- [Hadley's style](http://adv-r.had.co.nz/Style.html)
