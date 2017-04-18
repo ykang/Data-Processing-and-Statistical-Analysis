@@ -6,11 +6,14 @@ output:
   slidy_presentation:
     css: ../styles/ykstyle.css
     footer: 'Lecture 2: Text Processing, Web Scraping and Text Mining'
+  html_document: default
 logo: buaalogo.png
+header-includes: \usepackage{ctex}
+always_allow_html: yes
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, message = FALSE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ```
 
 
