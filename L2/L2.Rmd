@@ -435,4 +435,4 @@ terms(ctm, 2, 0.01)
 # Further readings
 
 - Other **R** packages like `XML`, `RCurl` and `scrapeR` are also used for web scraping.
-- Other packages for text mining can be found [here](https://cran.r-project.org/web/views/NaturalLanguageProcessing.html)
+- Other packages for text mining can be found [here](https://cran.r-project.org/web/views/NaturalLanguageProcessing.html).
