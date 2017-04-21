@@ -183,7 +183,7 @@ Web Scraping
 
 - Data is messy!
 
-<img src="./douban.png" width="1000px" height="800px" />
+<img src="./douban.png" width="1000px" height="780px" />
 
 - But we want a tidy format of data!
     + rows == observations 
