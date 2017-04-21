@@ -10,9 +10,25 @@ logo: buaalogo.png
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+```
+# In this lecture we are going to learn ...
+
+- How to install and use **R**
+- **R** coding style 
+- some nice **R** tips
+
+
+# Packages required in this lecture
+```{r}
+install.packages(c("forecast", "sos", "formatR"))
 ```
 
+# {.alert}
+<br>
+<br>
+How to install and use **R**
+                  
 # Getting and Installing R
 
 - Totally free!
@@ -32,75 +48,49 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Editor
 
-- Use a good text editor
-- e.g. vim, sublime text, text wrangler, notepad, etc
+- What editor do you usually use?
+- Use a good text editor such as vim, sublime text, text wrangler, notepad, etc
 - With syntax highlighting, otherwise, it's hard to detect errors
 - Or use an Integrated Development Environment (IDE) like RStudio
 
-# Use an IDE
+# Use an IDE: Rstudio
 
 - Syntax highlighting
-- Syntax aware
 - Able to evaluate R code
       + by line
       + by selection 
       + entire file
 - Command auto-completion
 
+# {.alert}
+<br>
+<br>
+**R** coding style
 
+# File names 
 
+- File names should end in .R and, of course, be *meaningful*. 
+- GOOD: `predict_ad_revenue.R` 
+- BAD: `foo.R`
 
-# Choose the names of variables carefully
+# Choose the names of variables and functions carefully
 
-Choose a consistent naming style for objects and functions
+#### What we should do
 
-- someObject
-- SomeObject
-- some_object 
-- some.object 
+- The preferred form for variable names is all lower case letters and words separated with dots (variable.name), but variableName is also accepted. Generally, variable names should be nouns.
+    - GOOD: avg.clicks 
+    - OK: avgClicks 
+    - BAD: avg_Clicks
+- Function names have initial capital letters and no dots. Function names are mostly verbs.
+    - GOOD: CalculateAvgClicks 
+    - BAD: calculate_avg_clicks , calculateAvgClicks 
+- Choose a consistent naming style
 
-Avoid using names of standard R objects
+#### What we should not do
 
-- mean
-- var
-- median
-
-
-
-# Indenting 
-
-- Keep your indentation style consistent
-- There is more than one way of indenting code
-- There is no “best” style that everyone should be following
-- You can indent using spaces or tabs (but don’t mix them)
-- Can help in detecting errors in your code because it can expose lack of symmetry
-- Do this systematically (RStudio editor helps a lot)
-- Reindenting and reformatting using RStudio.
-- formatR package: I run `tidy.dir()` before reading student code!
-
-```{r}
-# Do not do this!
-find_roots <- function(a = 1, b = 1, c = 0) {
-if (b^2 - 4*a*c < 0) {
-return("No real roots") } else
-{
-return(quadratic(a = a, b = b, c = c)) }
-}
-```
-
-$\Rightarrow$
-
-```{r}
-# Better with indentation
-find_roots <- function(a = 1, b = 1, c = 0) {
-  if (b^2 - 4*a*c < 0) {
-    return("No real roots")
-  } else
-  {
-    return(quadratic(a = a, b = b, c = c))
-  }
-}
-```
+- Don't use underscores (_) or hyphens (-).
+- Avoid using names of existing functions and variables like `mean', `median' etc.
+- Avoid using meaningless names like a, b, c, ..., aa, bb, cc, ...
 
 
 
@@ -111,58 +101,84 @@ find_roots <- function(a = 1, b = 1, c = 0) {
 
 
 # White Spaces
-- Use a lot of it
-- around operators (assignment and arithmetic)
-- between function arguments and list elements
-- between matrix/array indices, in particular for missing indices
-- Split long lines at meaningful places
 
+- around operators (=, +, -, <-, etc)
+- put a space after a comma, and never before
 
-
-Avoid this
-
-```
-a<-2
-x<-3
-y<-log(sqrt(x))
-3*x^7-pi*x/(y-a)
-plot(x,y,col=rgb(0.5,0.7,0.4),pch='+',cex=5)
-```
-Much Better
-
-```
-a <- 2
-x <- 3
-y <- log(sqrt(x))
-3*x^7 - pi * x / (y - a)
-plot(x, y, col = rgb(0.5, 0.7, 0.4), pch = '+', cex = 5)
-```
-
-Don’t be afraid of splitting one long line into individual pieces!
-
-```
-n = matrix(sample(1:100, 9), nrow = 3, ncol = 3, byrow = TRUE)
+```{r}
+x <- c(1:10)
+x.average<-mean(x,na.rm=TRUE)
 ```
 
 $\Rightarrow$
 
-```{}
-n = matrix(sample(1:100, 9),
+```{r}
+x.average <- mean(x, na.rm = TRUE)
+```
+
+- split long lines at meaningful places
+
+Don’t be afraid of splitting one long line into individual pieces!
+
+```{r}
+n <- matrix(sample(1:100, 9), nrow = 3, ncol = 3, byrow = TRUE)
+```
+
+$\Rightarrow$
+
+```{r}
+n <- matrix(sample(1:100, 9),
            nrow = 3,
            ncol = 3,
            byrow = TRUE)
 ```
 
+# Curly braces
+- An opening curly brace should never go on its own line and should always be followed by a new line. 
+- A closing curly brace should always go on its own line, unless it’s followed by else.
+- Always begin the body of a block on a new line.
+- Always indent the code inside curly braces.
+
+```{r}
+if (y < 0) {print("y is negative")}
+```
+$\Rightarrow$
+```{r}
+if (y < 0) {
+  print("y is negative")
+}
+```
+# Indenting 
+
+- Use two spaces
+- Can help in detecting errors in your code because it can expose lack of symmetry
+- Reindenting using RStudio
+
+
+```{r}
+if (y < 0) {
+print("y is negative")
+}
+```
+$\Rightarrow$
+```{r}
+if (y < 0) {
+  print("y is negative")
+}
+```
+
+# Make your code tidy in a second!
+
+- Reformat and reindent in Rstudio.
+- **formatR** package in **R**. You can even make a folder of `.R` files tidy using `tidy.dir()`.
+
+
+
 # Header, Line spaces and Comments
 
 - Add a Header for your file
 - Add lots of comments
-- But don’t belabor the obvious
-- Use blank lines to separate blocks of code and comments to say what the block does
-  Remember that in a few months, you may not follow your own code any better than a stranger
-- Some key things to document: – summarizing a block of code
-- explaining a very complicated piece of code – explaining arbitrary constant values
-
+- Use blank lines to separate blocks of code and comments to say what the block does. Remember that in a few months, you may not follow your own code any better than a stranger.
 
 
 ```{r}
@@ -190,9 +206,47 @@ x.mean = mean(x)
 x.var = var(x)
 ```
 
+# Function Documentation
 
+- Functions should contain a comments section immediately below the function definition line. 
+- These comments should include
+    - a one-sentence description of the function
+    - a list of the function's arguments, denoted by Args:, with a description of each (including the data type)
+    - a description of the return value, denoted by Returns:. 
+    - The comments should be descriptive enough that a caller can use the function without reading any of the function's code.
 
+```{r}
+CalculateSampleCovariance <- function(x, y, verbose = TRUE) {
+  # Computes the sample covariance between two vectors.
+  #
+  # Args:
+  #   x: One of two vectors whose sample covariance is to be calculated.
+  #   y: The other vector. x and y must have the same length, greater than one,
+  #      with no missing values.
+  #   verbose: If TRUE, prints sample covariance; if not, not. Default is TRUE.
+  #
+  # Returns:
+  #   The sample covariance between x and y.
+  n <- length(x)
+  # Error handling
+  if (n <= 1 || n != length(y)) {
+    stop("Arguments x and y have different lengths: ",
+         length(x), " and ", length(y), ".")
+  }
+  if (TRUE %in% is.na(x) || TRUE %in% is.na(y)) {
+    stop(" Arguments x and y must not have missing values.")
+  }
+  covariance <- var(x, y)
+  if (verbose)
+    cat("Covariance = ", round(covariance, 4), ".\n", sep = "")
+  return(covariance)
+}
+```
 
+# {.alert}
+<br>
+<br>
+Some nice  **R** tips
 
 # How to find the right function 
 
@@ -213,6 +267,7 @@ RSiteSearch("arima")
  
 # Digging into functions
 
+- Type `?sort` for the usage of the function `sort()`.
 - Typing the name of a function gives its definition.
 - Type `forecast:::estmodel` for hidden functions.
 - Download the tar.gz file from CRAN if you want to see any underlying **C** or **Fortran** code.
@@ -230,9 +285,7 @@ Basic idea
     
   
 
-
-# Other suggestions
-## Look at other people's codes 
+# Look at other people's codes 
 - https://github.com/hadley
 - https://github.com/yihui
 - https://github.com/karthik
@@ -240,24 +293,30 @@ Basic idea
 - https://github.com/cboettig
 - https://github.com/garrettgman
 
-## Getting help
+# Getting help
 - For programming questions: StackOverflow.com
 - For statistical questions: CrossValidated.com
 
-## Keep up-to-date
+# Keep up-to-date
 - RStudio blog: blog.rstudio.org
 - R-bloggers: www.r-bloggers.com
-It takes time to develop your own style. Once it is developed, it is really hard to be changed. So please be careful at the beginning. 
-    
-# Your turn 💓
+- It takes time to develop your own style. Once it is developed, it is really hard to be changed. So please be careful at the beginning. 
 
-- Write a function named `quaroot()` to solve the roots of given quadratic equation $ax^2 + bx + c = 0$ with $a$, $b$ and $c$ as input arguments. 
+
+    
+# Your turn (1) 💓
+
+- Write a function to solve the roots of given quadratic equation $ax^2 + bx + c = 0$ with $a$, $b$ and $c$ as input arguments. 
 
 - Test your function on some simple equations.
 
-- Keep in mind the tips we have learnt.
+- Keep in mind the styles we have learnt.
 
 
+# Your turn 💓(2) 
+
+- Write two messy `.R` files and put them in a folder.
+- Use `tidy.dir()` to make them tidy.
 
 # References
 

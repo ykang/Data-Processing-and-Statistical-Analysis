@@ -23,7 +23,7 @@ English.
 - **Lecture notes: ** available on https://yanfei.site/teaching/dpsa/. Their source codes can be found on  [Github](https://github.com/ykang/Data-Processing-and-Statistical-Analysis).
 - **Working load: **Depending on your own situation and you ambition, you decide how much time you want to input. 
 - **Course references: ** No specific reference books. References will be given for each lecture.
-- **Examinations: **To pass the final exam you have to have at least 60p in a scientific report, the topic of which can be chosen by yourselves.
+- **Examinations: **To pass the final exam you have to have to finish a scientific report, the topic of which can be chosen by yourselves. It should be submitted together with source code via email two weeks after the last lecture. You can go with a group with 2 students. Attendence will also be checked and included in your final mark.
 
 
 

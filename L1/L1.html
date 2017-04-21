@@ -58,6 +58,22 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </p>
   <p class="date">School of Economics and Management <br> Beihang University</p>
 </div>
+<div id="in-this-lecture-we-are-going-to-learn" class="slide section level1">
+<h1>In this lecture we are going to learn …</h1>
+<ul>
+<li>How to install and use <strong>R</strong></li>
+<li><strong>R</strong> coding style</li>
+<li>some nice <strong>R</strong> tips</li>
+</ul>
+</div>
+<div id="packages-required-in-this-lecture" class="slide section level1">
+<h1>Packages required in this lecture</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">&quot;forecast&quot;</span>, <span class="st">&quot;sos&quot;</span>, <span class="st">&quot;formatR&quot;</span>))</code></pre></div>
+</div>
+<div id="section" class="slide section level1 alert">
+<h1></h1>
+<p><br> <br> How to install and use <strong>R</strong></p>
+</div>
 <div id="getting-and-installing-r" class="slide section level1">
 <h1>Getting and Installing R</h1>
 <ul>
@@ -81,17 +97,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="editor" class="slide section level1">
 <h1>Editor</h1>
 <ul>
-<li>Use a good text editor</li>
-<li>e.g. vim, sublime text, text wrangler, notepad, etc</li>
+<li>What editor do you usually use?</li>
+<li>Use a good text editor such as vim, sublime text, text wrangler, notepad, etc</li>
 <li>With syntax highlighting, otherwise, it’s hard to detect errors</li>
 <li>Or use an Integrated Development Environment (IDE) like RStudio</li>
 </ul>
 </div>
-<div id="use-an-ide" class="slide section level1">
-<h1>Use an IDE</h1>
+<div id="use-an-ide-rstudio" class="slide section level1">
+<h1>Use an IDE: Rstudio</h1>
 <ul>
 <li>Syntax highlighting</li>
-<li>Syntax aware</li>
 <li>Able to evaluate R code
 <ul>
 <li>by line</li>
@@ -101,90 +116,105 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>Command auto-completion</li>
 </ul>
 </div>
-<div id="choose-the-names-of-variables-carefully" class="slide section level1">
-<h1>Choose the names of variables carefully</h1>
-<p>Choose a consistent naming style for objects and functions</p>
+<div id="section-1" class="slide section level1 alert">
+<h1></h1>
+<p><br> <br> <strong>R</strong> coding style</p>
+</div>
+<div id="file-names" class="slide section level1">
+<h1>File names</h1>
 <ul>
-<li>someObject</li>
-<li>SomeObject</li>
-<li>some_object</li>
-<li>some.object</li>
-</ul>
-<p>Avoid using names of standard R objects</p>
-<ul>
-<li>mean</li>
-<li>var</li>
-<li>median</li>
+<li>File names should end in .R and, of course, be <em>meaningful</em>.</li>
+<li>GOOD: <code>predict_ad_revenue.R</code></li>
+<li>BAD: <code>foo.R</code></li>
 </ul>
 </div>
-<div id="indenting" class="slide section level1">
-<h1>Indenting</h1>
+<div id="choose-the-names-of-variables-and-functions-carefully" class="slide section level1">
+<h1>Choose the names of variables and functions carefully</h1>
+<h4 id="what-we-should-do">What we should do</h4>
 <ul>
-<li>Keep your indentation style consistent</li>
-<li>There is more than one way of indenting code</li>
-<li>There is no “best” style that everyone should be following</li>
-<li>You can indent using spaces or tabs (but don’t mix them)</li>
-<li>Can help in detecting errors in your code because it can expose lack of symmetry</li>
-<li>Do this systematically (RStudio editor helps a lot)</li>
-<li>Reindenting and reformatting using RStudio.</li>
-<li>formatR package: I run <code>tidy.dir()</code> before reading student code!</li>
+<li>The preferred form for variable names is all lower case letters and words separated with dots (variable.name), but variableName is also accepted. Generally, variable names should be nouns.
+<ul>
+<li>GOOD: avg.clicks</li>
+<li>OK: avgClicks</li>
+<li>BAD: avg_Clicks</li>
+</ul></li>
+<li>Function names have initial capital letters and no dots. Function names are mostly verbs.
+<ul>
+<li>GOOD: CalculateAvgClicks</li>
+<li>BAD: calculate_avg_clicks , calculateAvgClicks</li>
+</ul></li>
+<li>Choose a consistent naming style</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Do not do this!</span>
-find_roots &lt;-<span class="st"> </span>function(<span class="dt">a =</span> <span class="dv">1</span>, <span class="dt">b =</span> <span class="dv">1</span>, <span class="dt">c =</span> <span class="dv">0</span>) {
-if (b^<span class="dv">2</span> -<span class="st"> </span><span class="dv">4</span>*a*c &lt;<span class="st"> </span><span class="dv">0</span>) {
-<span class="kw">return</span>(<span class="st">&quot;No real roots&quot;</span>) } else
-{
-<span class="kw">return</span>(<span class="kw">quadratic</span>(<span class="dt">a =</span> a, <span class="dt">b =</span> b, <span class="dt">c =</span> c)) }
-}</code></pre></div>
-<p><span class="math inline">\(\Rightarrow\)</span></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Better with indentation</span>
-find_roots &lt;-<span class="st"> </span>function(<span class="dt">a =</span> <span class="dv">1</span>, <span class="dt">b =</span> <span class="dv">1</span>, <span class="dt">c =</span> <span class="dv">0</span>) {
-  if (b^<span class="dv">2</span> -<span class="st"> </span><span class="dv">4</span>*a*c &lt;<span class="st"> </span><span class="dv">0</span>) {
-    <span class="kw">return</span>(<span class="st">&quot;No real roots&quot;</span>)
-  } else
-  {
-    <span class="kw">return</span>(<span class="kw">quadratic</span>(<span class="dt">a =</span> a, <span class="dt">b =</span> b, <span class="dt">c =</span> c))
-  }
-}</code></pre></div>
+<h4 id="what-we-should-not-do">What we should not do</h4>
+<ul>
+<li>Don’t use underscores (_) or hyphens (-).</li>
+<li>Avoid using names of existing functions and variables like <code>mean',</code>median’ etc.</li>
+<li>Avoid using meaningless names like a, b, c, …, aa, bb, cc, …</li>
+</ul>
 </div>
 <div id="white-spaces" class="slide section level1">
 <h1>White Spaces</h1>
 <ul>
-<li>Use a lot of it</li>
-<li>around operators (assignment and arithmetic)</li>
-<li>between function arguments and list elements</li>
-<li>between matrix/array indices, in particular for missing indices</li>
-<li>Split long lines at meaningful places</li>
+<li>around operators (=, +, -, &lt;-, etc)</li>
+<li>put a space after a comma, and never before</li>
 </ul>
-<p>Avoid this</p>
-<pre><code>a&lt;-2
-x&lt;-3
-y&lt;-log(sqrt(x))
-3*x^7-pi*x/(y-a)
-plot(x,y,col=rgb(0.5,0.7,0.4),pch='+',cex=5)</code></pre>
-<p>Much Better</p>
-<pre><code>a &lt;- 2
-x &lt;- 3
-y &lt;- log(sqrt(x))
-3*x^7 - pi * x / (y - a)
-plot(x, y, col = rgb(0.5, 0.7, 0.4), pch = '+', cex = 5)</code></pre>
-<p>Don’t be afraid of splitting one long line into individual pieces!</p>
-<pre><code>n = matrix(sample(1:100, 9), nrow = 3, ncol = 3, byrow = TRUE)</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">10</span>)
+x.average&lt;-<span class="kw">mean</span>(x,<span class="dt">na.rm=</span><span class="ot">TRUE</span>)</code></pre></div>
 <p><span class="math inline">\(\Rightarrow\)</span></p>
-<pre><code>n = matrix(sample(1:100, 9),
-           nrow = 3,
-           ncol = 3,
-           byrow = TRUE)</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x.average &lt;-<span class="st"> </span><span class="kw">mean</span>(x, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</code></pre></div>
+<ul>
+<li>split long lines at meaningful places</li>
+</ul>
+<p>Don’t be afraid of splitting one long line into individual pieces!</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">n &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">sample</span>(<span class="dv">1</span>:<span class="dv">100</span>, <span class="dv">9</span>), <span class="dt">nrow =</span> <span class="dv">3</span>, <span class="dt">ncol =</span> <span class="dv">3</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>)</code></pre></div>
+<p><span class="math inline">\(\Rightarrow\)</span></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">n &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">sample</span>(<span class="dv">1</span>:<span class="dv">100</span>, <span class="dv">9</span>),
+           <span class="dt">nrow =</span> <span class="dv">3</span>,
+           <span class="dt">ncol =</span> <span class="dv">3</span>,
+           <span class="dt">byrow =</span> <span class="ot">TRUE</span>)</code></pre></div>
+</div>
+<div id="curly-braces" class="slide section level1">
+<h1>Curly braces</h1>
+<ul>
+<li>An opening curly brace should never go on its own line and should always be followed by a new line.</li>
+<li>A closing curly brace should always go on its own line, unless it’s followed by else.</li>
+<li>Always begin the body of a block on a new line.</li>
+<li>Always indent the code inside curly braces.</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">if (y &lt;<span class="st"> </span><span class="dv">0</span>) {<span class="kw">print</span>(<span class="st">&quot;y is negative&quot;</span>)}</code></pre></div>
+<p><span class="math inline">\(\Rightarrow\)</span></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">if (y &lt;<span class="st"> </span><span class="dv">0</span>) {
+  <span class="kw">print</span>(<span class="st">&quot;y is negative&quot;</span>)
+}</code></pre></div>
+</div>
+<div id="indenting" class="slide section level1">
+<h1>Indenting</h1>
+<ul>
+<li>Use two spaces</li>
+<li>Can help in detecting errors in your code because it can expose lack of symmetry</li>
+<li>Reindenting using RStudio</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">if (y &lt;<span class="st"> </span><span class="dv">0</span>) {
+<span class="kw">print</span>(<span class="st">&quot;y is negative&quot;</span>)
+}</code></pre></div>
+<p><span class="math inline">\(\Rightarrow\)</span></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">if (y &lt;<span class="st"> </span><span class="dv">0</span>) {
+  <span class="kw">print</span>(<span class="st">&quot;y is negative&quot;</span>)
+}</code></pre></div>
+</div>
+<div id="make-your-code-tidy-in-a-second" class="slide section level1">
+<h1>Make your code tidy in a second!</h1>
+<ul>
+<li>Reformat and reindent in Rstudio.</li>
+<li><strong>formatR</strong> package in <strong>R</strong>. You can even make a folder of <code>.R</code> files tidy using <code>tidy.dir()</code>.</li>
+</ul>
 </div>
 <div id="header-line-spaces-and-comments" class="slide section level1">
 <h1>Header, Line spaces and Comments</h1>
 <ul>
 <li>Add a Header for your file</li>
 <li>Add lots of comments</li>
-<li>But don’t belabor the obvious</li>
-<li>Use blank lines to separate blocks of code and comments to say what the block does Remember that in a few months, you may not follow your own code any better than a stranger</li>
-<li>Some key things to document: – summarizing a block of code</li>
-<li>explaining a very complicated piece of code – explaining arbitrary constant values</li>
+<li>Use blank lines to separate blocks of code and comments to say what the block does. Remember that in a few months, you may not follow your own code any better than a stranger.</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">10</span>)
 x.mean =<span class="st"> </span><span class="kw">mean</span>(x)
@@ -205,41 +235,88 @@ x.mean =<span class="st"> </span><span class="kw">mean</span>(x)
 <span class="co"># getting the variance of x</span>
 x.var =<span class="st"> </span><span class="kw">var</span>(x)</code></pre></div>
 </div>
+<div id="function-documentation" class="slide section level1">
+<h1>Function Documentation</h1>
+<ul>
+<li>Functions should contain a comments section immediately below the function definition line.</li>
+<li>These comments should include
+<ul>
+<li>a one-sentence description of the function</li>
+<li>a list of the function’s arguments, denoted by Args:, with a description of each (including the data type)</li>
+<li>a description of the return value, denoted by Returns:.</li>
+<li>The comments should be descriptive enough that a caller can use the function without reading any of the function’s code.</li>
+</ul></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">CalculateSampleCovariance &lt;-<span class="st"> </span>function(x, y, <span class="dt">verbose =</span> <span class="ot">TRUE</span>) {
+  <span class="co"># Computes the sample covariance between two vectors.</span>
+  <span class="co">#</span>
+  <span class="co"># Args:</span>
+  <span class="co">#   x: One of two vectors whose sample covariance is to be calculated.</span>
+  <span class="co">#   y: The other vector. x and y must have the same length, greater than one,</span>
+  <span class="co">#      with no missing values.</span>
+  <span class="co">#   verbose: If TRUE, prints sample covariance; if not, not. Default is TRUE.</span>
+  <span class="co">#</span>
+  <span class="co"># Returns:</span>
+  <span class="co">#   The sample covariance between x and y.</span>
+  n &lt;-<span class="st"> </span><span class="kw">length</span>(x)
+  <span class="co"># Error handling</span>
+  if (n &lt;=<span class="st"> </span><span class="dv">1</span> ||<span class="st"> </span>n !=<span class="st"> </span><span class="kw">length</span>(y)) {
+    <span class="kw">stop</span>(<span class="st">&quot;Arguments x and y have different lengths: &quot;</span>,
+         <span class="kw">length</span>(x), <span class="st">&quot; and &quot;</span>, <span class="kw">length</span>(y), <span class="st">&quot;.&quot;</span>)
+  }
+  if (<span class="ot">TRUE</span> %in%<span class="st"> </span><span class="kw">is.na</span>(x) ||<span class="st"> </span><span class="ot">TRUE</span> %in%<span class="st"> </span><span class="kw">is.na</span>(y)) {
+    <span class="kw">stop</span>(<span class="st">&quot; Arguments x and y must not have missing values.&quot;</span>)
+  }
+  covariance &lt;-<span class="st"> </span><span class="kw">var</span>(x, y)
+  if (verbose)
+    <span class="kw">cat</span>(<span class="st">&quot;Covariance = &quot;</span>, <span class="kw">round</span>(covariance, <span class="dv">4</span>), <span class="st">&quot;.</span><span class="ch">\n</span><span class="st">&quot;</span>, <span class="dt">sep =</span> <span class="st">&quot;&quot;</span>)
+  <span class="kw">return</span>(covariance)
+}</code></pre></div>
+</div>
+<div id="section-2" class="slide section level1 alert">
+<h1></h1>
+<p><br> <br> Some nice <strong>R</strong> tips</p>
+</div>
+<div id="how-to-find-the-right-function" class="slide section level1">
+<h1>How to find the right function</h1>
+<ul>
+<li>Functions in installed packages</li>
+</ul>
+<pre><code>library(forecast)
+help.search(&quot;forecast&quot;)
+??forecast</code></pre>
+<ul>
+<li>Functions in other CRAN packages</li>
+</ul>
+<pre><code>library(sos)
+findFn(&quot;arima&quot;)
+RSiteSearch(&quot;arima&quot;)</code></pre>
+</div>
+<div id="digging-into-functions" class="slide section level1">
+<h1>Digging into functions</h1>
+<ul>
+<li>Type <code>?sort</code> for the usage of the function <code>sort()</code>.</li>
+<li>Typing the name of a function gives its definition.</li>
+<li>Type <code>forecast:::estmodel</code> for hidden functions.</li>
+<li>Download the tar.gz file from CRAN if you want to see any underlying <strong>C</strong> or <strong>Fortran</strong> code.</li>
+</ul>
+</div>
 <div id="organize-your-r-projects" class="slide section level1">
 <h1>Organize your R projects</h1>
 <p>Basic idea</p>
 <ul>
-<li>Every paper, book or consulting report is a `project’.</li>
+<li>Every paper, book or scientific report is a `project’.</li>
 <li>Every project has its own folder and R workspace.</li>
-<li>Every project is entirely scripted. That is, all analysis, graphs and tables must be able to be generated by running one R script.
+<li>Every project is entirely scripted. That is, all analysis, graphs and tables must be able to be generated by running one script.
 <ul>
-<li><code>main.R</code> sources all other R files in the correct order.</li>
+<li>This script sources all other R files in the correct order and yields all the required results. This script could be in <code>main.R</code> or <code>main.Rmd</code>.</li>
 <li><code>functions.R</code> contains all non-packaged functions used in the project.</li>
 <li>each function can not be too long.</li>
 </ul></li>
 </ul>
 </div>
-<div id="how-to-find-the-right-function" class="slide section level1">
-<h1>How to find the right function</h1>
-<ul>
-<li>Functions in installed packages <code>help.search(&quot;forecast&quot;)</code> or <code>??forecast</code></li>
-<li>Functions in other CRAN packages</li>
-</ul>
-<pre><code>library(sos)
-findFn(&quot;neural&quot;)
-RSitesearch(&quot;neural&quot;)</code></pre>
-</div>
-<div id="digging-into-functions" class="slide section level1">
-<h1>Digging into functions</h1>
-<ul>
-<li>Typing the name of a function gives its definition.</li>
-<li>Type <code>package:::function</code> for hidden functions.</li>
-<li>Download the tar.gz file from CRAN if you want to see any underlying <strong>C</strong> or <strong>Fortran</strong> code.</li>
-</ul>
-</div>
-<div id="other-suggestions" class="slide section level1">
-<h1>Other suggestions</h1>
-<h2 id="look-at-other-peoples-codes">Look at other people’s codes</h2>
+<div id="look-at-other-peoples-codes" class="slide section level1">
+<h1>Look at other people’s codes</h1>
 <ul>
 <li><a href="https://github.com/hadley" class="uri">https://github.com/hadley</a></li>
 <li><a href="https://github.com/yihui" class="uri">https://github.com/yihui</a></li>
@@ -248,23 +325,35 @@ RSitesearch(&quot;neural&quot;)</code></pre>
 <li><a href="https://github.com/cboettig" class="uri">https://github.com/cboettig</a></li>
 <li><a href="https://github.com/garrettgman" class="uri">https://github.com/garrettgman</a></li>
 </ul>
-<h2 id="getting-help">Getting help</h2>
+</div>
+<div id="getting-help" class="slide section level1">
+<h1>Getting help</h1>
 <ul>
 <li>For programming questions: StackOverflow.com</li>
 <li>For statistical questions: CrossValidated.com</li>
 </ul>
-<h2 id="keep-up-to-date">Keep up-to-date</h2>
+</div>
+<div id="keep-up-to-date" class="slide section level1">
+<h1>Keep up-to-date</h1>
 <ul>
 <li>RStudio blog: blog.rstudio.org</li>
-<li>R-bloggers: www.r-bloggers.com It takes time to develop your own style. Once it is developed, it is really hard to be changed. So please be careful at the beginning.</li>
+<li>R-bloggers: www.r-bloggers.com</li>
+<li>It takes time to develop your own style. Once it is developed, it is really hard to be changed. So please be careful at the beginning.</li>
 </ul>
 </div>
 <div id="your-turn" class="slide section level1">
 <h1>Your turn 💓</h1>
 <ul>
-<li><p>Write a function named <code>quaroot()</code> to solve the roots of given quadratic equation <span class="math inline">\(ax^2 + bx + c = 0\)</span> with <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> as input arguments.</p></li>
+<li><p>Write a function to solve the roots of given quadratic equation <span class="math inline">\(ax^2 + bx + c = 0\)</span> with <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> as input arguments.</p></li>
 <li><p>Test your function on some simple equations.</p></li>
-<li><p>Keep in mind the tips we have learnt.</p></li>
+<li><p>Keep in mind the styles we have learnt.</p></li>
+</ul>
+</div>
+<div id="your-turn-1" class="slide section level1">
+<h1>Your turn 💓</h1>
+<ul>
+<li>Write two messy <code>.R</code> files and put them in a folder.</li>
+<li>Use <code>tidy.dir()</code> to make them tidy.</li>
 </ul>
 </div>
 <div id="references" class="slide section level1">

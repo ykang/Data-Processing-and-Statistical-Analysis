@@ -8,14 +8,18 @@ output:
     footer: 'Lecture 2: Text Processing, Web Scraping and Text Mining'
   html_document: default
 logo: buaalogo.png
-header-includes: \usepackage{ctex}
-always_allow_html: yes
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ```
 
+# Packages required in this lecture
+
+```
+install.packages(c("stringr", "rvest", "knitr", "jiebaR", "wordcloud2",
+                  "tm", "slam" , "proxy", "topicmodels", "RColorBrewer"))
+```
 
 # {.alert}
 <br>
@@ -34,6 +38,9 @@ wmt.news[1]
 # write text data into R
 cat(wmt.news, file = "WMTnews.txt", sep = "\n")
 ```
+
+- You may use other functions like `read.table()`, `write.table()` etc.
+
 
 # Length of strings
 
@@ -113,6 +120,25 @@ gsub(' ', '', messySentences)
 x <- c('月薪：5000元', '月薪：8000元')
 substr(x,4,7)
 ```
+
+# Your turn (1) 💓
+
+1. Load text from the https://yanfei.site/docs/dpsa/BABAnews.txt and print it on screen. Text file contains some of the news of Alibaba.
+
+2. How many paragraphs is there in the article?
+
+3. Trim leading whitespaces of each paragraph.
+
+4. How many characters is there in the article?
+
+5. Collapse paragraphs into one and display it on the screen (un-list it).
+
+6. Does the text contain word `技术架构'?
+
+7. Replace '双11' with '双十一'.
+
+<!-- 98 Create a function that takes a string and returns it in reversed order by words (Hint: split the string according to a blank space ` '. Then count the number of components resulting from the splitting step. Re-arrenge them in reverse order and paste them in a single string.) -->
+
 
 # Further reading 
 
@@ -232,44 +258,70 @@ Scrape job information from http://sou.zhaopin.com of jobs related to '阿里巴
 
 ```{r zhilian0, cache=TRUE}
 library(rvest)
-url = 'http://sou.zhaopin.com/jobs/searchresult.ashx?jl=北京&kw=阿里巴巴'
-web = read_html(url, encoding = "utf-8")
-job_title_nodes = html_nodes(web, xpath = '//td[@class="zwmc"]/div/a')
-job_title = html_text(job_title_nodes)
+url <- 'http://sou.zhaopin.com/jobs/searchresult.ashx?jl=北京&kw=阿里巴巴'
+web <- read_html(url, encoding = "utf-8")
+job_title_nodes <- html_nodes(web, xpath = '//td[@class="zwmc"]/div/a')
+job_title <- html_text(job_title_nodes)
 job_title[1:5]
 ```
 
 # Pipeable!
 
-```{r zhilian1, cache=TRUE}
-library(rvest)
-url = 'http://sou.zhaopin.com/jobs/searchresult.ashx?jl=北京&kw=阿里巴巴'
-web = read_html(url, encoding = "utf-8")
-job_title = web %>%
+```
+job_title_nodes <- html_nodes(web, xpath = '//td[@class="zwmc"]/div/a')
+job_title <- html_text(job_title_nodes)
+```
+$\Downarrow$
+
+```
+job_title_nodes <- web %>%
+  html_nodes(xpath = '//td[@class="zwmc"]/div/a')
+job_title <- job_title_nodes %>% html_text()
+```
+
+$\Downarrow$
+
+```
+job_title <- web %>%
   html_nodes(xpath = '//td[@class="zwmc"]/div/a') %>%
   html_text()
-link = web %>%
+```
+
+# Let's extract as much information as we can
+
+### Extract job title, company, salary, location and link
+
+```{r zhilian1, cache=TRUE}
+library(rvest)
+url <- 'http://sou.zhaopin.com/jobs/searchresult.ashx?jl=北京&kw=阿里巴巴'
+web <- read_html(url, encoding = "utf-8")
+job_title <- web %>%
+  html_nodes(xpath = '//td[@class="zwmc"]/div/a') %>%
+  html_text()
+link <- web %>%
   html_nodes(xpath = '//td[@class="zwmc"]/div/a') %>%
   html_attr('href')
 # link = paste('[Link](', link, sep='')
 # link <- paste(link, ')', sep='')
-company = web %>%
+company <- web %>%
   html_nodes(xpath = '//td[@class="gsmc"]') %>%
   html_text()
-salary = web %>%
+salary <- web %>%
   html_nodes(xpath = '//td[@class="zwyx"]') %>%
   html_text()
-location = web %>%
+location <- web %>%
   html_nodes(xpath = '//td[@class="gzdd"]') %>%
   html_text()
-alibaba_jobs = data.frame(job_title, company, salary, location, link)
+alibaba_jobs <- data.frame(job_title, company, salary, location, link)
 library(knitr)
 kable(subset(alibaba_jobs, select = -link), format = "html")
 ```
 
 
 
-# Job details
+# Let's extract as much information as we can
+
+### Extract more job details via its link
 
 ```{r zhilian2, cache=TRUE}
 library(stringr)
@@ -346,17 +398,17 @@ alibaba_job_description <- as.character(alibaba_job_details$description)
 library(jiebaR)
 engine1 <- worker(stop_word = 'stopwords.txt')
 new_user_word(engine1, c("新技术", '新媒体'))
-Words = c()
+Words <-  c()
 for(i in 1:length(alibaba_job_description)){
-  Words=c(Words,c(segment(alibaba_job_description[i], engine1)))
+  Words <- c(Words,c(segment(alibaba_job_description[i], engine1)))
 }
 myStopwords <- c('工作', '地址', '公司', '岗位', '描述', 
                  '负责', '职位', '年', '优先', '具备',
                  '熟悉','相关')
-Words=Words[-which(Words %in% myStopwords)]
-Words<-gsub("[0-9]+?",'', Words)
+Words <- Words[-which(Words %in% myStopwords)]
+Words <- gsub("[0-9]+?",'', Words)
 Words <- Words[nchar(Words) > 1]
-Words = toupper(Words)
+Words <- toupper(Words)
 head(Words)
 ```
 
@@ -365,9 +417,8 @@ head(Words)
 # word frequencies
 wordsNum <- table(unlist(Words))  
 wordsNum <- sort(wordsNum, decreasing = TRUE)   
-library(wordcloud) 
 words.top150 <- head(wordsNum,150) 
-colors=brewer.pal(8,"Dark2")  
+library(RColorBrewer); colors <- brewer.pal(8,"Dark2")  
 # Sys.setlocale("LC_CTYPE")
 library(wordcloud2)
 wordcloud2(words.top150, color = "random-dark", shape = 'circle', backgroundColor = 'white')
@@ -377,9 +428,12 @@ wordcloud2(words.top150, color = "random-dark", shape = 'circle', backgroundColo
 
 # What tools are required?
 ```{r tools}
-toolsNum=wordsNum[substr(names(wordsNum),1,1)%in%  c("A","B","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z")]
-tools.top50 <- head(toolsNum,50) 
-wordcloud2(tools.top50, color = "random-dark", shape = 'circle', backgroundColor = 'white')
+toolsNum <- wordsNum[substr(names(wordsNum),1,1)%in%  c("A","B","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z")]
+tools.top50 <- head(toolsNum, 50) 
+my.english.stopwords <- c('IN', 'OF', 'TO', 'AND', 'WITH', 'FOR', 
+                          'THE', 'WORKING', 'WORK')
+tools.top <- tools.top50[!(names(tools.top50) %in% my.english.stopwords)]
+wordcloud2(tools.top, color = "random-dark", shape = 'circle', backgroundColor = 'white')
 ```
 
 # Clustering
@@ -387,22 +441,22 @@ wordcloud2(tools.top50, color = "random-dark", shape = 'circle', backgroundColor
 library(tm)
 library(slam)
 wmt.news <- readLines("WMTnews.txt") 
-mixseg = worker(stop_word = "stopwords.txt")
-mixseg$bylines = TRUE
-word_list = mixseg[wmt.news]
+mixseg <- worker(stop_word = "stopwords.txt")
+mixseg$bylines <- TRUE
+word_list <- mixseg[wmt.news]
 f <- function(x){
-  x = gsub("[0-9]+?",'', x)
-  x[x == '号店'] = '1号店'
-  x = paste(x[nchar(x)>1], collapse = ' ')
+  x <- gsub("[0-9]+?",'', x)
+  x[x == '号店'] <- '1号店'
+  x <- paste(x[nchar(x)>1], collapse = ' ')
   return(x)
   }
-d.vec = lapply(word_list,f)
-corpus = Corpus(VectorSource(d.vec))
+d.vec <- lapply(word_list,f)
+corpus <- Corpus(VectorSource(d.vec))
 myStopwords <- c('新浪', '沃尔玛', '年',  '月', '日','公司', '中国', '有限公司')
-stopwords=readLines('stopwords.txt')
-mycorpus=tm_map(corpus,removeWords,c(stopwords, myStopwords))
+stopwords <- readLines('stopwords.txt')
+mycorpus <- tm_map(corpus,removeWords,c(stopwords, myStopwords))
 
-control=list(removePunctuation=T, 
+control <- list(removePunctuation=T, 
              wordLengths = c(2, Inf), 
              # weighting = weightTfIdf,
              stopwords = c(stopwords, myStopwords))
