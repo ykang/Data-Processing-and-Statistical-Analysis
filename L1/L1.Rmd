@@ -1,10 +1,10 @@
 ---
-title: 'Lecture 1: R Tips'
+title: 'Lecture 1: R Basics and Tips'
 author: "<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn"
 date: "School of Economics and Management <br> Beihang University"
 output:
   slidy_presentation:
-    footer: "Lecture 1: R Tips"
+    footer: "Lecture 1: R Basics and Tips"
     css: ../styles/ykstyle.css
 logo: buaalogo.png
 ---
@@ -15,12 +15,13 @@ knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 # In this lecture we are going to learn ...
 
 - How to install and use **R**
+- **R** basics
 - **R** coding style 
-- some nice **R** tips
+- Some nice **R** tips
 
 
 # Packages required in this lecture
-```{r}
+```
 install.packages(c("forecast", "sos", "formatR"))
 ```
 
@@ -65,6 +66,156 @@ How to install and use **R**
 # {.alert}
 <br>
 <br>
+**R** basics
+
+# Basic Operations
+
+```{r}
+# simple maths
+1 + 2 + 3
+1 + 2 * 3 
+
+# assign a value to a variable
+x <- 1
+y <- 2
+z <- c(x,y)
+z
+
+# function examples
+exp(1)
+cos(3.141593)
+log2(1)
+```
+
+
+
+# Vectors
+
+- Numerical vectors 
+- Logical vectors
+- Character vectors
+- Length of a vector 
+- Vector calculations
+- Extract some elements of a vector dr
+
+```{r}
+# vectors
+c(0, 1, 1, 2, 3, 5, 8)
+1:10
+seq(1, 9, 2)
+rep(1, 10)
+length(rep(1, 10))
+
+# character vectors
+c("Hello world", "Hello R interpreter")
+
+# vector calculation
+c(1, 2, 3, 4) + c(10, 20, 30, 40)
+c(1, 2, 3, 4) + 1
+
+# you can refer to elements by location in a vector
+b <- c(1,2,3,4,5,6,7,8,9,10,11,12)
+length(b)
+b
+b[7]
+b[1:6]
+b[c(1,6,11)]
+b > 5
+b[b > 5]
+```
+
+# Matrix
+
+- Create a matrix: `matrix()`
+- Dimension of a matrix: `dim()`
+- Transpose of a matrix: `t()`
+- Extract elements from a matrix.
+- Combine two or more matrices: `rbind()`, `cbind()`
+
+```{r}
+# create a matrix
+m <- matrix(c(1:6), 2, 3)
+n <- matrix(c(8:13), 2, 3)
+dim(m)
+t(m)
+m[1, 2]
+m[1, ]
+cbind(m, n)
+rbind(m, n)
+```
+
+# List
+
+- Special data structure that matrix could not handle.
+    - Data length are not the same.
+    - Data type are not the same.
+- Create a list: `list()`
+- Extract elements of a list: [[]] or $
+
+```{r}
+l <- list(a = c(1, 2), b = 'apple')
+```
+
+# Data frame
+
+- `data.frame()`: tightly coupled collections of variables which share many of the properties of matrices and of lists, used as the fundamental data structure by most of R’s modeling software.
+- In most cases, the operation with a data frame is similar to matrix operation.
+
+```{r}
+L3 <- LETTERS[1:3]
+fac <- sample(L3, 10, replace = TRUE)
+d <- data.frame(x = 1, y = 1:10, fac = fac)
+```
+
+# Functions 
+
+- Create a function
+```{r}
+f <- function(x, y) {
+  z <- c(x + 1, y + 1)
+  return(z)
+}
+f(1, 2)
+```
+- Load the function: `source()`
+- Execute your function
+
+# The if condition
+```
+if (condition){
+  do something
+} else {
+  do something
+}
+```
+
+```{r}
+x <- 0
+if (x > 1) {
+  print('x is larger than 1')
+} else {
+  print('x is not larger than 1')
+}
+```
+# Loops
+
+```{r}
+x <- 1:10
+for(i in x) {
+  print(i^2)
+}
+```
+
+# Your turn (1) 💓
+
+1. Write a function `MySummary()` where the input argument is x can be any vector and the output is a list that contains the basic summary (mean, variance, length, max and minimum values) of the vector you have supplied to the function.
+2. Test your function with some vectors (that you make up by yourself).
+
+
+
+# {.alert}
+<br>
+<br>
 **R** coding style
 
 # File names 
@@ -91,8 +242,6 @@ How to install and use **R**
 - Don't use underscores (_) or hyphens (-).
 - Avoid using names of existing functions and variables like `mean', `median' etc.
 - Avoid using meaningless names like a, b, c, ..., aa, bb, cc, ...
-
-
 
 
 
@@ -252,14 +401,14 @@ Some nice  **R** tips
 
 - Functions in installed packages
 
-```{r}
+```{r, eval = FALSE}
 library(forecast)
 help.search("auto.arima")
 ??auto.arima
 ```
 - Functions in other CRAN packages
  
-```{r}
+```{r, eval = FALSE}
 library(sos)
 findFn("arima")
 RSiteSearch("arima")
@@ -304,7 +453,7 @@ RSiteSearch("arima")
 
 
     
-# Your turn (1) 💓
+# Your turn (2) 💓
 
 - Write a function to solve the roots of given quadratic equation $ax^2 + bx + c = 0$ with $a$, $b$ and $c$ as input arguments. 
 
@@ -313,7 +462,7 @@ RSiteSearch("arima")
 - Keep in mind the styles we have learnt.
 
 
-# Your turn (2) 💓
+# Your turn (3) 💓
 
 - Write two messy `.R` files and put them in a folder.
 - Use `tidy.dir()` to make them tidy.

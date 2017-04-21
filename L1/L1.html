@@ -6,8 +6,8 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <meta name="author" content="   Yanfei Kang   yanfeikang@buaa.edu.cn" />
-  <meta name="copyright" content="Lecture 1: R Tips" />
-  <title>Lecture 1: R Tips</title>
+  <meta name="copyright" content="Lecture 1: R Basics and Tips" />
+  <title>Lecture 1: R Basics and Tips</title>
   <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 div.sourceCode { overflow-x: auto; }
@@ -52,7 +52,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </head>
 <body>
 <div class="slide titlepage">
-  <h1 class="title">Lecture 1: R Tips</h1>
+  <h1 class="title">Lecture 1: R Basics and Tips</h1>
   <p class="author">
 <br> <br>Yanfei Kang <br> <a href="mailto:yanfeikang@buaa.edu.cn">yanfeikang@buaa.edu.cn</a>
   </p>
@@ -62,13 +62,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1>In this lecture we are going to learn …</h1>
 <ul>
 <li>How to install and use <strong>R</strong></li>
+<li><strong>R</strong> basics</li>
 <li><strong>R</strong> coding style</li>
-<li>some nice <strong>R</strong> tips</li>
+<li>Some nice <strong>R</strong> tips</li>
 </ul>
 </div>
 <div id="packages-required-in-this-lecture" class="slide section level1">
 <h1>Packages required in this lecture</h1>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">&quot;forecast&quot;</span>, <span class="st">&quot;sos&quot;</span>, <span class="st">&quot;formatR&quot;</span>))</code></pre></div>
+<pre><code>install.packages(c(&quot;forecast&quot;, &quot;sos&quot;, &quot;formatR&quot;))</code></pre>
 </div>
 <div id="section" class="slide section level1 alert">
 <h1></h1>
@@ -117,6 +118,146 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul>
 </div>
 <div id="section-1" class="slide section level1 alert">
+<h1></h1>
+<p><br> <br> <strong>R</strong> basics</p>
+</div>
+<div id="basic-operations" class="slide section level1">
+<h1>Basic Operations</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># simple maths</span>
+<span class="dv">1</span> +<span class="st"> </span><span class="dv">2</span> +<span class="st"> </span><span class="dv">3</span>
+<span class="dv">1</span> +<span class="st"> </span><span class="dv">2</span> *<span class="st"> </span><span class="dv">3</span> 
+
+<span class="co"># assign a value to a variable</span>
+x &lt;-<span class="st"> </span><span class="dv">1</span>
+y &lt;-<span class="st"> </span><span class="dv">2</span>
+z &lt;-<span class="st"> </span><span class="kw">c</span>(x,y)
+z
+
+<span class="co"># function examples</span>
+<span class="kw">exp</span>(<span class="dv">1</span>)
+<span class="kw">cos</span>(<span class="fl">3.141593</span>)
+<span class="kw">log2</span>(<span class="dv">1</span>)</code></pre></div>
+</div>
+<div id="vectors" class="slide section level1">
+<h1>Vectors</h1>
+<ul>
+<li>Numerical vectors</li>
+<li>Logical vectors</li>
+<li>Character vectors</li>
+<li>Length of a vector</li>
+<li>Vector calculations</li>
+<li>Extract some elements of a vector dr</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># vectors</span>
+<span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">8</span>)
+<span class="dv">1</span>:<span class="dv">10</span>
+<span class="kw">seq</span>(<span class="dv">1</span>, <span class="dv">9</span>, <span class="dv">2</span>)
+<span class="kw">rep</span>(<span class="dv">1</span>, <span class="dv">10</span>)
+<span class="kw">length</span>(<span class="kw">rep</span>(<span class="dv">1</span>, <span class="dv">10</span>))
+
+<span class="co"># character vectors</span>
+<span class="kw">c</span>(<span class="st">&quot;Hello world&quot;</span>, <span class="st">&quot;Hello R interpreter&quot;</span>)
+
+<span class="co"># vector calculation</span>
+<span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>) +<span class="st"> </span><span class="kw">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>)
+<span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>) +<span class="st"> </span><span class="dv">1</span>
+
+<span class="co"># you can refer to elements by location in a vector</span>
+b &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">12</span>)
+<span class="kw">length</span>(b)
+b
+b[<span class="dv">7</span>]
+b[<span class="dv">1</span>:<span class="dv">6</span>]
+b[<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">6</span>,<span class="dv">11</span>)]
+b &gt;<span class="st"> </span><span class="dv">5</span>
+b[b &gt;<span class="st"> </span><span class="dv">5</span>]</code></pre></div>
+</div>
+<div id="matrix" class="slide section level1">
+<h1>Matrix</h1>
+<ul>
+<li>Create a matrix: <code>matrix()</code></li>
+<li>Dimension of a matrix: <code>dim()</code></li>
+<li>Transpose of a matrix: <code>t()</code></li>
+<li>Extract elements from a matrix.</li>
+<li>Combine two or more matrices: <code>rbind()</code>, <code>cbind()</code></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># create a matrix</span>
+m &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">6</span>), <span class="dv">2</span>, <span class="dv">3</span>)
+n &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">c</span>(<span class="dv">8</span>:<span class="dv">13</span>), <span class="dv">2</span>, <span class="dv">3</span>)
+<span class="kw">dim</span>(m)
+<span class="kw">t</span>(m)
+m[<span class="dv">1</span>, <span class="dv">2</span>]
+m[<span class="dv">1</span>, ]
+<span class="kw">cbind</span>(m, n)
+<span class="kw">rbind</span>(m, n)</code></pre></div>
+</div>
+<div id="list" class="slide section level1">
+<h1>List</h1>
+<ul>
+<li>Special data structure that matrix could not handle.
+<ul>
+<li>Data length are not the same.</li>
+<li>Data type are not the same.</li>
+</ul></li>
+<li>Create a list: <code>list()</code></li>
+<li>Extract elements of a list: [<a href="#section-3"></a>] or $</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">l &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="dt">a =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>), <span class="dt">b =</span> <span class="st">'apple'</span>)</code></pre></div>
+</div>
+<div id="data-frame" class="slide section level1">
+<h1>Data frame</h1>
+<ul>
+<li><code>data.frame()</code>: tightly coupled collections of variables which share many of the properties of matrices and of lists, used as the fundamental data structure by most of R’s modeling software.</li>
+<li>In most cases, the operation with a data frame is similar to matrix operation.</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">L3 &lt;-<span class="st"> </span>LETTERS[<span class="dv">1</span>:<span class="dv">3</span>]
+fac &lt;-<span class="st"> </span><span class="kw">sample</span>(L3, <span class="dv">10</span>, <span class="dt">replace =</span> <span class="ot">TRUE</span>)
+d &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">x =</span> <span class="dv">1</span>, <span class="dt">y =</span> <span class="dv">1</span>:<span class="dv">10</span>, <span class="dt">fac =</span> fac)</code></pre></div>
+</div>
+<div id="functions" class="slide section level1">
+<h1>Functions</h1>
+<ul>
+<li>Create a function</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">f &lt;-<span class="st"> </span>function(x, y) {
+  z &lt;-<span class="st"> </span><span class="kw">c</span>(x +<span class="st"> </span><span class="dv">1</span>, y +<span class="st"> </span><span class="dv">1</span>)
+  <span class="kw">return</span>(z)
+}
+<span class="kw">f</span>(<span class="dv">1</span>, <span class="dv">2</span>)</code></pre></div>
+<ul>
+<li>Load the function: <code>source()</code></li>
+<li>Execute your function</li>
+</ul>
+</div>
+<div id="the-if-condition" class="slide section level1">
+<h1>The if condition</h1>
+<pre><code>if (condition){
+  do something
+} else {
+  do something
+}</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="dv">0</span>
+if (x &gt;<span class="st"> </span><span class="dv">1</span>) {
+  <span class="kw">print</span>(<span class="st">'x is larger than 1'</span>)
+} else {
+  <span class="kw">print</span>(<span class="st">'x is not larger than 1'</span>)
+}</code></pre></div>
+</div>
+<div id="loops" class="slide section level1">
+<h1>Loops</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="dv">1</span>:<span class="dv">10</span>
+for(i in x) {
+  <span class="kw">print</span>(i^<span class="dv">2</span>)
+}</code></pre></div>
+</div>
+<div id="your-turn-1" class="slide section level1">
+<h1>Your turn (1) 💓</h1>
+<ol style="list-style-type: decimal">
+<li>Write a function <code>MySummary()</code> where the input argument is x can be any vector and the output is a list that contains the basic summary (mean, variance, length, max and minimum values) of the vector you have supplied to the function.</li>
+<li>Test your function with some vectors (that you make up by yourself).</li>
+</ol>
+</div>
+<div id="section-2" class="slide section level1 alert">
 <h1></h1>
 <p><br> <br> <strong>R</strong> coding style</p>
 </div>
@@ -273,7 +414,7 @@ x.var =<span class="st"> </span><span class="kw">var</span>(x)</code></pre></div
   <span class="kw">return</span>(covariance)
 }</code></pre></div>
 </div>
-<div id="section-2" class="slide section level1 alert">
+<div id="section-3" class="slide section level1 alert">
 <h1></h1>
 <p><br> <br> Some nice <strong>R</strong> tips</p>
 </div>
@@ -284,8 +425,7 @@ x.var =<span class="st"> </span><span class="kw">var</span>(x)</code></pre></div
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(forecast)
 <span class="kw">help.search</span>(<span class="st">&quot;auto.arima&quot;</span>)
-??auto.arima
-?auto.arima</code></pre></div>
+??auto.arima</code></pre></div>
 <ul>
 <li>Functions in other CRAN packages</li>
 </ul>
@@ -304,9 +444,9 @@ x.var =<span class="st"> </span><span class="kw">var</span>(x)</code></pre></div
 </div>
 <div id="organize-your-r-projects" class="slide section level1">
 <h1>Organize your R projects</h1>
-<p>Basic idea</p>
+<h4 id="basic-idea">Basic idea</h4>
 <ul>
-<li>Every paper, book or scientific report is a `project’.</li>
+<li>Every paper, book or scientific report is a ‘project’.</li>
 <li>Every project has its own folder and R workspace.</li>
 <li>Every project is entirely scripted. That is, all analysis, graphs and tables must be able to be generated by running one script.
 <ul>
@@ -342,16 +482,16 @@ x.var =<span class="st"> </span><span class="kw">var</span>(x)</code></pre></div
 <li>It takes time to develop your own style. Once it is developed, it is really hard to be changed. So please be careful at the beginning.</li>
 </ul>
 </div>
-<div id="your-turn-1" class="slide section level1">
-<h1>Your turn (1) 💓</h1>
+<div id="your-turn-2" class="slide section level1">
+<h1>Your turn (2) 💓</h1>
 <ul>
 <li><p>Write a function to solve the roots of given quadratic equation <span class="math inline">\(ax^2 + bx + c = 0\)</span> with <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> as input arguments.</p></li>
 <li><p>Test your function on some simple equations.</p></li>
 <li><p>Keep in mind the styles we have learnt.</p></li>
 </ul>
 </div>
-<div id="your-turn-2" class="slide section level1">
-<h1>Your turn (2) 💓</h1>
+<div id="your-turn-3" class="slide section level1">
+<h1>Your turn (3) 💓</h1>
 <ul>
 <li>Write two messy <code>.R</code> files and put them in a folder.</li>
 <li>Use <code>tidy.dir()</code> to make them tidy.</li>
