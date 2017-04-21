@@ -280,10 +280,12 @@ Web Scraping
 Scrape job information from http://sou.zhaopin.com of jobs related to '阿里巴巴'.
 
 - Inspect a web page (easily found in Chrome).
+
 <center><img src="./zhilian.png" width="1000px" height="600px"/></center>
 
 - Find the xpath for the elements you want to extract
     - E.g., xpath for job titles: `//td[@class="zwmc"]/div/a`.
+    
 <center><img src="./zhilian_element.png" width="1000px" height="600px"/></center>
 
 # Your turn (3) 💓
