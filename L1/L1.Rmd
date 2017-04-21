@@ -469,9 +469,9 @@ RSiteSearch("arima")
 
 # References
 
+- [Official introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf)
 - [Google R style guide](https://google.github.io/styleguide/Rguide.xml)
 - [Rob's tips](http://robjhyndman.com/hyndsight/simpler/)
 
 # Further readings
-
 - [Hadley's style](http://adv-r.had.co.nz/Style.html)
