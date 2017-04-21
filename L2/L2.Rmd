@@ -127,6 +127,7 @@ gregexpr('沃尔玛', mySentences)
 
 # Pattern Replacement
 ```{r sub}
+# replace white spaces 
 messySentences <- c('沃尔玛还与微信   跨界合作，顾客可通过沃尔玛微信服务号的付   款功能在实体门店秒付买单。', 
                     '沃尔玛移动支付应 用已经部  署在其全美4,600家超市中。')
 
