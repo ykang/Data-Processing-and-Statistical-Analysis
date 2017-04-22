@@ -29,7 +29,7 @@ install.packages(c("forecast", "sos", "formatR"))
 
 - Standard R comes with some standard packages installed for basic data management, analysis, and graphical tools.
 - More than 10,000 packages available on CRAN! See http://cran.r-project.org.
-- `install.packages(forecast)` to install an package called 'forecast'.
+- `install.packages('forecast')` to install an package called 'forecast'.
 - `library(forecast)` before using the package.
 
 # {.alert}
