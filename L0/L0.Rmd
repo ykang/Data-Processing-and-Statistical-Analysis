@@ -30,7 +30,7 @@ English.
 
 # Course contents
 
-- L1: **R** tips
+- L1: **R** basics and tips
 - Collecting and dealing with text data
     + L2: Text processing, web scraping and text mining
 - Building models
