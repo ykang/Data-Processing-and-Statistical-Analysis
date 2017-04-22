@@ -207,7 +207,7 @@ m[<span class="dv">1</span>, ]
 <li>Data type are not the same.</li>
 </ul></li>
 <li>Create a list: <code>list()</code></li>
-<li>Extract elements of a list: [<a href="#section-3"></a>] or $</li>
+<li>Extract elements of a list: <code>[[]]</code> or <code>$</code></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">l &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="dt">a =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>), <span class="dt">b =</span> <span class="st">'apple'</span>)</code></pre></div>
 </div>
@@ -238,11 +238,15 @@ d &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="
 </div>
 <div id="the-if-condition" class="slide section level1">
 <h1>The if condition</h1>
+<ul>
+<li><p>Syntax</p>
 <pre><code>if (condition){
   do something
 } else {
   do something
-}</code></pre>
+}</code></pre></li>
+<li><p>Example</p></li>
+</ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="dv">0</span>
 if (x &gt;<span class="st"> </span><span class="dv">1</span>) {
   <span class="kw">print</span>(<span class="st">'x is larger than 1'</span>)
@@ -252,6 +256,9 @@ if (x &gt;<span class="st"> </span><span class="dv">1</span>) {
 </div>
 <div id="loops" class="slide section level1">
 <h1>Loops</h1>
+<ul>
+<li>Example</li>
+</ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="dv">1</span>:<span class="dv">10</span>
 for(i in x) {
   <span class="kw">print</span>(i^<span class="dv">2</span>)

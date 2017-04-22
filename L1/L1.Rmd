@@ -157,7 +157,7 @@ rbind(m, n)
     - Data length are not the same.
     - Data type are not the same.
 - Create a list: `list()`
-- Extract elements of a list: [[]] or $
+- Extract elements of a list: `[[]]` or `$`
 
 ```{r}
 l <- list(a = c(1, 2), b = 'apple')
@@ -188,6 +188,7 @@ f(1, 2)
 - Execute your function
 
 # The if condition
+- Syntax
 ```
 if (condition){
   do something
@@ -195,7 +196,7 @@ if (condition){
   do something
 }
 ```
-
+- Example
 ```{r}
 x <- 0
 if (x > 1) {
@@ -206,6 +207,7 @@ if (x > 1) {
 ```
 # Loops
 
+- Example
 ```{r}
 x <- 1:10
 for(i in x) {
