@@ -37,7 +37,11 @@ Text Processing
 
 ```{r readlines}
 # read text data into R
-wmt.news <- readLines("WMTnews.txt") 
+# WMTnews.txt can be found on my Github.
+wmt.news <- readLines('WMTnews.txt')
+# You can also read from the file I put online. It takes roughly 2 mins to read.
+# wmt.news <- readLines("https://yanfei.site/docs/dpsa/WMTnews.txt",
+#                       encoding = 'UTF-8') 
 length(wmt.news)
 
 # print the first news article without quotes
@@ -91,7 +95,7 @@ paste('http://sou.zhaopin.com/jobs/searchresult.ashx?jl=',
 # combine text and variable values
 comp <- '阿里巴巴'
 job.location <- '上海'
-sprintf('http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%s&kw=%s', 
+sprintf('http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%s&kw=%s',
         job.location, comp)
 ```
 
@@ -167,7 +171,37 @@ substr(x,4,7)
 
 <!-- 8. Create a function that takes a string and returns it in reversed order by words (Hint: split the string according to a blank space ` '. Then count the number of components resulting from the splitting step. Re-arrenge them in reverse order and paste them in a single string.) -->
 
+# Answer (1)
 
+```{r, eval = FALSE}
+# 1
+baba.news <- readLines("https://yanfei.site/docs/dpsa/BABAnews.txt",
+                       encoding = 'UTF-8')
+noquote(baba.news)
+
+# 2
+length(baba.news)
+
+# 3
+baba.news <- str_trim(baba.news)
+
+# 4
+nchar(baba.news)
+
+# 5
+baba.news.collapsed <- paste(baba.news, collapse = "")
+cat(baba.news.collapsed)
+
+# 6
+grepl("技术架构", baba.news.collapsed)
+grep('技术架构', baba.news)
+
+# 7
+strsplit(baba.news.collapsed, "。")
+
+# 8
+gsub("双11", "双十一", baba.news.collapsed)
+```
 # Reference and further reading 
 
 Please see [Text processing on Wiki](https://en.wikibooks.org/wiki/R_Programming/Text_Processing) for more details, examples, **R** packages and **R** functions used for text processing in **R**.
@@ -417,7 +451,14 @@ Please choose one exercise from the two below.
 
 - Extract at least 5 attributes of the movies listed on [Douban top 250](https://movie.douban.com/top250)
 
+<!-- # Answer (4) -->
 
+<!-- ```{r} -->
+<!-- # buaa sem professors -->
+<!-- web %>% html_nodes(xpath = "//div[@class=\"fak-list\"]//tr/td[2]/span") %>% html_text() -->
+
+<!-- web %>% html_nodes(xpath = "//div[@class=\"fak-list\"]//tr//a") %>% html_attr("href") -->
+<!-- ``` -->
 
 #{.alert}
 <br>
