@@ -249,15 +249,65 @@ Web Scraping
 </html>
 ```
 
+- `<!DOCTYPE html>` : HTML documents must start with a type declaration
+- HTML document is contained between `<html>` and `</html>`
+- The visible part of the HTML document is between `<body>` and `</body>`
+- HTML headings are defined with the `<h1>` to `<h6>` tags
+- HTML paragraphs are defined with the `<p>` tag
 
-#### XPath
+# Work with other useful tags
 
-- Path used to select nodes and info in html. Here are some examples of XPath expressions and their meanings:
-    - **`/html/title`**: selects the `<title>` element of an HTML document 
-    - **`//p`**: selects all the `<p>` elements
+- HTML links are defined with the `<a>` tag
+```
+<a href="http://www.test.com">This is a link for test.com</a>
+```
+- HTML tables are defined with `<Table>`, row as `<tr>` and rows are divided into data as `<td>`
+```
+<table style="width:100%">
+  <tr>
+    <td> 中文名称 </td>
+    <td> 英文名称 </td>
+    <td> 简称     </td>
+  </tr>
+  <tr>
+    <td> 北京航空航天大学 </td>
+    <td> Beihang University </td>
+    <td> 北航 </td>
+  </tr>   
+</table>
+```
 
+- HTML list starts with `<ul>` (unordered) and `<ol>` (ordered). Each item of list starts with `<li>`
+```
+<ol>
+  <li> 科技获奖 </li>
+  <li> 服务国家战略 </li>
+  <li> 标志性成果 </li>
+</ol>
+```
 
-#  Another example
+You can try http://www.tryiteditor.com to learn more about html. 
+
+# XPath
+
+- Path used to select nodes and info in html. Here are some examples of XPath expressions and their meanings. XPath is one of the most crucial step to do web scraping.
+
+#### Example 1
+```
+<!DOCTYPE html>
+<html>
+  <title> My title
+  </title>
+  <body>
+    <h1> My first heading </h1>
+      <p> My first paragraph </p>
+  </body>
+</html>
+```
+- **`/html/title`**: selects the `<title>` element of an HTML document 
+- **`//p`**: selects all the `<p>` elements
+
+#### Example 2
 ```
 <html> 
   <head>
@@ -278,12 +328,9 @@ Web Scraping
   </body>
 </html>
 ```
-
-#### Xpath
-
-- **`//div[@id="images"]`**: selects all the `<div>` elements which contain an attribute `id="images"`.
+- **`//div[@id="images"]`**: selects all the `<div>` elements which contain an attribute `id="images"`. Note its difference with `//div`
     - **`//div[@class="img"]`** 
-    - **`//body/div`** 
+    - **`//body/div[1]`** 
     - Xpath is not unique. 
     - attributes like 'class' and 'id' are mostly used.
     
@@ -308,9 +355,7 @@ Web Scraping
 
 
 
-
-
-# Let's do it!
+# Where to go?
 
 Scrape job information from http://sou.zhaopin.com of jobs related to '阿里巴巴'.
 
@@ -320,7 +365,7 @@ Scrape job information from http://sou.zhaopin.com of jobs related to '阿里巴
 
 - Find the xpath for the elements you want to extract
     - E.g., xpath for job titles: `//td[@class="zwmc"]/div/a`.
-    
+    - You can also find xpath from viewing the whole page source
 <center><img src="./zhilian_element.png" width="1000px" height="600px"/></center>
 
 # Your turn (3) 💓
@@ -328,15 +373,68 @@ Scrape job information from http://sou.zhaopin.com of jobs related to '阿里巴
 Can you find xpath for companies, salaries, locations and links?
 
 
-# *rvest* package in **R**
+#  Scrapping a webpage using **rvest** package
 
 
-- `read_html()`: read html from its url.
-- `html_nodes()`: select parts of an html document using XPath.
-- These are done after using html_nodes().
-    - `html_text()`:  extract all text inside the tag.
+- Parse the entire website: `read_html()`.
+- Find and extract the pieces of the website you need using XPath: `html_nodes()`. It pull out the entire node.
+- The following are done after using html_nodes() to extract content we need.
+    - `html_table()`:  extract all data inside a html table.
+    - `html_text()`:  extract all text within the node.
     - `html_attr()`: extract contents of a single attribute.
     - `html_attrs()`: extract all attributes. 
+- Cleanup
+
+# Go back to previous examples
+
+```{r}
+library(rvest)
+web <- read_html('<!DOCTYPE html>
+<html>
+  <title> My title
+  </title>
+  <body>
+    <h1> My first heading </h1>
+      <p> My first paragraph </p>
+  </body>
+</html>')
+title_node <- html_nodes(web, xpath = '//title')
+title_node
+html_text(title_node)
+str_trim(html_text(title_node))
+```
+
+
+# Let's do it!
+
+#### Now we want to scrape data from a html table
+
+```{r wiki1, cache = TRUE}
+url <- "https://en.wikipedia.org/wiki/Provinces_of_China"
+web <- read_html(url)
+provinces_nodes <-
+  html_nodes(web, xpath = '//*[@class="wikitable sortable"]')
+provinces <- html_table(provinces_nodes)
+library(knitr)
+kable(head(provinces[[1]]), format = "html")
+```
+
+# Let's do it!
+
+#### Now let's scrape data from a list
+
+```{r wiki2, cache = TRUE}
+url <- "https://en.wikipedia.org/wiki/Provinces_of_China"
+web <- read_html(url)
+references_nodes <-
+  html_nodes(web, xpath = '//div[@class="reflist"]//li')
+references <- html_text(references_nodes)
+references
+```
+
+# Let's do it!
+
+#### Now let's scrape some employment data
 
 ```{r zhilian0, cache=TRUE}
 library(rvest)
@@ -355,13 +453,6 @@ link[1:5]
 ```
 job_title_nodes <- html_nodes(web, xpath = '//td[@class="zwmc"]/div/a')
 job_title <- html_text(job_title_nodes)
-```
-$\Downarrow$
-
-```
-job_title_nodes <- web %>%
-  html_nodes(xpath = '//td[@class="zwmc"]/div/a')
-job_title <- job_title_nodes %>% html_text()
 ```
 
 $\Downarrow$
@@ -402,6 +493,9 @@ library(knitr)
 kable(head(alibaba_jobs), format = "html")
 ```
 
+# How to turn page?
+
+Think about how to turn pages?
 
 
 # Let's extract as much information as we can
@@ -445,20 +539,50 @@ kable(head(subset(alibaba_job_details, select = -description)), format = "html")
 
 # Your turn (4) 💓
 
-Please choose one exercise from the two below.
+Please choose one from the following exercises.
 
-- Extract names, research interests, emails and links  of all [BUAA SEM Professors](http://sem.buaa.edu.cn/szdw/jsbd.htm)
+- Extract names, research interests, emails and links  of all BUAA SEM Professors (http://sem.buaa.edu.cn/szdw/jsbd.htm)
 
-- Extract at least 5 attributes of the movies listed on [Douban top 250](https://movie.douban.com/top250)
+- Extract at least 5 attributes of the movies listed on Douban top 250 (https://movie.douban.com/top250)
+
+- Extract the top 5 pages of hotel information including the newest reviews from TripAdvisor (https://www.tripadvisor.com/Hotels-g294212-Beijing-Hotels.html)
+
+- Extract the top 5 pages of book information from Amazon (https://www.amazon.cn/s/ref=nb_sb_noss?__mk_zh_CN=亚马逊网站&field-keywords=大数据)
+
+
+
 
 <!-- # Answer (4) -->
 
 <!-- ```{r} -->
 <!-- # buaa sem professors -->
-<!-- web %>% html_nodes(xpath = "//div[@class=\"fak-list\"]//tr/td[2]/span") %>% html_text() -->
+<!-- web %>%  -->
+<!--   html_nodes(xpath = "//div[@class=\"fak-list\"]//tr/td[2]/span")%>% -->
+<!--   html_text() -->
 
-<!-- web %>% html_nodes(xpath = "//div[@class=\"fak-list\"]//tr//a") %>% html_attr("href") -->
+<!-- web %>%  -->
+<!--   html_nodes(xpath = "//div[@class=\"fak-list\"]//tr//a") %>% -->
+<!--   html_attr("href") -->
+
+<!-- # Amazon book information -->
+<!-- web %>%  -->
+<!--   html_nodes(xpath = '//a[@class="a-link-normal s-access-detail-page  s-color-twister-title-link a-text-normal"]') %>%  -->
+<!--   html_attr('href') -->
+
+<!-- # TripAdvisor -->
+<!-- web %>% -->
+<!--   html_nodes(xpath='//div[@class="listing_title"]/a') %>% -->
+<!--   html_attr('href') -->
 <!-- ``` -->
+
+
+# Some notes
+
+- When you scrape a website too frequently, the server may reject your request. One possible solution is to stop for several seconds irregularly.
+
+- Not every website is scrappable! Some websites go with really high technoloy to protect their data from being extracted. For example, they use javascript, or really complex captcha codes.
+
+- Python has more functionality for web scraping. It is more flexible to deal with the problems mentioned above. If you are interested in that, please refer to [this book](https://yanfei.site/docs/dpsa/references/PyWebScrapingBook.pdf). Basics of web scraping with Python are similar.
 
 #{.alert}
 <br>
@@ -469,42 +593,66 @@ Text Mining
 
 ## Raw human written text $\Rightarrow$ Structured information
 
-- Word frequency and wordcloud
+- The biggest difference between text mining and general data analysis is that it deals with text data, instead of numeric values. - Sometimes text mining is called 'Natural Language Processing (NLP)', especially in computer science.
+- Most text mining methods are based on word frequency in real world.
+
+# We are going to focus on ...
+
+- Corpus
+    - a collection of documents (e.g., a collection of different job description documents)
+- Word segment
+    - segment each text into words
+    - stopwords: common words that generally do not contribute to the meaning of a sentence, at least for the purposes of information retrieval and natural language processing. These are words such as the and a. Most search engines will filter out stopwords from search queries and documents in order to save space in their index.
+- DocumentTermMatrix
+    - Each row is a document, while each column shows word frequencies of the corresponding word.
+    - This is the very basic data structure for text mining.
 - Text clustering
+    - Group similar documents together according to their similarities.
 - Topic models
+    - Find topics which the corpus is talking about.
 
 
-# Job description text mining
+
+# Case study: job description corpus
 
 ```{r loaddata}
 # read text data into R
 alibaba_job_description <- as.character(alibaba_job_details$description)
 ```
 
-# Preprocessing
 
-## Word segment
+# Word segment
 
 ```{r segment, cache=TRUE}
-# word segment
+# load the word segment package
 library(jiebaR)
+# build a segment engine
 engine1 <- worker(stop_word = 'stopwords.txt')
+# add news words into the engine 
 new_user_word(engine1, c("新技术", '新媒体'))
+
+# for each job description, perform word segmentation
 Words <-  c()
 for(i in 1:length(alibaba_job_description)){
   Words <- c(Words,c(segment(alibaba_job_description[i], engine1)))
 }
+
+# we need to consider other stopwords in this specific case
 myStopwords <- c('工作', '地址', '公司', '岗位', '描述', 
                  '负责', '职位', '年', '优先', '具备',
                  '熟悉','相关')
 Words <- Words[-which(Words %in% myStopwords)]
+
+# remove all the numbers
 Words <- gsub("[0-9]+?",'', Words)
+
+# only keep terms
 Words <- Words[nchar(Words) > 1]
-Words <- toupper(Words)
 head(Words)
 ```
 
-# Word frequencies and wordcloud
+
+# Word frequency and wordcloud
 ```{r wordfreq}
 # word frequencies
 wordsNum <- table(unlist(Words))  
@@ -530,31 +678,46 @@ wordcloud2(tools.top, color = "random-dark", shape = 'circle', backgroundColor =
 
 # Clustering
 ```{r clustering, cache=TRUE}
+# load the text mining packages
 library(tm)
 library(slam)
 wmt.news <- readLines("WMTnews.txt") 
+# wmt.news <- readLines("https://yanfei.site/docs/dpsa/WMTnews.txt", encoding = 'UTF-8')
+
+# build word segment engine
 mixseg <- worker(stop_word = "stopwords.txt")
+# mixseg <- worker(stop_word = "https://yanfei.site/docs/dpsa/stopwords.txt")
 mixseg$bylines <- TRUE
+
+# word segmentation for each of the 449 articles
 word_list <- mixseg[wmt.news]
+
 f <- function(x){
   x <- gsub("[0-9]+?",'', x)
   x[x == '号店'] <- '1号店'
-  x <- paste(x[nchar(x)>1], collapse = ' ')
+  x <- paste(x[nchar(x) > 1], collapse = ' ')
   return(x)
-  }
+}
+# cleanup
 d.vec <- lapply(word_list,f)
 corpus <- Corpus(VectorSource(d.vec))
+
+# remove stopwords
 myStopwords <- c('新浪', '沃尔玛', '年',  '月', '日','公司', '中国', '有限公司')
 stopwords <- readLines('stopwords.txt')
 mycorpus <- tm_map(corpus,removeWords,c(stopwords, myStopwords))
 
+# creat DocumentTermMatrix
 control <- list(removePunctuation=T, 
              wordLengths = c(2, Inf), 
-             # weighting = weightTfIdf,
              stopwords = c(stopwords, myStopwords))
 d.dtm <- DocumentTermMatrix(mycorpus, control)
 d.dtm <- d.dtm[row_sums(d.dtm)!=0, ]
-d.dtm.sub <- removeSparseTerms(d.dtm, sparse=0.99)
+
+# remove sparse ones
+d.dtm.sub <- removeSparseTerms(d.dtm, sparse = 0.99)
+
+# text clustering
 library(proxy)
 d.dist <- proxy::dist(as.matrix(d.dtm.sub), method='cosine')
 fit <- hclust(d.dist, method="ward.D")
@@ -568,6 +731,8 @@ findFreqTerms(d.dtm.sub[memb==1, ], 300)
 findFreqTerms(d.dtm.sub[memb==2, ], 300)
 ```
 
+
+
 # Topic models
 ```{r topicmodeling, cache=TRUE}
 library(topicmodels)
@@ -579,9 +744,10 @@ terms(ctm, 2, 0.01)
 
 - [Wikibooks on text processing](https://en.wikibooks.org/wiki/R_Programming/Text_Processing)
 - [`rvest` package documentation](https://cran.r-project.org/web/packages/rvest/rvest.pdf)
-- [`jiebaR` tutorial](https://jiebar.qinwf.com)
+- [`jiebaR` tutorial](http://qinwenfeng.com/jiebaR/)
 
 # Further readings
 
 - Other **R** packages like `XML`, `RCurl` and `scrapeR` are also used for web scraping.
 - Other packages for text mining can be found [here](https://cran.r-project.org/web/views/NaturalLanguageProcessing.html).
+- [Web Scraping with Python](https://yanfei.site/docs/dpsa/references/PyWebScrapingBook.pdf)
