@@ -261,7 +261,7 @@ Web Scraping
 ```
 <a href="http://www.test.com">This is a link for test.com</a>
 ```
-- HTML tables are defined with `<Table>`, row as `<tr>` and rows are divided into data as `<td>`
+- HTML tables are defined with `<table>`, row as `<tr>` and rows are divided into data as `<td>`
 ```
 <table style="width:100%">
   <tr>
