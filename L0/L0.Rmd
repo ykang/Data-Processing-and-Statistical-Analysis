@@ -33,14 +33,15 @@ English.
 - L1: **R** basics and tips
 - Collecting and dealing with text data
     + L2: Text processing, web scraping and text mining
-- Building models
-    + L3: Unsupervised methods
-    + L4: Supervised methods
-    + L5: Time series forecasting
-- L6: Parallel computation with **R**
+- Looking at data
+    + L3: Data visualization
+- Modeling data
+    + L4: Unsupervised methods
+    + L5: Supervised methods
+    + L6: Time series forecasting
+- L7: Parallel computation with **R**
 - Delivering results 
-    + L7: Graphics
-    + L8: Dynamic Documents
+    + L8: Dynamic documents
 
 
 

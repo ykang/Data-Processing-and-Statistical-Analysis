@@ -593,7 +593,8 @@ Text Mining
 
 ## Raw human written text $\Rightarrow$ Structured information
 
-- The biggest difference between text mining and general data analysis is that it deals with text data, instead of numeric values. - Sometimes text mining is called 'Natural Language Processing (NLP)', especially in computer science.
+- The biggest difference between text mining and general data analysis is that it deals with text data, instead of numeric values. 
+- Sometimes text mining is called 'Natural Language Processing (NLP)', especially in computer science.
 - Most text mining methods are based on word frequency in real world.
 
 # We are going to focus on ...

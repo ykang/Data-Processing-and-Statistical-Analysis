@@ -1,100 +1,15 @@
 ---
-title: 'Lecture 3: Unsupervised Methods'
+title: 'Lecture 3: Data Visualization'
 author: "<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn"
 date: "School of Economics and Management <br> Beihang University"
 output:
   slidy_presentation:
-    footer: "Lecture 3: Unsupervised Methods"
-    css: ../styles/ykstyle.css
+  footer: "Lecture 3: Data Visualization"
+css: ../styles/ykstyle.css
 logo: buaalogo.png
 ---
-
+  
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# # In this lecture we are going to learn unsupervised methods...
-
-- PCA
-- Cluster analysis
-- Association rules
-
-# Packages required in this lecture
-
-```
-install.packages(c("cluster", "ggfortify", "ggplot2"))
-```
-
-# PCA
-
-```{r pca}
-library(mlbench)
-data("BreastCancer")
-breast.cancer.raw = BreastCancer[complete.cases(BreastCancer),]
-breast.cancer.data = subset(breast.cancer.raw, select = -c(Id, Class))
-scaled.breast.cancer.data = scale(sapply(breast.cancer.data, as.numeric))
-breast.cancer.pc.cr <- princomp(scaled.breast.cancer.data)
-breast.cancer.PC1 <- breast.cancer.pc.cr$scores[, 1]
-breast.cancer.PC2 <- breast.cancer.pc.cr$scores[, 2]
-summary(breast.cancer.pc.cr)
-library(ggplot2)
-bc.class <- as.factor(breast.cancer.raw$Class)
-qplot(breast.cancer.PC1, breast.cancer.PC2)
-qplot(breast.cancer.PC1, breast.cancer.PC2, col = bc.class)
-```
-
-# Cluster analysis
-
-- In cancer research for classifying patients into subgroups according their gene expression profile. This can be useful for identifying the molecular profile of patients with good or bad prognostic, as well as for understanding the disease.
-
-- In marketing for market segmentation by identifying subgroups of customers with similar profiles and who might be receptive to a particular form of advertising.
-
-- In City-planning for identifying groups of houses according to their type, value and location.
-
-
-# Clustering analysis
-
-- Partitioning Clustering ($k$-means, $k$-medoids or pam-partitioning around medoids, etc.)
-- Hierarchical Clustering 
-- Others like spectral clustering etc.
-
-# Breast cancer data again
-
-```{r km}
-set.seed(1)
-km.breast.cancer <- kmeans(scaled.breast.cancer.data, 2)
-autoplot(km.breast.cancer, data = scaled.breast.cancer.data)
-```
-
-```{r pam}
-pam.breast.cancer <- pam(scaled.breast.cancer.data , 2)
-autoplot(pam.breast.cancer)
-```
-
-```{r hc}
-hc.breast.cancer <- hclust(dist(scaled.breast.cancer.data))
-hc.cluster <- cutree(hc.breast.cancer, k = 2)
-plot(hc.breast.cancer,hang = -1, cex = 0.6)
-rect.hclust(hc.breast.cancer, k = 2, border = "red")
-```
-
-```{r heatmap}
-```
-
-# Global Happiness Case Study
-
-- **Motivation: ** illustrate the applications of web scraping, dimension reduction and applied clustering tools in R.
-- Two parts of **data** to scrape from internet: 
-    - The World Happiness Report 2017 (https://en.wikipedia.org/wiki/World_Happiness_Report)
-    - The 2015 social progress index of countries (https://en.wikipedia.org/wiki/List_of_countries_by_Social_Progress_Index)
-- **Our goal: ** segment rows of the over 150 countries in the data into separate groups (clusters)
-
-# Web Scraping and Data Pre-processing
-
-# Simple correlation analysis
-
-# PCA
-
-# Clustering
-
-# Visualisation  on  world map
