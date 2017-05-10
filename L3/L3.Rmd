@@ -12,4 +12,32 @@ logo: buaalogo.png
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+# What we are going to learn today ...
 
+1. basic graphics with **manipulate**
+2. elegant graphics **ggplot2**
+3. interactive graphics with **plotly**
+4. interactive graphic with **shiny**
+
+
+
+# Basic graphics with **manipulate**
+
+```{r}
+plot(cars)
+```
+
+#### Check this out:
+```{r}
+library(manipulate)
+manipulate(
+  plot(cars, xlim=c(0,x.max)),  
+  x.max=slider(15,25))
+```
+
+
+# References
+
+1. Philipp K. Janert (2011). Data analysis with open source tools. O'Reilly.
+2. Joseph Adler (2012). R in a Nutshell (2ed). O'Reilly.
+3. [R for data science](http://r4ds.had.co.nz/index.html)
