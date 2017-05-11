@@ -10,60 +10,408 @@ logo: buaalogo.png
 ---
   
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, fig.align = 'center')
 ```
+
+
+# {.bigger}
+<br>
+<br>
+<br>
+<br>
+
+> "The simple graph has brought more information to the data analyst’s mind than any other device."
+
+> — John Tukey
+
+
 # What we are going to learn today ...
 
 1. basic graphics with **R**
 2. elegant graphics with **ggplot2**
-3. interactive plotting with **manipulate**
 3. interactive graphs with **plotly**
 4. interactive web apps with **shiny**
+
+
+
+
+
 
 
 # {.alert}
 <br>
 <br>
-Basic graphics with **manipulate**
+Basic graphics with **R**
 
-# Basic graphics
+# The `mpg` data frame
+
+`mpg` contains observations collected by the US Environment Protection Agency on 38 models of car. You can see more details via `?mpg`. Among the variables in `mpg` are:
+
+1. `displ`, a car’s engine size, in litres.
+2. `hwy`, a car's fuel efficiency on the highway, in miles per gallon (mpg). A car with a low fuel efficiency consumes more fuel than a car with a high fuel efficiency when they travel the same distance.
+
+# Basic plots
+
+- Practice and look at the help document of `plot`
 
 ```{r}
-plot(cars)
+library(ggplot2)
+attach(mpg)
+plot(displ, hwy) 
+abline(lm(hwy~displ))
+title("Regression of MPG on engine size")
 ```
 
-#### Check this out:
+
+
+# Histograms and density plots
+
+#### Histograms
+```{r}
+hist(mpg$hwy)
+```
+
+
+#### Density plots
+```{r}
+d <- density(mpg$hwy) # returns the density data 
+plot(d) 
+```
+
+# Piechart
+
+```{r}
+car.table <- table(mpg$manufacturer)
+pie.cars <- car.table
+names(pie.cars) <- names(car.table)
+pie(pie.cars)
+```
+
+# Boxplots
+
+```{r}
+# Boxplot of MPG
+boxplot(hwy, data = mpg, main = 'Boxplot of MPG')
+
+# Boxplot of MPG by Car Cylinders 
+boxplot(hwy~cyl,data = mpg, main = "Car Milage Data", 
+  	xlab = "Number of Cylinders", ylab = "Miles Per Gallon")
+```
+
+# Time series
+```{r}
+library(forecast)
+library(fpp)
+plot(ausbeer)
+```
+
+# Multiple plots
+```{r, fig.width=12, fig.height=5}
+par(mfrow = c(1, 2))
+plot(ausbeer)
+boxplot(hwy, data = mpg, main = 'Boxplot of MPG')
+```
+
+# {.alert}
+<br>
+<br>
+Elegant graphics with **ggplot2**
+
+
+
+# Creating a ggplot
+
+```{r}
+library(ggplot2)
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy))
+```
+
+
+1. With ggplot2, you begin a plot with the function `ggplot()`. `ggplot()` creates a coordinate system that you can add layers to.
+
+2. `geom_point()` adds a layer of points to your plot, which creates a scatterplot. You can specify the color, size and shape of these points. Each geom function in ggplot2 takes a `mapping` argument. 
+
+
+# Your turn (1) 💓
+
+1. Run `ggplot(data = mpg)`. What do you see?
+
+2. How many rows are in mpg? How many columns?
+
+3. What does the `drv` variable describe? Read the help for `?mpg` to find out.
+
+4. Make a scatterplot of `hwy` vs `cyl`.
+
+5. What happens if you make a scatterplot of `class` vs `drv`? Why is the plot not useful?
+
+# What happens for the outliers?
+
+```{r}
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = class))
+```
+
+# Change the color, size and shape of points
+
+```{r}
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy), color = 2, size = 3)
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy), shape = 18)
+```
+
+# Your turn (2) 💓
+
+1. What’s gone wrong with this code? Why are the points not blue?
+
+```{r}
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = "blue"))
+```
+
+2. Which variables in `mpg` are categorical? Which variables are continuous? 
+
+3. Map a continuous variable to `color`. How does it behave differently for categorical vs. continuous variables?
+
+4. What happens if you use something other than a variable name as the color, like aes(colour = displ < 5)?
+
+# Facets
+
+- Another way, particularly useful for categorical variables, is to split your plot into facets, subplots that each display one subset of the data.
+- To facet your plot by a single variable, use `facet_wrap()`. The first argument should be a formula, which you create with ~ followed by a variable name. 
+
+```{r}
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy)) + 
+  facet_wrap(~ class, nrow = 2)
+```
+
+
+# Your turn (3) 💓
+
+1. Check it out. What plots do you get? What does the dot mean? 
+
+2. Remeber to look at the help documents.
+
 ```{r, eval=FALSE}
-library(manipulate)
-manipulate(
-  plot(cars, xlim=c(0,x.max)),  
-  x.max=slider(15,25))
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  facet_grid(drv ~ .)
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  facet_grid(. ~ cyl)
 ```
 
-# Basic graphics
+# Statistical transformations
+
+#### Let’s take a look at a bar chart.
+
+The following chart displays the total number of diamonds in the `diamonds` dataset, grouped by `cut`.
 
 ```{r}
-plot(longley[, 'Year'], longley[, 'GNP'], type = 'l', main = 'GNP')
+ggplot(data = diamonds) + 
+  geom_bar(mapping = aes(x = cut))
 ```
+
+You can change the colors.
+```{r}
+ggplot(data = diamonds) + 
+  geom_bar(mapping = aes(x = cut, fill = cut))
+```
+
+#### Let’s take a look at a histogram.
+```{r}
+ggplot(data = mpg) + 
+  geom_histogram(mapping = aes(x = hwy))
+```
+
+
+# Boxplots
+
+```{r}
+ggplot(data = mpg, mapping = aes(x = class, y = hwy)) + 
+  geom_boxplot()
+ggplot(data = mpg, mapping = aes(x = class, y = hwy)) + 
+  geom_boxplot() +
+  coord_flip()
+```
+
+# Time series
+
+```{r}
+library(forecast)
+library(fpp)
+library(ggplot2)
+autoplot(ausbeer)
+```
+
+# {.alert}
+<br>
+<br>
+Interactive graphs with **plotly**
+
+# `mpg` data again
+
+```{r}
+library(plotly)
+plot_ly(mpg, type="scatter", mode = 'markers', x = ~displ, y = ~hwy, color = ~drv,
+        size = ~cyl, text = ~paste("manufacturer: ", manufacturer))
+```
+
+# Basic Histogram
+```{r}
+plot_ly(mpg, x = ~hwy, type = "histogram")
+plot_ly(diamonds, x = ~cut, type = "histogram")
+```
+
+# Boxplots
+```{r}
+plot_ly(mpg, y = ~hwy, color = ~as.factor(cyl), type = "box")
+```
+
+
+# {.alert}
+<br>
+<br>
+Interactive web apps with **shiny**
+
+# Example
+
+<center><img src="./wordcloudApp.png" width="1200px" height="500px" /></center>
+
+
+
+# Structure of a Shiny App
+
+Shiny apps have two components:
+
+1. **A user-interface script.** The user-interface (ui) script controls the layout and appearance of your app. It is defined in a source script named `ui.R`. 
+2. **A server script.** The `server.R` script contains the instructions that your computer needs to build your app. 
+
+
+# Number of telephones in different regions
+
+`ui.R`
 
 ```{r, eval=FALSE}
-manipulate(
-  plot(longley[, 'Year'], longley[,factor], type = 'l', main = factor),
-  factor = picker("GNP", "Unemployed", "Employed"))
+# Rely on the 'WorldPhones' dataset in the datasets
+# package (which generally comes preloaded).
+library(datasets)
+
+# Use a fluid Bootstrap layout
+fluidPage(    
+  
+  # Give the page a title
+  titlePanel("Telephones by region"),
+  
+  # Generate a row with a sidebar
+  sidebarLayout(      
+    
+    # Define the sidebar with one input
+    sidebarPanel(
+      selectInput("region", "Region:", 
+                  choices=colnames(WorldPhones)),
+      hr(),
+      helpText("Data from AT&T (1961) The World's Telephones.")
+    ),
+    
+    # Create a spot for the barplot
+    mainPanel(
+      plotOutput("phonePlot")  
+    )
+    
+  )
+)
 ```
 
-# Combine controls
+# Number of telephones in different regions
 
-```{r}
-manipulate(
-  plot(longley[, 'Year'], longley[,factor], xlim = c(1947, x.max), main = factor, ann = label, type = 'l'),
-   x.max = slider(1956, 1962, step=1, initial = 1962),
-  factor = picker("GNP", "Unemployed", "Employed"),
-  label = checkbox(TRUE, "Draw Labels"))
+`server.R`
+```{r, eval=FALSE}
+# Rely on the 'WorldPhones' dataset in the datasets
+# package (which generally comes preloaded).
+library(datasets)
+
+# Define a server for the Shiny app
+function(input, output) {
+  
+  # Fill in the spot we created for a plot
+  output$phonePlot <- renderPlot({
+    
+    # Render a barplot
+    barplot(WorldPhones[,input$region]*1000, 
+            main=input$region,
+            ylab="Number of Telephones",
+            xlab="Year")
+  })
+}
 ```
+
+# Density of a normal distribution
+`ui.R`
+```{r, eval=FALSE}
+library(shiny)
+
+# Define UI 
+fluidPage(
+  
+  # Application title
+  titlePanel("Please choose a mean and sd"),
+  
+  # Sidebar with controls 
+  sidebarLayout(
+    sidebarPanel(
+      numericInput("mean", 
+                   label = h3("Mean"), 
+                   value = 1),
+      
+      selectInput("sd", label = h3("Standard Deviation"), 
+                  choices = list("1" = 1, "2" = 2,
+                                 "3" = 3), selected = 1)
+  
+    ),
+    
+
+    mainPanel(
+      h2("This is the density plot of normal distribution."),
+      h3("Note how it changes with mean and sd."),
+      plotOutput("normPlot")
+    )
+  )
+)
+
+```
+
+# Density of a normal distribution
+`server.R`
+```{r, eval=FALSE}
+library(shiny)
+
+
+# Define server logic required to plot density of normal distribution
+function(input, output) {
+
+  output$normPlot <- renderPlot({
+    plot(density(rnorm(1000, mean = as.numeric(input$mean), 
+               sd = as.numeric(input$sd))), main = 'normal density',
+         xlim = c(-10, 10))
+  })
+}
+```
+
+# Your turn (4) 💓
+
+I will leave you to think about how to design the wordcloud app or an app in your mind?
+
+You may wonder how to put your app on the web. Please refer to [this page]( https://shiny.rstudio.com/deploy/).
+
 
 # References
 
-1. Philipp K. Janert (2011). Data analysis with open source tools. O'Reilly.
-2. Joseph Adler (2012). R in a Nutshell (2ed). O'Reilly.
-3. [R for data science](http://r4ds.had.co.nz/index.html)
+1. Robert I. Kabacoff (2015). R in action (2ed). Manning.
+2. [R for data science](http://r4ds.had.co.nz/index.html)
+3. [The **plotly** site](https://plot.ly/r/)
+4. [The **shiny** site](https://shiny.rstudio.com/)

@@ -39,7 +39,7 @@ English.
     + L4: Unsupervised methods
     + L5: Supervised methods
     + L6: Time series forecasting
-- L7: Parallel computation with **R**
+- ~~L7: Parallel computation with **R**~~
 - Delivering results 
     + L8: Dynamic documents
 
