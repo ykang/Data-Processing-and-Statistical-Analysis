@@ -14,27 +14,53 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 # What we are going to learn today ...
 
-1. basic graphics with **manipulate**
-2. elegant graphics **ggplot2**
-3. interactive graphics with **plotly**
-4. interactive graphic with **shiny**
+1. basic graphics with **R**
+2. elegant graphics with **ggplot2**
+3. interactive plotting with **manipulate**
+3. interactive graphs with **plotly**
+4. interactive web apps with **shiny**
 
 
+# {.alert}
+<br>
+<br>
+Basic graphics with **manipulate**
 
-# Basic graphics with **manipulate**
+# Basic graphics
 
 ```{r}
 plot(cars)
 ```
 
 #### Check this out:
-```{r}
+```{r, eval=FALSE}
 library(manipulate)
 manipulate(
   plot(cars, xlim=c(0,x.max)),  
   x.max=slider(15,25))
 ```
 
+# Basic graphics
+
+```{r}
+plot(longley[, 'Year'], longley[, 'GNP'], type = 'l', main = 'GNP')
+```
+
+```{r, eval=FALSE}
+manipulate(
+  plot(longley[, 'Year'], longley[,factor], type = 'l', main = factor),
+  factor = picker("GNP", "Unemployed", "Employed"))
+```
+
+# Combine controls
+
+```{r}
+manipulate(
+  plot(longley[, 'Year'], longley[,factor], xlim = c(1947, x.max), main = factor, ann = label, type = 'l'),
+   x.max = slider(1956, 1962, step=1, initial = 1962),
+  factor = picker("GNP", "Unemployed", "Employed"),
+  label = checkbox(TRUE, "Draw Labels"))
+```
 
 # References
 
