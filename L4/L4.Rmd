@@ -10,7 +10,7 @@ logo: buaalogo.png
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, fig.align = 'center', warning = FALSE, message = FALSE)
 ```
 
 #  In this lecture we are going to learn unsupervised methods...
@@ -65,12 +65,14 @@ qplot(breast.cancer.PC1, breast.cancer.PC2, col = bc.class)
 # Breast cancer data again
 
 ```{r km}
+library(ggfortify)
 set.seed(1)
 km.breast.cancer <- kmeans(scaled.breast.cancer.data, 2)
 autoplot(km.breast.cancer, data = scaled.breast.cancer.data)
 ```
 
 ```{r pam}
+library(cluster)
 pam.breast.cancer <- pam(scaled.breast.cancer.data , 2)
 autoplot(pam.breast.cancer)
 ```
