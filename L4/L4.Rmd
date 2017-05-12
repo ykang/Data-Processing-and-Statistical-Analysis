@@ -13,23 +13,32 @@ logo: buaalogo.png
 knitr::opts_chunk$set(echo = TRUE, fig.align = 'center', warning = FALSE, message = FALSE)
 ```
 
-#  In this lecture we are going to learn unsupervised methods...
+#  In this lecture we are going to learn...
 
-- PCA
+- Principal component analysis (PCA)
 - Cluster analysis
 - Association rules
 
-# Packages required in this lecture
 
-```
-install.packages(c("cluster", "ggfortify", "ggplot2"))
-```
+# {.alert}
+<br>
+<br>
+PCA
 
-# PCA
+# Why PCA?
 
+In PCA, the dataset is transformed from its original coordinate system to a new coordinate system. The first new axis is chosen in the direction of the most variance in the data. The second axis is orthogonal to the first axis and in the direction of an orthogonal axis with the largest variance. The majority of the variance is often contained in the first few axes. Therefore, we can ignore the rest of the axes, and we reduce the dimensionality of our data. 
+
+Therefore, PCA is often used for:
+
+1. Dimension reduction
+
+2. Data visualisation for multivariate data
 
 
 # Case study: PCA
+
+Check out the details about the  dataset we will use (`?BreastCancer`).
 
 ```{r pca}
 library(mlbench)
@@ -47,7 +56,12 @@ qplot(breast.cancer.PC1, breast.cancer.PC2)
 qplot(breast.cancer.PC1, breast.cancer.PC2, col = bc.class)
 ```
 
-# Cluster analysis
+# {.alert}
+<br>
+<br>
+Cluster analysis
+
+# Motivation
 
 - In cancer research for classifying patients into subgroups according their gene expression profile. This can be useful for identifying the molecular profile of patients with good or bad prognostic, as well as for understanding the disease.
 
@@ -62,20 +76,28 @@ qplot(breast.cancer.PC1, breast.cancer.PC2, col = bc.class)
 - Hierarchical Clustering 
 - Others like spectral clustering etc.
 
-# Breast cancer data again
+# $K$-means clustering
+
+<center><img src="./kmeans.png" width="950px" height="600px" /></center>
+
+
+
+#### Breast cancer data again
 
 ```{r km}
 library(ggfortify)
 set.seed(1)
 km.breast.cancer <- kmeans(scaled.breast.cancer.data, 2)
-autoplot(km.breast.cancer, data = scaled.breast.cancer.data)
+
+# visualizing clusters using pca
+Cluster <- as.factor(km.breast.cancer$cluster)
+qplot(breast.cancer.PC1, breast.cancer.PC2, col = Cluster)
 ```
 
-```{r pam}
-library(cluster)
-pam.breast.cancer <- pam(scaled.breast.cancer.data , 2)
-autoplot(pam.breast.cancer)
-```
+# Hierachical clustering
+- The `hclust()` function takes as input a distance matrix, which records the distances between all pairs of points in the data. 
+- Returns a dendrogram: a tree that represents the nested clusters.  
+- `dist()` will calculate distance functions using the (squared) Euclidean distance, the Manhattan distance, and something else (see `help(dist)` for further details).
 
 ```{r hc}
 hc.breast.cancer <- hclust(dist(scaled.breast.cancer.data))
@@ -84,8 +106,24 @@ plot(hc.breast.cancer,hang = -1, cex = 0.6)
 rect.hclust(hc.breast.cancer, k = 2, border = "red")
 ```
 
-```{r heatmap}
-```
+# The practical issue: picking the number of clusters
+
+- What value should $k$ take? It's best to take advantage of domain knowledge.
+- In the absence of a subject-matter knowledge, try a variety of heuristics, and perhaps a few different values of $k$. Eg: 
+    - The Calinski-Harabasz index of a clustering is the ratio of the between-cluster variance to the total within-cluster variance.
+
+- R offers various empirical approaches for selecting a value of $k$. One such R tool for suggested best number of clusters is the **NbClust** package.
+
+# Clustering takeaways
+
+1. The goal of clustering is to discover or draw out similarities among subsets of your data.
+2. In a good clustering, points in the same cluster should be more similar (nearer) to each other than they are to points in other clusters.
+3. When clustering, the units that each variable is measured in matter. Different units cause different distances and potentially different clusterings.
+4. Ideally, you want a unit change in each coordinate to represent the same degree of change. One way to approximate this is to transform all the columns to have a mean value of 0 and a standard deviation of 1.0, for example by using the function scale().
+5. Clustering is often used for data exploration or as a precursor to supervised learning methods. But you may want to use the clusters that you discovered to categorize new data, as well. 
+6. Like visualization, it’s more iterative and interactive, and less automated than supervised methods.
+7. Different clustering algorithms will give different results. You should consider different approaches, with different numbers of clusters.
+8. There are many heuristics for estimating the best number of clusters. Again, you should consider the results from different heuristics and explore various numbers of clusters.
 
 # Global Happiness Case Study
 
@@ -95,16 +133,166 @@ rect.hclust(hc.breast.cancer, k = 2, border = "red")
     - The 2015 social progress index of countries (https://en.wikipedia.org/wiki/List_of_countries_by_Social_Progress_Index)
 - **Our goal: ** segment rows of the over 150 countries in the data into separate groups (clusters)
 
-# Web Scraping and Data Pre-processing
+# Web Scraping
+```{r, cache=TRUE}
+library(rvest)
+url1 <- "https://en.wikipedia.org/wiki/World_Happiness_Report"
+happy <- read_html(url1) %>% 
+        html_node("table") %>% 
+        html_table()
+
+# inspect imported data structure 
+str(happy)
+
+### scrape social progress index data report from the site
+url2 <- "https://en.wikipedia.org/wiki/List_of_countries_by_Social_Progress_Index"
+social <- read_html(url2) %>% 
+     html_nodes("table") %>% 
+     .[[2]] %>% 
+     html_table(fill=T)
+# check imported data structure 
+str(social)
+```
+
+# Data Pre-processing
+```{r}
+## Exclude columns with ranks and scores, retain the other columns
+happy <- happy[c(3,6:11)]
+### rename column headers 
+colnames(happy) <- gsub(" ", "_", colnames(happy), perl=TRUE)
+names(happy)
+
+### standardize names of selected countries to confirm with country names in the the map database 
+library(plyr)
+happy$Country <- as.character(mapvalues(happy$Country, from = c("United States", "Congo (Kinshasa)", "Congo (Brazzaville)", "Trinidad and Tobago"),to = c("USA","Democratic Republic of the Congo", "Democratic Republic of the Congo", "Trinidad")))
+
+### Again, exclude columns with ranks, keep the rest
+social <- social[c(1,5,7,9)]
+### rename column headers 
+names(social) <- c("Country", "basic_human_needs", "foundations_well_being", "opportunity")
+
+### Standardize country names to confirm with country names in the map dataset 
+social$Country <- as.character(mapvalues(social$Country, from = c("United States", "Côte d'Ivoire","Democratic Republic of Congo", "Congo", "Trinidad and Tobago"), to=c("USA", "Ivory Cost","Democratic Republic of the Congo", "Democratic Republic of the Congo", "Trinidad")))
+
+## coerce character data columns to numeric
+social[, 2:4] <- sapply(social[, 2:4], as.numeric)
+```
+
+# Join two datasets
+```{r}
+### perform left join
+library(dplyr)
+soc.happy <- left_join(happy, social, by = c('Country' = 'Country'))
+### check for missing values in the combined data set
+mean(is.na(soc.happy[, 2:10]))
+```
+
+#  Dealing with missing values
+
+```{r}
+### median imputation
+for(i in 1:ncol(soc.happy[, 2:10])) {
+        soc.happy[, 2:10][is.na(soc.happy[, 2:10][,i]), i] <- median(soc.happy[, 2:10][,i], na.rm = TRUE)
+}
+### summary of the raw data
+summary(soc.happy[,2:10])
+```
+
+# Data transformation
+
+An important procedure for meaningful clustering and dimension reduction steps involves data transformation and scaling variables. 
+
+```{r}
+## transform variables to a range of 0 to 1
+soc.happy[,2:10] <- as.data.frame(scale(soc.happy[,2:10]))
+
+### summary of transformed data shows success of transformation
+summary(soc.happy[,2:10])
+```
 
 # Simple correlation analysis
+```{r}
+library(corrplot)
+corrplot(cor(soc.happy[, 2:10]), addCoef.col = "grey")
+```
 
 # PCA
+```{r}
+soc.pca <- princomp(soc.happy[, 2:10])
+soc.PC1 <- soc.pca$scores[, 1]
+soc.PC2 <- soc.pca$scores[, 2]
+summary(soc.pca)
+library(ggplot2)
+qplot(soc.PC1, soc.PC2)
+```
 
 # Clustering
+#### Choose the number of clusters
+```{r, cache=TRUE}
+require(NbClust)
+nbc <- NbClust(soc.happy[, 2:10], distance="manhattan", min.nc=2, max.nc=30, method="ward.D", index='all')
+```
 
-# Visualisation  on  world map
+# Clustering
+#### k-median clustering
+
+```{r}
+# k-median clustering
+library(cluster)
+km.soc <- pam(soc.happy[,2:10], 3)
+Cluster <- as.factor(km.soc$cluster)
+qplot(soc.PC1, soc.PC2, col = Cluster) 
+soc.happy['cluster'] <- Cluster
+table(Cluster)
+
+# what does each cluster mean
+km.soc$medoids
+
+# and which countries were typical of each cluster
+soc.happy$Country[km.soc$id.med]
+```
+
+
+# Visualisation on world map
+```{r, fig.width=12, fig.height=8}
+map.world <- map_data("world")
+# LEFT JOIN
+map.world_joined <- left_join(map.world, soc.happy, by = c('region' = 'Country'))
+ggplot() +
+  geom_polygon(data = map.world_joined, aes(x = long, y = lat, group = group, fill=cluster, color=cluster)) +
+  labs(title = "Applied Clustering World Happiness and Social Progress Index",
+       subtitle = "Based on data from:https://en.wikipedia.org/wiki/World_Happiness_Report and 
+       https://en.wikipedia.org/wiki/List_of_countries_by_Social_Progress_Index", 
+       x=NULL, y=NULL) +
+  theme(plot.title = element_text(hjust = 0.5), plot.subtitle = element_text(hjust = 0.5)) +
+  coord_equal() +
+  theme(panel.grid.major=element_blank(),
+        panel.grid.minor=element_blank(),
+        axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks=element_blank(),
+        panel.background=element_blank()
+  )
+```
+
+# {.alert}
+<br>
+<br>
+Association rules
+
+# Association rules
+
+- Products that are often bought together during a shopping session (think about how jd recommends product to you)
+- Queries that tend to occur together during a session on a website’s search engine (think about baidu)
+
+Association rule mining is used to find objects or attributes that frequently occur together.
+
+# Example
+
+<center><img src="./bookCheckout.png" width="1150px" height="600px" /></center>
+
 
 # References
 
-1. Philipp K. Janert (2011). Data analysis with open source tools. O'Reilly.
+1. Nina Zumel and John Mount (2014). Data Science with R. Manning.
+2. https://datascienceplus.com/web-scraping-and-applied-clustering-global-happiness-and-social-progress-index/
