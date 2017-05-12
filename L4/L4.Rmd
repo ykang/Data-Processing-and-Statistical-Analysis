@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE, fig.align = 'center', warning = FALSE, messag
 
 - Principal component analysis (PCA)
 - Cluster analysis
-- Association rules
+
 
 
 # {.alert}
@@ -50,9 +50,10 @@ breast.cancer.pc.cr <- princomp(scaled.breast.cancer.data)
 breast.cancer.PC1 <- breast.cancer.pc.cr$scores[, 1]
 breast.cancer.PC2 <- breast.cancer.pc.cr$scores[, 2]
 summary(breast.cancer.pc.cr)
+breast.cancer.pc.cr$loadings
 library(ggplot2)
-bc.class <- as.factor(breast.cancer.raw$Class)
 qplot(breast.cancer.PC1, breast.cancer.PC2)
+bc.class <- as.factor(breast.cancer.raw$Class)
 qplot(breast.cancer.PC1, breast.cancer.PC2, col = bc.class)
 ```
 
@@ -72,16 +73,20 @@ Cluster analysis
 
 # Clustering analysis
 
-- Partitioning Clustering ($k$-means, $k$-medoids or pam-partitioning around medoids, etc.)
-- Hierarchical Clustering 
-- Others like spectral clustering etc.
-
-# $K$-means clustering
-
+- Partitioning Clustering ($k$-means or pam-partitioning around medoids, etc.)
+    - E.g.,$k$-means clustering - aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean.
 <center><img src="./kmeans.png" width="950px" height="600px" /></center>
 
+- Hierarchical Clustering 
+    1. Agglomerative: This is a "bottom up" approach: each observation starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy.
+    2. Divisive: This is a "top down" approach: all observations start in one cluster, and splits are performed recursively as one moves down the hierarchy.
+    
+- Others like spectral clustering etc.
 
 
+
+
+# $k$-means clustering
 #### Breast cancer data again
 
 ```{r km}
@@ -95,9 +100,12 @@ qplot(breast.cancer.PC1, breast.cancer.PC2, col = Cluster)
 ```
 
 # Hierachical clustering
-- The `hclust()` function takes as input a distance matrix, which records the distances between all pairs of points in the data. 
-- Returns a dendrogram: a tree that represents the nested clusters.  
-- `dist()` will calculate distance functions using the (squared) Euclidean distance, the Manhattan distance, and something else (see `help(dist)` for further details).
+
+You do not need to specify $k$ before clustering. 
+
+<!-- - The `hclust()` function takes as input a distance matrix, which records the distances between all pairs of points in the data.  -->
+<!-- - Returns a dendrogram: a tree that represents the nested clusters.   -->
+<!-- - `dist()` will calculate distance functions using the (squared) Euclidean distance, the Manhattan distance, and something else (see `help(dist)` for further details). -->
 
 ```{r hc}
 hc.breast.cancer <- hclust(dist(scaled.breast.cancer.data))
@@ -106,7 +114,7 @@ plot(hc.breast.cancer,hang = -1, cex = 0.6)
 rect.hclust(hc.breast.cancer, k = 2, border = "red")
 ```
 
-# The practical issue: picking the number of clusters
+# A practical issue: picking the number of clusters
 
 - What value should $k$ take? It's best to take advantage of domain knowledge.
 - In the absence of a subject-matter knowledge, try a variety of heuristics, and perhaps a few different values of $k$. Eg: 
@@ -116,16 +124,17 @@ rect.hclust(hc.breast.cancer, k = 2, border = "red")
 
 # Clustering takeaways
 
-1. The goal of clustering is to discover or draw out similarities among subsets of your data.
-2. In a good clustering, points in the same cluster should be more similar (nearer) to each other than they are to points in other clusters.
-3. When clustering, the units that each variable is measured in matter. Different units cause different distances and potentially different clusterings.
-4. Ideally, you want a unit change in each coordinate to represent the same degree of change. One way to approximate this is to transform all the columns to have a mean value of 0 and a standard deviation of 1.0, for example by using the function scale().
-5. Clustering is often used for data exploration or as a precursor to supervised learning methods. But you may want to use the clusters that you discovered to categorize new data, as well. 
-6. Like visualization, it’s more iterative and interactive, and less automated than supervised methods.
-7. Different clustering algorithms will give different results. You should consider different approaches, with different numbers of clusters.
-8. There are many heuristics for estimating the best number of clusters. Again, you should consider the results from different heuristics and explore various numbers of clusters.
+1. In a good clustering, points in the same cluster should be more similar (nearer) to each other than they are to points in other clusters.
 
-# Global Happiness Case Study
+2. Ideally, you want a unit change in each coordinate to represent the same degree of change. One way to approximate this is to transform all the columns to have a mean value of 0 and a standard deviation of 1.0, for example by using the function `scale()`.
+
+3. Clustering is often used for data exploration. But you may want to use the clusters that you discovered to categorize new data, as well. 
+
+4. Different clustering algorithms will give different results. You should consider different approaches, with different numbers of clusters.
+
+5. There are many heuristics for estimating the best number of clusters. Again, you should consider the results from different heuristics and explore various numbers of clusters.
+
+# Case Study: Global Happiness
 
 - **Motivation: ** illustrate the applications of web scraping, dimension reduction and applied clustering tools in R.
 - Two parts of **data** to scrape from internet: 
@@ -160,11 +169,11 @@ str(social)
 happy <- happy[c(3,6:11)]
 ### rename column headers 
 colnames(happy) <- gsub(" ", "_", colnames(happy), perl=TRUE)
-names(happy)
 
 ### standardize names of selected countries to confirm with country names in the the map database 
 library(plyr)
 happy$Country <- as.character(mapvalues(happy$Country, from = c("United States", "Congo (Kinshasa)", "Congo (Brazzaville)", "Trinidad and Tobago"),to = c("USA","Democratic Republic of the Congo", "Democratic Republic of the Congo", "Trinidad")))
+names(happy)
 
 ### Again, exclude columns with ranks, keep the rest
 social <- social[c(1,5,7,9)]
@@ -176,6 +185,7 @@ social$Country <- as.character(mapvalues(social$Country, from = c("United States
 
 ## coerce character data columns to numeric
 social[, 2:4] <- sapply(social[, 2:4], as.numeric)
+names(social)
 ```
 
 # Join two datasets
@@ -187,7 +197,8 @@ soc.happy <- left_join(happy, social, by = c('Country' = 'Country'))
 mean(is.na(soc.happy[, 2:10]))
 ```
 
-#  Dealing with missing values
+# Data Pre-processing
+####  Dealing with missing values
 
 ```{r}
 ### median imputation
@@ -195,10 +206,10 @@ for(i in 1:ncol(soc.happy[, 2:10])) {
         soc.happy[, 2:10][is.na(soc.happy[, 2:10][,i]), i] <- median(soc.happy[, 2:10][,i], na.rm = TRUE)
 }
 ### summary of the raw data
-summary(soc.happy[,2:10])
+#summary(soc.happy[,2:10])
 ```
 
-# Data transformation
+#### Data transformation
 
 An important procedure for meaningful clustering and dimension reduction steps involves data transformation and scaling variables. 
 
@@ -207,7 +218,8 @@ An important procedure for meaningful clustering and dimension reduction steps i
 soc.happy[,2:10] <- as.data.frame(scale(soc.happy[,2:10]))
 
 ### summary of transformed data shows success of transformation
-summary(soc.happy[,2:10])
+#summary(soc.happy[,2:10])
+names(soc.happy)
 ```
 
 # Simple correlation analysis
@@ -222,6 +234,7 @@ soc.pca <- princomp(soc.happy[, 2:10])
 soc.PC1 <- soc.pca$scores[, 1]
 soc.PC2 <- soc.pca$scores[, 2]
 summary(soc.pca)
+soc.pca$loadings
 library(ggplot2)
 qplot(soc.PC1, soc.PC2)
 ```
@@ -229,15 +242,16 @@ qplot(soc.PC1, soc.PC2)
 # Clustering
 #### Choose the number of clusters
 ```{r, cache=TRUE}
-require(NbClust)
-nbc <- NbClust(soc.happy[, 2:10], distance="manhattan", min.nc=2, max.nc=30, method="ward.D", index='all')
+library(NbClust)
+nbc <- NbClust(soc.happy[, 2:10], distance="manhattan", min.nc=2, max.nc=30, method = 'ward.D', index = 'all')
 ```
 
 # Clustering
-#### k-median clustering
+#### pam
+Partitioning (clustering) of the data into $k$ clusters "around medoids", a more robust version of $K$-means.
 
 ```{r}
-# k-median clustering
+# pam
 library(cluster)
 km.soc <- pam(soc.happy[,2:10], 3)
 Cluster <- as.factor(km.soc$cluster)
@@ -275,21 +289,7 @@ ggplot() +
   )
 ```
 
-# {.alert}
-<br>
-<br>
-Association rules
 
-# Association rules
-
-- Products that are often bought together during a shopping session (think about how jd recommends product to you)
-- Queries that tend to occur together during a session on a website’s search engine (think about baidu)
-
-Association rule mining is used to find objects or attributes that frequently occur together.
-
-# Example
-
-<center><img src="./bookCheckout.png" width="1150px" height="600px" /></center>
 
 
 # References

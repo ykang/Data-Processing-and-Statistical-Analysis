@@ -49,10 +49,11 @@ Basic graphics with **R**
 
 1. `displ`, a car’s engine size, in litres.
 2. `hwy`, a car's fuel efficiency on the highway, in miles per gallon (mpg). A car with a low fuel efficiency consumes more fuel than a car with a high fuel efficiency when they travel the same distance.
+3. ...
 
 # Basic plots
 
-- Practice and look at the help document of `plot`
+Practice and look at the help document of `plot`
 
 ```{r}
 library(ggplot2)
@@ -198,21 +199,21 @@ ggplot(data = mpg) +
 ```
 
 
-# Your turn (3) 💓
+<!-- # Your turn (3) 💓 -->
 
-1. Check it out. What plots do you get? What does the dot mean? 
+<!-- 1. Check it out. What plots do you get? What does the dot mean?  -->
 
-2. Remeber to look at the help documents.
+<!-- 2. Remeber to look at the help documents. -->
 
-```{r, eval=FALSE}
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy)) +
-  facet_grid(drv ~ .)
+<!-- ```{r, eval=FALSE} -->
+<!-- ggplot(data = mpg) +  -->
+<!--   geom_point(mapping = aes(x = displ, y = hwy)) + -->
+<!--   facet_grid(drv ~ .) -->
 
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy)) +
-  facet_grid(. ~ cyl)
-```
+<!-- ggplot(data = mpg) +  -->
+<!--   geom_point(mapping = aes(x = displ, y = hwy)) + -->
+<!--   facet_grid(. ~ cyl) -->
+<!-- ``` -->
 
 # Pairwise plots
 
@@ -332,6 +333,7 @@ Shiny apps have two components:
 1. **A user-interface script.** The user-interface (ui) script controls the layout and appearance of your app. It is defined in a source script named `ui.R`. 
 2. **A server script.** The `server.R` script contains the instructions that your computer needs to build your app. 
 
+Put the two `.R` files in one folder and you can run the app in **Rstudio**.
 
 # Number of telephones in different regions
 
@@ -443,7 +445,7 @@ function(input, output) {
 }
 ```
 
-# Your turn (4) 💓
+# Your turn (3) 💓
 
 I will leave you to think about how to design the wordcloud app or an app in your mind?
 
