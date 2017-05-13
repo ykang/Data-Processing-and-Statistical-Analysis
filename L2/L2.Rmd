@@ -550,7 +550,27 @@ Please choose one from the following exercises.
 - Extract the top 5 pages of book information from Amazon (https://www.amazon.cn/s/ref=nb_sb_noss?__mk_zh_CN=亚马逊网站&field-keywords=大数据)
 
 
+# About assignments
 
+1. Subject of your email: "DPSA_姓名_学号"
+2. You'd better describe what you did in the body of the email and let me know the questions or problems you have.
+3. Email attachments:
+    1. DPSA_姓名_学号.R
+    2. DPSA_姓名_学号.csv
+    
+# Resubmit your assignment
+
+Improve your assignments and resubmit. 
+
+1. Subject: "DPSA_R1_姓名_学号"
+2. Describe what you have improved in the new version
+3. Attachements:
+    1. DPSA_R1_姓名_学号.R
+    2. DPSA_R1_姓名_学号.csv
+
+
+    
+    
 
 <!-- # Answer (4) -->
 

@@ -1,0 +1,1064 @@
+"x"
+"1" "<table>
+ <thead>
+  <tr>
+   <th style=\"text-align:left;\"> Hotel_names </th>
+   <th style=\"text-align:left;\"> Hotel_ranks_inBJ6450 </th>
+   <th style=\"text-align:left;\"> Newest_reviews1 </th>
+   <th style=\"text-align:left;\"> Newest_reviews2 </th>
+   <th style=\"text-align:left;\"> Descriptions </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style=\"text-align:left;\"> 北京怡亨酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 1 </td>
+   <td style=\"text-align:left;\"> 2017/03/28 “nice hotel” </td>
+   <td style=\"text-align:left;\"> 2017/03/12 “位置一流。服务一流。房间超好” </td>
+   <td style=\"text-align:left;\"> 含早餐豪华工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京诺金酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 2 </td>
+   <td style=\"text-align:left;\"> 2017/04/25 “相当有水准的酒店” </td>
+   <td style=\"text-align:left;\"> 2017/04/19 “我被诺金的设计惊艳到了” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 瑜舍酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 3 </td>
+   <td style=\"text-align:left;\"> 2017/04/21 “我的北京入住酒店之绝对首选！极具艺术感的低奢风格 + 自然真心的服务，把那些千篇一律的所谓“国际奢华酒店”甩了10条大街。奢华酒店里的一股清泉！” </td>
+   <td style=\"text-align:left;\"> 2017/03/31 “非常有意思的概念酒店” </td>
+   <td style=\"text-align:left;\"> 泳池豪华工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京四季酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 4 </td>
+   <td style=\"text-align:left;\"> 2017/05/06 “fourseasons is the best choise” </td>
+   <td style=\"text-align:left;\"> 2017/05/04 “好服务，好地方~” </td>
+   <td style=\"text-align:left;\"> 泳池豪华燕莎 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京嘉里大酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 5 </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “不错的酒店” </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “高大上” </td>
+   <td style=\"text-align:left;\"> 泳池豪华国贸 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京瑰丽酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 6 </td>
+   <td style=\"text-align:left;\"> 2017/04/26 “绝佳地理位置 人性化服务” </td>
+   <td style=\"text-align:left;\"> 2017/04/04 “舒适惬意的酒店” </td>
+   <td style=\"text-align:left;\"> 含早餐泳池豪华 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京丽思卡尔顿酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 7 </td>
+   <td style=\"text-align:left;\"> 2017/05/07 “#2017.5.1婚宴#” </td>
+   <td style=\"text-align:left;\"> 2017/05/06 “回家的感觉” </td>
+   <td style=\"text-align:left;\"> 泳池豪华国贸 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京富力万丽酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 8 </td>
+   <td style=\"text-align:left;\"> 2017/05/08 “business travel” </td>
+   <td style=\"text-align:left;\"> 2017/05/06 “很开心” </td>
+   <td style=\"text-align:left;\"> 中等泳池免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 金融街丽思卡尔顿酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 9 </td>
+   <td style=\"text-align:left;\"> 2017/05/08 “用后感” </td>
+   <td style=\"text-align:left;\"> 2017/05/06 “有趣的折纸小课堂” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京华尔道夫酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 10 </td>
+   <td style=\"text-align:left;\"> 2017/04/22 “黄金外观的华尔道夫” </td>
+   <td style=\"text-align:left;\"> 2017/04/22 “有品味的空间” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京国贸大酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 11 </td>
+   <td style=\"text-align:left;\"> 2017/04/19 “硬件设施和服务优” </td>
+   <td style=\"text-align:left;\"> 2017/04/10 “最好的服务” </td>
+   <td style=\"text-align:left;\"> 泳池豪华国贸 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 阅微庄四合院宾馆 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 12 </td>
+   <td style=\"text-align:left;\"> 2017/05/07 “好” </td>
+   <td style=\"text-align:left;\"> 2017/02/21 “不虚此行的北京游” </td>
+   <td style=\"text-align:left;\"> 含早餐中等工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京JW万豪酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 13 </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “到京首选” </td>
+   <td style=\"text-align:left;\"> 2017/05/07 “#2017.5.1婚宴#” </td>
+   <td style=\"text-align:left;\"> 泳池豪华国贸 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京新世界酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 14 </td>
+   <td style=\"text-align:left;\"> 2017/05/01 “总经理领导有方，团队表现精彩” </td>
+   <td style=\"text-align:left;\"> 2017/04/24 “不错” </td>
+   <td style=\"text-align:left;\"> 泳池豪华崇文门 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 东隅酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 15 </td>
+   <td style=\"text-align:left;\"> 2017/04/12 “现代优雅的五星饭店” </td>
+   <td style=\"text-align:left;\"> 2017/02/20 “Convenient location, Amiable Service, Comfortable equiped room” </td>
+   <td style=\"text-align:left;\"> 中等泳池可带宠物 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 华彬费尔蒙酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 16 </td>
+   <td style=\"text-align:left;\"> 2017/05/10 “完美的入住享受” </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “The cut restaurant&lt;f0&gt;&lt;U+009F&gt;&lt;U+0091&gt;&lt;U+008D&gt;” </td>
+   <td style=\"text-align:left;\"> 泳池豪华国贸 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 红墙花园酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 17 </td>
+   <td style=\"text-align:left;\"> 2016/10/04 “地理位置和公共空间很棒，房间内部和服务细节有待改善” </td>
+   <td style=\"text-align:left;\"> 2016/06/06 “亲子家庭的完美乐园” </td>
+   <td style=\"text-align:left;\"> 含早餐中等天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 中国大饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 18 </td>
+   <td style=\"text-align:left;\"> 2017/04/29 “入住感受” </td>
+   <td style=\"text-align:left;\"> 2017/04/07 “在这里的入住感受” </td>
+   <td style=\"text-align:left;\"> 泳池豪华国贸 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京北辰洲际酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 19 </td>
+   <td style=\"text-align:left;\"> 2017/05/08 “酒店特别的棒！还有欢乐儿童房” </td>
+   <td style=\"text-align:left;\"> 2017/05/02 “记一次完美的旅宿” </td>
+   <td style=\"text-align:left;\"> 泳池豪华奥运村 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 秦唐府客栈7号院 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 20 </td>
+   <td style=\"text-align:left;\"> 2017/03/27 “家庭旅游” </td>
+   <td style=\"text-align:left;\"> 2016/11/01 “很棒的北京胡同客栈住宿体验” </td>
+   <td style=\"text-align:left;\"> 含早餐中等度假村 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京金茂万丽酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 21 </td>
+   <td style=\"text-align:left;\"> 2017/04/30 “各方面都不错。” </td>
+   <td style=\"text-align:left;\"> 2017/04/01 “完美” </td>
+   <td style=\"text-align:left;\"> 含早餐泳池豪华 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京柏悦酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 22 </td>
+   <td style=\"text-align:left;\"> 2017/03/11 “隐蔽于银泰的奢华” </td>
+   <td style=\"text-align:left;\"> 2017/02/20 “在北京很不错的酒店选择” </td>
+   <td style=\"text-align:left;\"> 泳池豪华国贸 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京饭店诺金 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 23 </td>
+   <td style=\"text-align:left;\"> 2017/04/24 “不错” </td>
+   <td style=\"text-align:left;\"> 2017/02/02 “非常好的酒店！” </td>
+   <td style=\"text-align:left;\"> 泳池豪华西单 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 金隅喜来登酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 24 </td>
+   <td style=\"text-align:left;\"> 2017/05/08 “北京金隅喜来登酒店出行体验” </td>
+   <td style=\"text-align:left;\"> 2017/05/07 “非常满意” </td>
+   <td style=\"text-align:left;\"> 泳池豪华安贞 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 丽亭酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 25 </td>
+   <td style=\"text-align:left;\"> 2017/04/29 “早餐丰富的饭店” </td>
+   <td style=\"text-align:left;\"> 2016/11/22 “距地铁站以及王府井大街近，早餐丰盛” </td>
+   <td style=\"text-align:left;\"> 中等天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京首都机场希尔顿酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 26 </td>
+   <td style=\"text-align:left;\"> 2017/05/02 “非常非常棒的一家酒店” </td>
+   <td style=\"text-align:left;\"> 2017/04/26 “离首都机场很近，是周围不错的酒店。” </td>
+   <td style=\"text-align:left;\"> 泳池豪华首都机场 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 王府井希尔顿酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 27 </td>
+   <td style=\"text-align:left;\"> 2017/04/17 “房间很大” </td>
+   <td style=\"text-align:left;\"> 2017/03/08 “地理位置绝佳，对会员厚道” </td>
+   <td style=\"text-align:left;\"> 泳池豪华天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京千禧大酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 28 </td>
+   <td style=\"text-align:left;\"> 2017/04/20 “很好的入住体验” </td>
+   <td style=\"text-align:left;\"> 2017/04/11 “適合公务出差的酒店” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京金融街威斯汀大酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 29 </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “商务出行” </td>
+   <td style=\"text-align:left;\"> 2017/05/07 “环境很好，非常干净，就是离地铁站远了点。” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 丽晶酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 30 </td>
+   <td style=\"text-align:left;\"> 2017/05/01 “价性比高，适合亲子” </td>
+   <td style=\"text-align:left;\"> 2017/04/22 “可以看到紫禁城的五星级饭店!” </td>
+   <td style=\"text-align:left;\"> 泳池豪华天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 金茂北京威斯汀大饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 31 </td>
+   <td style=\"text-align:left;\"> 2017/04/21 “好评” </td>
+   <td style=\"text-align:left;\"> 2017/04/17 “最用心的服务” </td>
+   <td style=\"text-align:left;\"> 泳池豪华工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 兰花宾馆 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 32 </td>
+   <td style=\"text-align:left;\"> 2016/01/13 “小而巧的胡同民宿” </td>
+   <td style=\"text-align:left;\"> 2014/09/20 “胡同里的酒店” </td>
+   <td style=\"text-align:left;\"> 含早餐中等后海 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京康莱德酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 33 </td>
+   <td style=\"text-align:left;\"> 2017/05/02 “比较愉快的一次入住” </td>
+   <td style=\"text-align:left;\"> 2017/04/23 “外观、早餐厅不错” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京瑞吉酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 34 </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “非常好的酒店” </td>
+   <td style=\"text-align:left;\"> 2017/04/18 “值得一去” </td>
+   <td style=\"text-align:left;\"> 泳池豪华北京站/建国门 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京首都机场朗豪酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 35 </td>
+   <td style=\"text-align:left;\"> 2017/04/27 “Great stay” </td>
+   <td style=\"text-align:left;\"> 2017/02/15 “奢华的机场酒店” </td>
+   <td style=\"text-align:left;\"> 豪华免费停车首都机场 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京三里屯CHAO </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 36 </td>
+   <td style=\"text-align:left;\"> 2017/04/23 “低调奢华充满艺术气息让人惊喜的酒店” </td>
+   <td style=\"text-align:left;\"> 2017/04/23 “A modern Hotel with fabulous staffs” </td>
+   <td style=\"text-align:left;\"> 含早餐豪华 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 励骏酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 37 </td>
+   <td style=\"text-align:left;\"> 2016/11/16 “欧式装修很大气” </td>
+   <td style=\"text-align:left;\"> 2016/10/18 “很漂亮” </td>
+   <td style=\"text-align:left;\"> 含早餐泳池豪华 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京香格里拉饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 38 </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “餐厅很棒，很适合家庭出游” </td>
+   <td style=\"text-align:left;\"> 2017/04/07 “北京不错的住宿” </td>
+   <td style=\"text-align:left;\"> 远大路泳池豪华 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 东方君悦大酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 39 </td>
+   <td style=\"text-align:left;\"> 2017/05/04 “环境还行，比较静的商业区” </td>
+   <td style=\"text-align:left;\"> 2017/05/03 “地点适中便利, 大致好, 某些服务员对供应食物不甚了解” </td>
+   <td style=\"text-align:left;\"> 泳池豪华天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京粤财JW万豪酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 40 </td>
+   <td style=\"text-align:left;\"> 2017/05/06 “最棒的行政酒廊团队！” </td>
+   <td style=\"text-align:left;\"> 2017/05/06 “酷” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 长富宫饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 41 </td>
+   <td style=\"text-align:left;\"> 2017/03/16 “朝阳区的大型连锁饭店” </td>
+   <td style=\"text-align:left;\"> 2016/12/06 “非常好” </td>
+   <td style=\"text-align:left;\"> 泳池豪华北京站/建国门 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 万达索菲特大饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 42 </td>
+   <td style=\"text-align:left;\"> 2017/05/03 “感谢酒店服务” </td>
+   <td style=\"text-align:left;\"> 2017/05/03 “感谢行政酒廊服务” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 希尔顿逸林酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 43 </td>
+   <td style=\"text-align:left;\"> 2017/05/07 “酒店不错，有WiFi，游泳池，健身房，地理位置方便” </td>
+   <td style=\"text-align:left;\"> 2017/05/05 “这次入住希尔顿酒店各方面还是比较满意的，比如：用下午茶也比较愉快，只是没用到无线网络有些遗憾” </td>
+   <td style=\"text-align:left;\"> 泳池豪华西客站 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京长安街 W 酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 44 </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “舒适体验” </td>
+   <td style=\"text-align:left;\"> 2017/05/04 “谢谢前台经理simon为我制造完美的stay” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京万豪酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 45 </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “暖心之旅” </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “Mension” </td>
+   <td style=\"text-align:left;\"> 泳池豪华北京站/建国门 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 迈克之家酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 46 </td>
+   <td style=\"text-align:left;\"> 2017/05/03 “地点理想” </td>
+   <td style=\"text-align:left;\"> 2016/12/14 “亲切的服务台” </td>
+   <td style=\"text-align:left;\"> 含早餐中等后海 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京东直门智选假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 47 </td>
+   <td style=\"text-align:left;\"> 2016/12/05 “北京住宿的好选择” </td>
+   <td style=\"text-align:left;\"> 2016/11/13 “会员果盘很丰盛” </td>
+   <td style=\"text-align:left;\"> 含早餐中等工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京希尔顿酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 48 </td>
+   <td style=\"text-align:left;\"> 2017/02/05 “中规中矩。行政楼很棒。” </td>
+   <td style=\"text-align:left;\"> 2017/01/31 “需要办理美签的好住所” </td>
+   <td style=\"text-align:left;\"> 泳池豪华燕莎 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京海航大厦万豪酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 49 </td>
+   <td style=\"text-align:left;\"> 2017/03/29 “小住一晚” </td>
+   <td style=\"text-align:left;\"> 2017/03/15 “Nice day ” </td>
+   <td style=\"text-align:left;\"> 泳池豪华燕莎 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京前门富力智选假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 50 </td>
+   <td style=\"text-align:left;\"> 2017/02/21 “位于老市区，但距离地铁有些距离” </td>
+   <td style=\"text-align:left;\"> 2016/12/24 “北京遇到好天气” </td>
+   <td style=\"text-align:left;\"> 含早餐中等崇文门 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 王府半岛酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 51 </td>
+   <td style=\"text-align:left;\"> 2017/04/13 “未来首选” </td>
+   <td style=\"text-align:left;\"> 2017/04/03 “A Good Renovation” </td>
+   <td style=\"text-align:left;\"> 泳池豪华天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京朝阳悠唐皇冠假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 52 </td>
+   <td style=\"text-align:left;\"> 2017/03/14 “性价比还不错” </td>
+   <td style=\"text-align:left;\"> 2017/03/31 “位置好，服务好！” </td>
+   <td style=\"text-align:left;\"> 泳池豪华工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 凯丽家酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 53 </td>
+   <td style=\"text-align:left;\"> 2015/02/28 “服务很好, 温馨又漂亮的胡同内民宿.” </td>
+   <td style=\"text-align:left;\"> 2013/07/20 “都好，很满意” </td>
+   <td style=\"text-align:left;\"> 含早餐中等西单 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京贝尔特酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 54 </td>
+   <td style=\"text-align:left;\"> 2017/05/01 “好食早餐自助餐” </td>
+   <td style=\"text-align:left;\"> 2017/04/27 “喜欢酒店年轻时尚有型的主题, 但是工作人员有些态度无礼” </td>
+   <td style=\"text-align:left;\"> 中等崇文门免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京丽苑公寓 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 55 </td>
+   <td style=\"text-align:left;\"> 2016/12/12 “位于市中心，邻近王府井大街，非常方便” </td>
+   <td style=\"text-align:left;\"> 2016/10/28 “房间很大，设施很棒” </td>
+   <td style=\"text-align:left;\"> 中等泳池天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 国贸饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 56 </td>
+   <td style=\"text-align:left;\"> 2016/06/21 “与国贸相通，交通非常便利” </td>
+   <td style=\"text-align:left;\"> 2016/05/15 “很好的入住体验” </td>
+   <td style=\"text-align:left;\"> 中等国贸 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 红杉假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 57 </td>
+   <td style=\"text-align:left;\"> 2017/04/10 “感谢Amy！让客人疲惫的身心感动且放松！” </td>
+   <td style=\"text-align:left;\"> 2017/01/13 “假日酒店” </td>
+   <td style=\"text-align:left;\"> 中等泳池免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京丽都皇冠假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 58 </td>
+   <td style=\"text-align:left;\"> 2017/05/10 “入住感受” </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “优质服务” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京161酒店-雍和宫四合院店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 59 </td>
+   <td style=\"text-align:left;\"> 2015/08/05 “住在四合院里面的美好经验” </td>
+   <td style=\"text-align:left;\"> 2015/07/29 “一个非常舒适的地方” </td>
+   <td style=\"text-align:left;\"> 中等工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京上东今旅酒店(香格里拉旗下酒店） </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 60 </td>
+   <td style=\"text-align:left;\"> 2016/11/26 “近机场的商务酒店” </td>
+   <td style=\"text-align:left;\"> 2016/10/27 “推荐” </td>
+   <td style=\"text-align:left;\"> 中等泳池免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 华侨大厦 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 61 </td>
+   <td style=\"text-align:left;\"> 2016/12/15 “还算不错的酒店” </td>
+   <td style=\"text-align:left;\"> 2017/01/06 “在北京算是不错的性价比了” </td>
+   <td style=\"text-align:left;\"> 中等泳池免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 诺富特和平宾馆 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 62 </td>
+   <td style=\"text-align:left;\"> 2017/03/24 “地点好 价格合理 服务普通” </td>
+   <td style=\"text-align:left;\"> 2017/01/15 “酒店位置好 房间舒适 但前台太差” </td>
+   <td style=\"text-align:left;\"> 中等泳池天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京国际艺苑皇冠假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 63 </td>
+   <td style=\"text-align:left;\"> 2017/03/17 “陈设虽旧，服务来补” </td>
+   <td style=\"text-align:left;\"> 2016/09/05 “王府井大街” </td>
+   <td style=\"text-align:left;\"> 泳池豪华天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 什刹海紫檀文化酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 64 </td>
+   <td style=\"text-align:left;\"> 2016/10/14 “在胡同里的华丽宅院” </td>
+   <td style=\"text-align:left;\"> 2016/09/02 “有趣的四合院经验” </td>
+   <td style=\"text-align:left;\"> 含早餐中等免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 斯芙驿 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 65 </td>
+   <td style=\"text-align:left;\"> 2017/01/19 “小而美的精品旅店” </td>
+   <td style=\"text-align:left;\"> 2016/11/27 “房间宽敞舒适，服务人员亲切。” </td>
+   <td style=\"text-align:left;\"> 含早餐中等免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京燕莎中心凯宾斯基饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 66 </td>
+   <td style=\"text-align:left;\"> 2017/01/10 “一定程度的老饭店” </td>
+   <td style=\"text-align:left;\"> 2017/04/13 “感谢酒店热情服务” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京新云南皇冠假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 67 </td>
+   <td style=\"text-align:left;\"> 2017/03/09 “很不错” </td>
+   <td style=\"text-align:left;\"> 2017/02/17 “北京皇冠假日3天” </td>
+   <td style=\"text-align:left;\"> 泳池豪华国展 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 什刹海皮影主题文化酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 68 </td>
+   <td style=\"text-align:left;\"> 2017/04/27 “感受中华皮影的魅力” </td>
+   <td style=\"text-align:left;\"> 2017/03/16 “具有文化内涵的低调旅店” </td>
+   <td style=\"text-align:left;\"> 含早餐中等免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 华京木棉花酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 69 </td>
+   <td style=\"text-align:left;\"> 2016/07/30 “寒冷的北京留给我温暖回忆的地方” </td>
+   <td style=\"text-align:left;\"> 2016/06/03 “现代时尚具时尚感，游故宫十分方便” </td>
+   <td style=\"text-align:left;\"> 中等天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京新侨诺富特饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 70 </td>
+   <td style=\"text-align:left;\"> 2016/11/22 “美好的回忆” </td>
+   <td style=\"text-align:left;\"> 2016/07/13 “北京自由行的好选择” </td>
+   <td style=\"text-align:left;\"> 中等崇文门 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京前门皇家驿栈 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 71 </td>
+   <td style=\"text-align:left;\"> 2016/09/02 “地点佳的设计酒店” </td>
+   <td style=\"text-align:left;\"> 2016/08/18 “不是五星级酒店” </td>
+   <td style=\"text-align:left;\"> 含早餐泳池豪华 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 港澳中心瑞士酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 72 </td>
+   <td style=\"text-align:left;\"> 2016/11/03 “商务入住，服务贴心” </td>
+   <td style=\"text-align:left;\"> 2016/07/14 “地点适中 交通非常方便” </td>
+   <td style=\"text-align:left;\"> 泳池豪华工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京壶庐宾馆 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 73 </td>
+   <td style=\"text-align:left;\"> 2016/12/28 “新式四合院” </td>
+   <td style=\"text-align:left;\"> 2016/12/19 “非常喜欢！” </td>
+   <td style=\"text-align:left;\"> 含早餐中等可带宠物 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 辉盛阁国际公寓 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 74 </td>
+   <td style=\"text-align:left;\"> 2017/02/19 “一次愉快的经历” </td>
+   <td style=\"text-align:left;\"> 2017/02/18 “Good” </td>
+   <td style=\"text-align:left;\"> 含早餐泳池豪华 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 时光漫步怀旧主题酒店(北京雍和宫店) </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 75 </td>
+   <td style=\"text-align:left;\"> 2017/03/07 “管理有待改进” </td>
+   <td style=\"text-align:left;\"> 2016/05/09 “氛围不错，房间干净。” </td>
+   <td style=\"text-align:left;\"> 中等工体免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 昆仑饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 76 </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “天庭咖啡厅” </td>
+   <td style=\"text-align:left;\"> 2017/04/09 “北京最佳的五星饭店之一” </td>
+   <td style=\"text-align:left;\"> 泳池豪华工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 天伦王朝酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 77 </td>
+   <td style=\"text-align:left;\"> 2016/10/27 “是非常满意的壹次住宿” </td>
+   <td style=\"text-align:left;\"> 2016/10/18 “性价比比较高” </td>
+   <td style=\"text-align:left;\"> 泳池豪华天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京建国饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 78 </td>
+   <td style=\"text-align:left;\"> 2017/03/11 “价格实惠” </td>
+   <td style=\"text-align:left;\"> 2016/10/16 “酒店位置很好” </td>
+   <td style=\"text-align:left;\"> 中等泳池国贸 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京临空皇冠假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 79 </td>
+   <td style=\"text-align:left;\"> 2017/03/17 “参加展会，舒适” </td>
+   <td style=\"text-align:left;\"> 2016/09/24 “入住安排” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 唐拉雅秀酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 80 </td>
+   <td style=\"text-align:left;\"> 2017/05/01 “pretty nice hotel” </td>
+   <td style=\"text-align:left;\"> 2017/04/25 “宴会厅工作人员服务、态度超一流” </td>
+   <td style=\"text-align:left;\"> 泳池豪华西客站 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 天伦松鹤大饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 81 </td>
+   <td style=\"text-align:left;\"> 2017/04/01 “很近王府井大街” </td>
+   <td style=\"text-align:left;\"> 2016/08/26 “这个价钱，这间酒店，在北京已经很好了” </td>
+   <td style=\"text-align:left;\"> 中等免费停车天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 龙城丽宫国际酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 82 </td>
+   <td style=\"text-align:left;\"> 2016/10/23 “非常好的酒店 很舒适” </td>
+   <td style=\"text-align:left;\"> 2015/02/26 “很好的酒店” </td>
+   <td style=\"text-align:left;\"> 含早餐泳池豪华 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京首都大酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 83 </td>
+   <td style=\"text-align:left;\"> 2016/04/07 “没有可以插电源和充电器的地方” </td>
+   <td style=\"text-align:left;\"> 2015/07/23 “失望的酒店” </td>
+   <td style=\"text-align:left;\"> 中等泳池崇文门 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 颐和安缦酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 84 </td>
+   <td style=\"text-align:left;\"> 2016/12/31 “一年一城” </td>
+   <td style=\"text-align:left;\"> 2016/09/05 “皇家园林酒店” </td>
+   <td style=\"text-align:left;\"> 含早餐度假村泳池 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京万达嘉华酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 85 </td>
+   <td style=\"text-align:left;\"> 2017/04/25 “在最寒冷的冬天，我被温暖撞了一下腰” </td>
+   <td style=\"text-align:left;\"> 2017/03/06 “和餐厅” </td>
+   <td style=\"text-align:left;\"> 含早餐泳池豪华 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京丽亭华苑酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 86 </td>
+   <td style=\"text-align:left;\"> 2017/04/17 “交通便利靠近地铁知春路站，附近生活机能良好，步行可到walmart” </td>
+   <td style=\"text-align:left;\"> 2017/01/15 “交通便利、新颖丶但服务还可以再加强的酒店” </td>
+   <td style=\"text-align:left;\"> 中等五道口 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 中环假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 87 </td>
+   <td style=\"text-align:left;\"> 2016/11/10 “很厚道的假日酒店，白金卡升行政给待遇” </td>
+   <td style=\"text-align:left;\"> 2016/10/29 “出行方便” </td>
+   <td style=\"text-align:left;\"> 泳池豪华北京南站 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京八十一酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 88 </td>
+   <td style=\"text-align:left;\"> 2017/04/04 “完美融合古典与现代的酒店” </td>
+   <td style=\"text-align:left;\"> 2016/08/13 “非常棒的京城文化四合院名居” </td>
+   <td style=\"text-align:left;\"> 含早餐豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 宝辰饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 89 </td>
+   <td style=\"text-align:left;\"> 2017/03/26 “价格很有优势” </td>
+   <td style=\"text-align:left;\"> 2016/12/03 “房间旧，位置不好找，网络根本无法用” </td>
+   <td style=\"text-align:left;\"> 中等免费停车北京站/建国门 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京海淀永泰福朋喜来登酒店及服务公寓 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 90 </td>
+   <td style=\"text-align:left;\"> 2017/03/22 “还行” </td>
+   <td style=\"text-align:left;\"> 2017/03/18 “粤式自助茶点很有特色” </td>
+   <td style=\"text-align:left;\"> 远大路含早餐泳池 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 国家会议中心大酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 91 </td>
+   <td style=\"text-align:left;\"> 2016/08/01 “早餐有待改进！” </td>
+   <td style=\"text-align:left;\"> 2017/04/18 “房间超级大” </td>
+   <td style=\"text-align:left;\"> 泳池豪华奥运村 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京四合院宾馆 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 92 </td>
+   <td style=\"text-align:left;\"> 2016/07/30 “安静和干净的旅社” </td>
+   <td style=\"text-align:left;\"> 2016/07/08 “古色古香、位于胡同内，可深入当地生活” </td>
+   <td style=\"text-align:left;\"> 含早餐中等天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京人济万怡酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 93 </td>
+   <td style=\"text-align:left;\"> 2017/04/30 “中规中矩的万怡酒店” </td>
+   <td style=\"text-align:left;\"> 2017/01/24 “一次还不错的入住体验” </td>
+   <td style=\"text-align:left;\"> 中等泳池免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 日坛宾馆 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 94 </td>
+   <td style=\"text-align:left;\"> 2014/01/05 “日坛边上的酒店，地理位置没得挑” </td>
+   <td style=\"text-align:left;\"> 2010/04/04 “办事效率太低” </td>
+   <td style=\"text-align:left;\"> 中等泳池免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京国际饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 95 </td>
+   <td style=\"text-align:left;\"> 2016/11/20 “老饭店但有一定的水准” </td>
+   <td style=\"text-align:left;\"> 2016/11/16 “总体都很棒” </td>
+   <td style=\"text-align:left;\"> 中等泳池北京站/建国门 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 贵宾楼饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 96 </td>
+   <td style=\"text-align:left;\"> 2016/11/08 “木床很有情调” </td>
+   <td style=\"text-align:left;\"> 2016/08/11 “房间是不错 但价钱...” </td>
+   <td style=\"text-align:left;\"> 泳池豪华天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京中关村皇冠假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 97 </td>
+   <td style=\"text-align:left;\"> 2016/09/25 “普通的皇冠假日酒店” </td>
+   <td style=\"text-align:left;\"> 2016/05/26 “地理位置很好” </td>
+   <td style=\"text-align:left;\"> 泳池豪华中关村 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 西单美爵酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 98 </td>
+   <td style=\"text-align:left;\"> 2017/05/09 “升房好评，仅此而已” </td>
+   <td style=\"text-align:left;\"> 2016/04/23 “春节出行，住客爆满，房间升级。” </td>
+   <td style=\"text-align:left;\"> 中等泳池西单 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 昆泰嘉华酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 99 </td>
+   <td style=\"text-align:left;\"> 2016/11/16 “早餐比较丰富” </td>
+   <td style=\"text-align:left;\"> 2016/10/15 “房价变化太频繁” </td>
+   <td style=\"text-align:left;\"> 含早餐泳池豪华 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 内蒙古大厦 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 100 </td>
+   <td style=\"text-align:left;\"> 2016/11/14 “酒店很不错，就是餐厅送餐具还要收押金这点很无趣。” </td>
+   <td style=\"text-align:left;\"> 2016/02/08 “非常不错的酒店” </td>
+   <td style=\"text-align:left;\"> 中等天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 东方美爵酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 101 </td>
+   <td style=\"text-align:left;\"> 2017/04/29 “地点优越 硬体设备完善 服务可再提升” </td>
+   <td style=\"text-align:left;\"> 2017/03/01 “服务中规中矩，无功无过” </td>
+   <td style=\"text-align:left;\"> 中等工体免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 盘古七星酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 102 </td>
+   <td style=\"text-align:left;\"> 2017/04/23 “地道的日餐” </td>
+   <td style=\"text-align:left;\"> 2016/11/13 “高，大，上” </td>
+   <td style=\"text-align:left;\"> 含早餐豪华亚运村 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 工大建国饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 103 </td>
+   <td style=\"text-align:left;\"> 2017/02/02 “不推荐” </td>
+   <td style=\"text-align:left;\"> 2016/07/07 “额 常旅客吧” </td>
+   <td style=\"text-align:left;\"> 中等劲松 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京北辰五洲皇冠国际酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 104 </td>
+   <td style=\"text-align:left;\"> 2016/08/15 “优质的服务” </td>
+   <td style=\"text-align:left;\"> 2017/02/13 “服务不错，房间设备也很好” </td>
+   <td style=\"text-align:left;\"> 中等泳池亚运村 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 翠明庄宾馆 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 105 </td>
+   <td style=\"text-align:left;\"> 2016/09/21 “CP值超高的,舒适、干净、宽敞、交通便利,服务周到的古典建筑休憩旅店~~” </td>
+   <td style=\"text-align:left;\"> 2015/08/23 “闹中取静” </td>
+   <td style=\"text-align:left;\"> 中等天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 皇家大饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 106 </td>
+   <td style=\"text-align:left;\"> 2016/05/31 “老牌酒店，地理位置很好” </td>
+   <td style=\"text-align:left;\"> 2017/05/05 “住房感想” </td>
+   <td style=\"text-align:left;\"> 中等泳池国展 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京时光漫步怀旧主题酒店天坛店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 107 </td>
+   <td style=\"text-align:left;\"> 2016/12/06 “最有情怀的酒店” </td>
+   <td style=\"text-align:left;\"> 2016/10/25 “Great boutique hotel” </td>
+   <td style=\"text-align:left;\"> 中等 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京雅诗阁来福士中心服务公寓 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 108 </td>
+   <td style=\"text-align:left;\"> 2017/04/19 “北京雅诗阁来福士公寓” </td>
+   <td style=\"text-align:left;\"> 2017/04/10 “酒店前台的服务让人觉得很贴心，每天都很开心的跟我打招呼” </td>
+   <td style=\"text-align:left;\"> 泳池豪华工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 长峰假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 109 </td>
+   <td style=\"text-align:left;\"> 2016/11/15 “地段很不错，外观有点老” </td>
+   <td style=\"text-align:left;\"> 2016/10/24 “位于北京市中心便捷的四星商务酒店” </td>
+   <td style=\"text-align:left;\"> 中等泳池万寿路 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京日出东方凯宾斯基酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 110 </td>
+   <td style=\"text-align:left;\"> 2017/05/05 “服务热情，设施齐全” </td>
+   <td style=\"text-align:left;\"> 2017/04/30 “除了惊喜还是惊喜” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 涵珍园国际酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 111 </td>
+   <td style=\"text-align:left;\"> 2016/09/15 “集中式传统文化建筑及现代豪华酒店的舒适度为一身的五星级豪华精品酒店” </td>
+   <td style=\"text-align:left;\"> 2015/01/06 “地中海套房稍微让人失望” </td>
+   <td style=\"text-align:left;\"> 豪华后海 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京香港马会会所 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 112 </td>
+   <td style=\"text-align:left;\"> 2016/10/21 “成熟高雅的气质” </td>
+   <td style=\"text-align:left;\"> 2016/05/17 “非常舒适的入住体验” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 丽景湾国际酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 113 </td>
+   <td style=\"text-align:left;\"> 2017/03/31 “出差匆匆过的酒店” </td>
+   <td style=\"text-align:left;\"> 2016/08/28 “未达五星级水准” </td>
+   <td style=\"text-align:left;\"> 朝青含早餐中等 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 龙城华美达酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 114 </td>
+   <td style=\"text-align:left;\"> 2016/11/20 “远离市区换取大空间的饭店” </td>
+   <td style=\"text-align:left;\"> 2016/11/09 “酒店的性价比不错，服务及卫生状况都不错。只是早餐厅人比较多。如果能把商务客人与旅行团客人分开就好了。...” </td>
+   <td style=\"text-align:left;\"> 中等奥运村 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 时光漫步怀旧主题酒店（北京西单店） </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 115 </td>
+   <td style=\"text-align:left;\"> 2017/05/02 “有意思的主题酒店” </td>
+   <td style=\"text-align:left;\"> 2016/06/06 “怀旧风情的温暖酒店” </td>
+   <td style=\"text-align:left;\"> 经济实惠 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京金融街洲际酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 116 </td>
+   <td style=\"text-align:left;\"> 2017/03/27 “老牌洲际酒店” </td>
+   <td style=\"text-align:left;\"> 2017/03/18 “北京最早的洲际酒店” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 景山花园酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 117 </td>
+   <td style=\"text-align:left;\"> 2016/01/04 “位置好 有北京特色 有点冷” </td>
+   <td style=\"text-align:left;\"> 2015/04/29 “the best hotel” </td>
+   <td style=\"text-align:left;\"> 含早餐中等后海 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 西国贸大酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 118 </td>
+   <td style=\"text-align:left;\"> 2013/07/16 “很努力的山寨酒店” </td>
+   <td style=\"text-align:left;\"> 2013/04/20 “豪华婚礼” </td>
+   <td style=\"text-align:left;\"> 含早餐泳池豪华 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 方恒假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 119 </td>
+   <td style=\"text-align:left;\"> 2017/02/17 “望京区域便利的商务酒店” </td>
+   <td style=\"text-align:left;\"> 2016/09/20 “位置便利,景观视野开阔” </td>
+   <td style=\"text-align:left;\"> 中等泳池免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 万商花园酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 120 </td>
+   <td style=\"text-align:left;\"> 2016/10/17 “前台服务不成熟，硬件还可以” </td>
+   <td style=\"text-align:left;\"> 2016/12/22 “交通便利环境好” </td>
+   <td style=\"text-align:left;\"> 泳池豪华八角游乐园 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 天安瑞嘉酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 121 </td>
+   <td style=\"text-align:left;\"> 2017/02/28 “地点佳” </td>
+   <td style=\"text-align:left;\"> 2016/09/25 “普通简单的酒店，没有什么额别” </td>
+   <td style=\"text-align:left;\"> 中等天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京金都假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 122 </td>
+   <td style=\"text-align:left;\"> 2017/01/08 “豆腐脑有特色的老牌四星酒店” </td>
+   <td style=\"text-align:left;\"> 2016/12/07 “洲际旗下的老酒店” </td>
+   <td style=\"text-align:left;\"> 中等免费停车西单 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 侣松园宾馆 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 123 </td>
+   <td style=\"text-align:left;\"> 2017/03/13 “住房非常舒适” </td>
+   <td style=\"text-align:left;\"> 2016/04/24 “闹中取静” </td>
+   <td style=\"text-align:left;\"> 中等后海 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 中航泊悦酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 124 </td>
+   <td style=\"text-align:left;\"> 2016/09/10 “性价比不错的选择” </td>
+   <td style=\"text-align:left;\"> 2016/08/17 “北京三元桥店” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北平小院国际青年旅舍 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 125 </td>
+   <td style=\"text-align:left;\"> 2016/06/28 “舒适宁静的胡同旅社” </td>
+   <td style=\"text-align:left;\"> 2015/10/16 “房间很舒服” </td>
+   <td style=\"text-align:left;\"> 经济实惠工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 亚洲大酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 126 </td>
+   <td style=\"text-align:left;\"> 2015/03/29 “充满江浙风味的饮食，过软的床垫” </td>
+   <td style=\"text-align:left;\"> 2015/01/07 “一次愉快的住房体验 :-)” </td>
+   <td style=\"text-align:left;\"> 中等泳池工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 华腾美居酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 127 </td>
+   <td style=\"text-align:left;\"> 2016/05/19 “整体不错的商务酒店” </td>
+   <td style=\"text-align:left;\"> 2015/12/27 “床不是特别舒服” </td>
+   <td style=\"text-align:left;\"> 中等泳池免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 辉盛庭国际公寓 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 128 </td>
+   <td style=\"text-align:left;\"> 2016/11/17 “安心睡觉” </td>
+   <td style=\"text-align:left;\"> 2016/11/05 “感觉很好” </td>
+   <td style=\"text-align:left;\"> 含早餐中等可带宠物 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京海淀永泰福朋喜来登酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 129 </td>
+   <td style=\"text-align:left;\"> 2016/09/13 “以北京市区来说房间格局很大” </td>
+   <td style=\"text-align:left;\"> 2016/06/11 “旅行小住2天” </td>
+   <td style=\"text-align:left;\"> 远大路泳池免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京中奥马哥孛罗大酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 130 </td>
+   <td style=\"text-align:left;\"> 2016/11/28 “设施新 挺好的” </td>
+   <td style=\"text-align:left;\"> 2017/04/27 “Nice hotel and location, bad impression from a foreign GRM” </td>
+   <td style=\"text-align:left;\"> 中等泳池奥运村 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 中成天坛假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 131 </td>
+   <td style=\"text-align:left;\"> 2016/11/05 “服务热情” </td>
+   <td style=\"text-align:left;\"> 2016/09/29 “非常舒适的体验~” </td>
+   <td style=\"text-align:left;\"> 含早餐中等泳池 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 香江戴斯酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 132 </td>
+   <td style=\"text-align:left;\"> 2016/07/08 “邻近天安门及王府井” </td>
+   <td style=\"text-align:left;\"> 2016/05/29 “北京自助旅行” </td>
+   <td style=\"text-align:left;\"> 中等免费停车天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京明豪戴斯酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 133 </td>
+   <td style=\"text-align:left;\"> 2016/09/30 “干净整洁，接送机服务贴心” </td>
+   <td style=\"text-align:left;\"> 2015/09/24 “便捷转机” </td>
+   <td style=\"text-align:left;\"> 中等免费停车首都机场 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 隆福天缘宾馆 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 134 </td>
+   <td style=\"text-align:left;\"> 2011/06/05 “位置方便，干净舒适有特点” </td>
+   <td style=\"text-align:left;\"> 2011/01/14 “非常适合外国人的地方!” </td>
+   <td style=\"text-align:left;\"> 经济实惠工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京三里屯通盈中心洲际酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 135 </td>
+   <td style=\"text-align:left;\"> 2016/08/21 “三里屯旗舰店” </td>
+   <td style=\"text-align:left;\"> 2017/04/08 “大半夜噪音太大，严重影响睡眠” </td>
+   <td style=\"text-align:left;\"> 泳池豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 紫金丽亭酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 136 </td>
+   <td style=\"text-align:left;\"> 2016/02/19 “卫生不好” </td>
+   <td style=\"text-align:left;\"> 2015/08/23 “超值的北京酒店” </td>
+   <td style=\"text-align:left;\"> 豪华万寿路 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 人卫酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 137 </td>
+   <td style=\"text-align:left;\"> 2016/10/06 “书香人卫” </td>
+   <td style=\"text-align:left;\"> 2014/12/05 “会议室” </td>
+   <td style=\"text-align:left;\"> 潘家园泳池豪华 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 新世纪日航饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 138 </td>
+   <td style=\"text-align:left;\"> 2016/09/11 “服务很日式 硬件设施略老” </td>
+   <td style=\"text-align:left;\"> 2016/08/25 “房小，管理不错，性价比高” </td>
+   <td style=\"text-align:left;\"> 含早餐中等泳池 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 竹园宾馆 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 139 </td>
+   <td style=\"text-align:left;\"> 2015/04/22 “风味酒店！” </td>
+   <td style=\"text-align:left;\"> 2013/09/05 “非常喜欢” </td>
+   <td style=\"text-align:left;\"> 中等免费停车后海 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 德胜门华宇假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 140 </td>
+   <td style=\"text-align:left;\"> 2017/03/31 “假日，在美国时就爱上了你” </td>
+   <td style=\"text-align:left;\"> 2017/01/27 “一切不错” </td>
+   <td style=\"text-align:left;\"> 中等后海 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京橡树公馆 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 141 </td>
+   <td style=\"text-align:left;\"> 2017/04/10 “不错的酒店式公寓” </td>
+   <td style=\"text-align:left;\"> 2017/03/12 “性价比超高” </td>
+   <td style=\"text-align:left;\"> 豪华燕莎 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京丽都维景酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 142 </td>
+   <td style=\"text-align:left;\"> 2016/07/06 “虽有点旧但设施一凭俱全 非常周到” </td>
+   <td style=\"text-align:left;\"> 2016/05/17 “在东四环边上经济首选，房间虽老但不旧，枕头及床都相当舒服。” </td>
+   <td style=\"text-align:left;\"> 中等泳池酒仙桥 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 新源里谭阁美饭店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 143 </td>
+   <td style=\"text-align:left;\"> 2016/05/09 “干净，离地铁约十分钟，冬天没有空调” </td>
+   <td style=\"text-align:left;\"> 2014/11/24 “干净方便时尚年轻的酒店，非常好” </td>
+   <td style=\"text-align:left;\"> 含早餐中等工体 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 好苑建国酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 144 </td>
+   <td style=\"text-align:left;\"> 2016/06/12 “第2次入住希望系最后一次” </td>
+   <td style=\"text-align:left;\"> 2013/11/15 “比较好” </td>
+   <td style=\"text-align:left;\"> 泳池豪华天安门/王府井 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京亦庄智选假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 145 </td>
+   <td style=\"text-align:left;\"> 2016/10/08 “静谧的新酒店” </td>
+   <td style=\"text-align:left;\"> 2016/09/24 “性价比超高的酒店” </td>
+   <td style=\"text-align:left;\"> 含早餐中等免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 春晖园温泉度假村 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 146 </td>
+   <td style=\"text-align:left;\"> 2017/02/11 “温泉设施不错 软件服务太差” </td>
+   <td style=\"text-align:left;\"> 2016/05/09 “温泉蛮有特色的” </td>
+   <td style=\"text-align:left;\"> 中等度假村泳池 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 古城老院精品酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 147 </td>
+   <td style=\"text-align:left;\"> 2017/05/10 “Boutique hotel in ancient decorations” </td>
+   <td style=\"text-align:left;\"> 2016/12/13 “餐厅用餐” </td>
+   <td style=\"text-align:left;\"> 含早餐豪华免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 御城瑞府 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 148 </td>
+   <td style=\"text-align:left;\"> 2017/03/14 “天子脚下的住宿” </td>
+   <td style=\"text-align:left;\"> 2010/01/08 “觉得像是住在皇家宿舍——尤其是它的后院是禁地!” </td>
+   <td style=\"text-align:left;\"> 中等密云风景区 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 京泰龙国际大酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 149 </td>
+   <td style=\"text-align:left;\"> 2015/04/22 “连电视都没看，遥控器却没了，我们稀罕你家遥控器啊” </td>
+   <td style=\"text-align:left;\"> 2012/10/16 “不错的酒店，下次还会选它” </td>
+   <td style=\"text-align:left;\"> 中等崇文门免费停车 </td>
+  </tr>
+  <tr>
+   <td style=\"text-align:left;\"> 北京上地智选假日酒店 </td>
+   <td style=\"text-align:left;\"> 在北京市 6,451 家酒店中排名第 150 </td>
+   <td style=\"text-align:left;\"> 2016/11/07 “上地最有性价比的酒店” </td>
+   <td style=\"text-align:left;\"> 2016/09/28 “还不错” </td>
+   <td style=\"text-align:left;\"> 含早餐中等免费停车 </td>
+  </tr>
+</tbody>
+</table>"

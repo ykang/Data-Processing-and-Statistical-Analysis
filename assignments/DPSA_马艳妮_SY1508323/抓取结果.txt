@@ -1,0 +1,1001 @@
+"movie_title" "movie_detail" "movie_num" "movie_evaluate" "link"
+"1" "肖申克的救赎" "
+                            导演: 弗兰克·德拉邦特 Frank Darabont<U+00A0><U+00A0><U+00A0>主演: 蒂姆·罗宾斯 Tim Robbins /...
+                            1994<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>犯罪 剧情
+                        " "9.6" "820235人评价" "https://movie.douban.com/subject/1292052/"
+"2" "这个杀手不太冷" "
+                            导演: 吕克·贝松 Luc Besson<U+00A0><U+00A0><U+00A0>主演: 让·雷诺 Jean Reno / 娜塔丽·波特曼 ...
+                            1994<U+00A0>/<U+00A0>法国<U+00A0>/<U+00A0>剧情 动作 犯罪
+                        " "9.4" "787280人评价" "https://movie.douban.com/subject/1295644/"
+"3" "霸王别姬" "
+                            导演: 陈凯歌 Kaige Chen<U+00A0><U+00A0><U+00A0>主演: 张国荣 Leslie Cheung / 张丰毅 Fengyi Zha...
+                            1993<U+00A0>/<U+00A0>中国大陆 香港<U+00A0>/<U+00A0>剧情 爱情 同性
+                        " "9.5" "585143人评价" "https://movie.douban.com/subject/1291546/"
+"4" "阿甘正传" "
+                            导演: Robert Zemeckis<U+00A0><U+00A0><U+00A0>主演: Tom Hanks / Robin Wright Penn / Gary Sinise
+                            1994<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 爱情
+                        " "9.4" "675560人评价" "https://movie.douban.com/subject/1292720/"
+"5" "美丽人生" "
+                            导演: 罗伯托·贝尼尼 Roberto Benigni<U+00A0><U+00A0><U+00A0>主演: 罗伯托·贝尼尼 Roberto Beni...
+                            1997<U+00A0>/<U+00A0>意大利<U+00A0>/<U+00A0>剧情 喜剧 爱情 战争
+                        " "9.5" "391698人评价" "https://movie.douban.com/subject/1292063/"
+"6" "千与千寻" "
+                            导演: 宫崎骏 Hayao Miyazaki<U+00A0><U+00A0><U+00A0>主演: 柊瑠美 Rumi H<U+00EE>ragi / 入野自由 Miy...
+                            2001<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情 动画 奇幻
+                        " "9.2" "627283人评价" "https://movie.douban.com/subject/1291561/"
+"7" "辛德勒的名单" "
+                            导演: 史蒂文·斯皮尔伯格 Steven Spielberg<U+00A0><U+00A0><U+00A0>主演: 连姆·尼森 Liam Neeson...
+                            1993<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 历史 战争
+                        " "9.4" "362708人评价" "https://movie.douban.com/subject/1295124/"
+"8" "泰坦尼克号" "
+                            导演: 詹姆斯·卡梅隆 James Cameron<U+00A0><U+00A0><U+00A0>主演: 莱昂纳多·迪卡普里奥 Leonardo...
+                            1997<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 爱情 灾难
+                        " "9.2" "621692人评价" "https://movie.douban.com/subject/1292722/"
+"9" "盗梦空间" "
+                            导演: 克里斯托弗·诺兰 Christopher Nolan<U+00A0><U+00A0><U+00A0>主演: 莱昂纳多·迪卡普里奥 Le...
+                            2010<U+00A0>/<U+00A0>美国 英国<U+00A0>/<U+00A0>剧情 动作 科幻 悬疑 冒险
+                        " "9.2" "729516人评价" "https://movie.douban.com/subject/3541415/"
+"10" "机器人总动员" "
+                            导演: 安德鲁·斯坦顿 Andrew Stanton<U+00A0><U+00A0><U+00A0>主演: 本·贝尔特 Ben Burtt / 艾丽...
+                            2008<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 爱情 科幻 动画 冒险
+                        " "9.3" "479110人评价" "https://movie.douban.com/subject/2131459/"
+"11" "海上钢琴师" "
+                            导演: 朱塞佩·托纳多雷 Giuseppe Tornatore<U+00A0><U+00A0><U+00A0>主演: 蒂姆·罗斯 Tim Roth / ...
+                            1998<U+00A0>/<U+00A0>意大利<U+00A0>/<U+00A0>剧情 音乐
+                        " "9.2" "574826人评价" "https://movie.douban.com/subject/1292001/"
+"12" "三傻大闹宝莱坞" "
+                            导演: 拉库马·希拉尼 Rajkumar Hirani<U+00A0><U+00A0><U+00A0>主演: 阿米尔·汗 Aamir Khan / 卡...
+                            2009<U+00A0>/<U+00A0>印度<U+00A0>/<U+00A0>剧情 喜剧 爱情 歌舞
+                        " "9.1" "635111人评价" "https://movie.douban.com/subject/3793023/"
+"13" "忠犬八公的故事" "
+                            导演: 莱塞·霍尔斯道姆 Lasse Hallstr<U+00F6>m<U+00A0><U+00A0><U+00A0>主演: 理查·基尔 Richard Ger...
+                            2009<U+00A0>/<U+00A0>美国 英国<U+00A0>/<U+00A0>剧情
+                        " "9.2" "427533人评价" "https://movie.douban.com/subject/3011091/"
+"14" "放牛班的春天" "
+                            导演: 克里斯托夫·巴拉蒂 Christophe Barratier<U+00A0><U+00A0><U+00A0>主演: 杰拉尔·朱诺 Géra...
+                            2004<U+00A0>/<U+00A0>法国 瑞士 德国<U+00A0>/<U+00A0>剧情 音乐
+                        " "9.2" "430423人评价" "https://movie.douban.com/subject/1291549/"
+"15" "大话西游之大圣娶亲" "
+                            导演: 刘镇伟 Jeffrey Lau<U+00A0><U+00A0><U+00A0>主演: 周星驰 Stephen Chow / 吴孟达 Man Tat Ng...
+                            2017<U+00A0>/<U+00A0>香港 中国大陆<U+00A0>/<U+00A0>动作 冒险 喜剧 奇幻 爱情
+                        " "9.2" "462475人评价" "https://movie.douban.com/subject/1292213/"
+"16" "教父" "
+                            导演: 弗朗西斯·福特·科波拉 Francis Ford Coppola<U+00A0><U+00A0><U+00A0>主演: 马龙·白兰度 M...
+                            1972<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 犯罪
+                        " "9.2" "328204人评价" "https://movie.douban.com/subject/1291841/"
+"17" "龙猫" "
+                            导演: 宫崎骏 Hayao Miyazaki<U+00A0><U+00A0><U+00A0>主演: 日高法子 Noriko Hidaka / 坂本千夏 Ch...
+                            1988<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>动画 奇幻
+                        " "9.1" "399165人评价" "https://movie.douban.com/subject/1291560/"
+"18" "楚门的世界" "
+                            导演: 彼得·威尔 Peter Weir<U+00A0><U+00A0><U+00A0>主演: 金·凯瑞 Jim Carrey / 劳拉·琳妮 Lau...
+                            1998<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 科幻
+                        " "9.0" "425734人评价" "https://movie.douban.com/subject/1292064/"
+"19" "乱世佳人" "
+                            导演: 维克多·弗莱明 Victor Fleming / 乔治·库克 George Cukor<U+00A0><U+00A0><U+00A0>主演: 托...
+                            1939<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 爱情 战争
+                        " "9.2" "260134人评价" "https://movie.douban.com/subject/1300267/"
+"20" "天堂电影院" "
+                            导演: 朱塞佩·托纳多雷 Giuseppe Tornatore<U+00A0><U+00A0><U+00A0>主演: 安东娜拉·塔莉 Antonel...
+                            1988<U+00A0>/<U+00A0>意大利 法国<U+00A0>/<U+00A0>剧情 爱情
+                        " "9.1" "297150人评价" "https://movie.douban.com/subject/1291828/"
+"21" "当幸福来敲门" "
+                            导演: 加布里尔·穆奇诺 Gabriele Muccino<U+00A0><U+00A0><U+00A0>主演: 威尔·史密斯 Will Smith ...
+                            2006<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 传记 家庭
+                        " "8.9" "515392人评价" "https://movie.douban.com/subject/1849031/"
+"22" "触不可及" "
+                            导演: 奥利维·那卡什 Olivier Nakache / 艾力克·托兰达 Eric Toledano<U+00A0><U+00A0><U+00A0>主...
+                            2011<U+00A0>/<U+00A0>法国<U+00A0>/<U+00A0>剧情 喜剧
+                        " "9.1" "348671人评价" "https://movie.douban.com/subject/6786002/"
+"23" "搏击俱乐部" "
+                            导演: 大卫·芬奇 David Fincher<U+00A0><U+00A0><U+00A0>主演: 爱德华·诺顿 Edward Norton / 布拉...
+                            1999<U+00A0>/<U+00A0>美国 德国<U+00A0>/<U+00A0>剧情 动作 悬疑 惊悚
+                        " "9.0" "390015人评价" "https://movie.douban.com/subject/1292000/"
+"24" "十二怒汉" "
+                            导演: Sidney Lumet<U+00A0><U+00A0><U+00A0>主演: 亨利·方达 Henry Fonda / 马丁·鲍尔萨姆 Marti...
+                            1957<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情
+                        " "9.3" "162024人评价" "https://movie.douban.com/subject/1293182/"
+"25" "无间道" "
+                            导演: 刘伟强 / 麦兆辉<U+00A0><U+00A0><U+00A0>主演: 刘德华 / 梁朝伟 / 黄秋生
+                            2002<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>犯罪 悬疑 惊悚
+                        " "9.0" "377310人评价" "https://movie.douban.com/subject/1307914/"
+"26" "指环王3：王者无敌" "
+                            导演: 彼得·杰克逊 Peter Jackson<U+00A0><U+00A0><U+00A0>主演: 维果·莫腾森 Viggo Mortensen / ...
+                            2003<U+00A0>/<U+00A0>美国 新西兰<U+00A0>/<U+00A0>剧情 动作 奇幻 冒险
+                        " "9.1" "273464人评价" "https://movie.douban.com/subject/1291552/"
+"27" "熔炉" "
+                            导演: 黄东赫 Dong-hyuk Hwang<U+00A0><U+00A0><U+00A0>主演: 孔侑 Yoo Gong / 郑有美 Yu-mi Jeong ...
+                            2011<U+00A0>/<U+00A0>韩国<U+00A0>/<U+00A0>剧情
+                        " "9.2" "228157人评价" "https://movie.douban.com/subject/5912992/"
+"28" "怦然心动" "
+                            导演: 罗伯·莱纳 Rob Reiner<U+00A0><U+00A0><U+00A0>主演: 玛德琳·卡罗尔 Madeline Carroll / 卡...
+                            2010<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 喜剧 爱情
+                        " "8.9" "513666人评价" "https://movie.douban.com/subject/3319755/"
+"29" "天空之城" "
+                            导演: 宫崎骏 Hayao Miyazaki<U+00A0><U+00A0><U+00A0>主演: 田中真弓 Mayumi Tanaka / 鹫尾真知子 ...
+                            1986<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>动画 奇幻 冒险
+                        " "9.0" "316402人评价" "https://movie.douban.com/subject/1291583/"
+"30" "罗马假日" "
+                            导演: 威廉·惠勒 William Wyler<U+00A0><U+00A0><U+00A0>主演: 奥黛丽·赫本 Audrey Hepburn / 格...
+                            1953<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 剧情 爱情
+                        " "8.9" "369248人评价" "https://movie.douban.com/subject/1293839/"
+"31" "少年派的奇幻漂流" "
+                            导演: 李安 Ang Lee<U+00A0><U+00A0><U+00A0>主演: 苏拉·沙玛 Suraj Sharma / 拉菲·斯波 Rafe Spa...
+                            2012<U+00A0>/<U+00A0>美国 台湾 英国 加拿大<U+00A0>/<U+00A0>剧情 奇幻 冒险
+                        " "9.0" "555911人评价" "https://movie.douban.com/subject/1929463/"
+"32" "大话西游之月光宝盒" "
+                            导演: 刘镇伟 Jeffrey Lau<U+00A0><U+00A0><U+00A0>主演: 周星驰 Stephen Chow / 吴孟达 Man Tat Ng...
+                            1995<U+00A0>/<U+00A0>香港 中国大陆<U+00A0>/<U+00A0>喜剧 动作 爱情 奇幻 冒险 古装
+                        " "8.9" "376082人评价" "https://movie.douban.com/subject/1299398/"
+"33" "鬼子来了" "
+                            导演: 姜文 Wen Jiang<U+00A0><U+00A0><U+00A0>主演: 姜文 Wen Jiang / 香川照之 Teruyuki Kagawa /...
+                            2000<U+00A0>/<U+00A0>中国大陆<U+00A0>/<U+00A0>剧情 战争
+                        " "9.1" "214685人评价" "https://movie.douban.com/subject/1291858/"
+"34" "蝙蝠侠：黑暗骑士" "
+                            导演: 克里斯托弗·诺兰 Christopher Nolan<U+00A0><U+00A0><U+00A0>主演: 克里斯蒂安·贝尔 Christ...
+                            2008<U+00A0>/<U+00A0>美国 英国<U+00A0>/<U+00A0>剧情 动作 科幻 犯罪 惊悚
+                        " "9.0" "299746人评价" "https://movie.douban.com/subject/1851857/"
+"35" "星际穿越" "
+                            导演: 克里斯托弗·诺兰 Christopher Nolan<U+00A0><U+00A0><U+00A0>主演: 马修·麦康纳 Matthew Mc...
+                            2014<U+00A0>/<U+00A0>美国 英国 加拿大<U+00A0>/<U+00A0>剧情 科幻 悬疑 冒险 家庭
+                        " "9.1" "455652人评价" "https://movie.douban.com/subject/1889243/"
+"36" "两杆大烟枪" "
+                            导演: Guy Ritchie<U+00A0><U+00A0><U+00A0>主演: Jason Flemyng / Dexter Fletcher / Nick Moran
+                            1998<U+00A0>/<U+00A0>英国<U+00A0>/<U+00A0>剧情 喜剧 犯罪
+                        " "9.0" "262172人评价" "https://movie.douban.com/subject/1293350/"
+"37" "飞屋环游记" "
+                            导演: 彼特·道格特 Pete Docter<U+00A0><U+00A0><U+00A0>主演: 爱德华·阿斯纳 Edward Asner / 克...
+                            2009<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 喜剧 动画 奇幻 冒险
+                        " "8.9" "478199人评价" "https://movie.douban.com/subject/2129039/"
+"38" "活着" "
+                            导演: 张艺谋 Yimou Zhang<U+00A0><U+00A0><U+00A0>主演: 葛优 You Ge / 巩俐 Li Gong / 姜武 Wu Jiang
+                            1994<U+00A0>/<U+00A0>中国大陆 香港<U+00A0>/<U+00A0>剧情 家庭
+                        " "9.0" "248643人评价" "https://movie.douban.com/subject/1292365/"
+"39" "飞越疯人院" "
+                            导演: 米洛斯·福尔曼 Milo<U+0161> Forman<U+00A0><U+00A0><U+00A0>主演: 杰克·尼科尔森 Jack Nichols...
+                            1975<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情
+                        " "9.0" "265861人评价" "https://movie.douban.com/subject/1292224/"
+"40" "窃听风暴" "
+                            导演: 弗洛里安·亨克尔·冯·多纳斯马 Florian Henckel von Donnersmarck<U+00A0><U+00A0><U+00A0>...
+                            2006<U+00A0>/<U+00A0>德国<U+00A0>/<U+00A0>剧情 悬疑
+                        " "9.1" "209832人评价" "https://movie.douban.com/subject/1900841/"
+"41" "海豚湾" "
+                            导演: Louie Psihoyos<U+00A0><U+00A0><U+00A0>主演: John Chisholm / Mandy-Rae Cruikshank / Char...
+                            2009<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>纪录片
+                        " "9.3" "175470人评价" "https://movie.douban.com/subject/3442220/"
+"42" "闻香识女人" "
+                            导演: 马丁·布莱斯 Martin Brest<U+00A0><U+00A0><U+00A0>主演: 阿尔·帕西诺 Al Pacino / 克里斯...
+                            1992<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情
+                        " "8.9" "305362人评价" "https://movie.douban.com/subject/1298624/"
+"43" "V字仇杀队" "
+                            导演: 詹姆斯·麦克特格 James McTeigue<U+00A0><U+00A0><U+00A0>主演: 娜塔丽·波曼 Natalie Portm...
+                            2005<U+00A0>/<U+00A0>美国 英国 德国<U+00A0>/<U+00A0>剧情 动作 科幻 惊悚
+                        " "8.8" "391573人评价" "https://movie.douban.com/subject/1309046/"
+"44" "美丽心灵" "
+                            导演: 朗·霍华德 Ron Howard<U+00A0><U+00A0><U+00A0>主演: 罗素·克劳 Russell Crowe / 詹妮弗·...
+                            2001<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>传记 剧情
+                        " "8.9" "290776人评价" "https://movie.douban.com/subject/1306029/"
+"45" "教父2" "
+                            导演: 弗朗西斯·福特·科波拉 Francis Ford Coppola<U+00A0><U+00A0><U+00A0>主演: 阿尔·帕西诺 A...
+                            1974<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 犯罪
+                        " "9.1" "176990人评价" "https://movie.douban.com/subject/1299131/"
+"46" "哈尔的移动城堡" "
+                            导演: 宫崎骏 Hayao Miyazaki<U+00A0><U+00A0><U+00A0>主演: 倍赏千惠子 Chieko Baish<U+00F4> / 木村拓...
+                            2004<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>爱情 动画 奇幻 冒险
+                        " "8.8" "327747人评价" "https://movie.douban.com/subject/1308807/"
+"47" "指环王2：双塔奇兵" "
+                            导演: 彼得·杰克逊 Peter Jackson<U+00A0><U+00A0><U+00A0>主演: 伊利亚·伍德 Elijah Wood / 西恩...
+                            2002<U+00A0>/<U+00A0>美国 新西兰<U+00A0>/<U+00A0>剧情 动作 奇幻 冒险
+                        " "8.9" "258436人评价" "https://movie.douban.com/subject/1291572/"
+"48" "指环王1：魔戒再现" "
+                            导演: 彼得·杰克逊 Peter Jackson<U+00A0><U+00A0><U+00A0>主演: 伊利亚·伍德 Elijah Wood / 西恩...
+                            2001<U+00A0>/<U+00A0>新西兰 美国<U+00A0>/<U+00A0>剧情 动作 奇幻 冒险
+                        " "8.9" "288235人评价" "https://movie.douban.com/subject/1291571/"
+"49" "天使爱美丽" "
+                            导演: Jean-Pierre Jeunet<U+00A0><U+00A0><U+00A0>主演: 奥黛丽·塔图 Audrey Tautou / 马修·卡索...
+                            2001<U+00A0>/<U+00A0>法国 德国<U+00A0>/<U+00A0>喜剧 爱情
+                        " "8.7" "461197人评价" "https://movie.douban.com/subject/1292215/"
+"50" "情书" "
+                            导演: 岩井俊二 Shunji Iwai<U+00A0><U+00A0><U+00A0>主演: 中山美穗 Miho Nakayama / 丰川悦司 Ets...
+                            1995<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.8" "353825人评价" "https://movie.douban.com/subject/1292220/"
+"51" "死亡诗社" "
+                            导演: 彼得·威尔 Peter Weir<U+00A0><U+00A0><U+00A0>主演: 罗宾·威廉姆斯 Robin Williams / 罗伯...
+                            1989<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情
+                        " "8.9" "260538人评价" "https://movie.douban.com/subject/1291548/"
+"52" "美国往事" "
+                            导演: Sergio Leone<U+00A0><U+00A0><U+00A0>主演: 罗伯特·德尼罗 Robert De Niro / 詹姆斯·伍兹 ...
+                            1984<U+00A0>/<U+00A0>意大利 美国<U+00A0>/<U+00A0>犯罪 剧情
+                        " "9.1" "165010人评价" "https://movie.douban.com/subject/1292262/"
+"53" "七宗罪" "
+                            导演: 大卫·芬奇 David Fincher<U+00A0><U+00A0><U+00A0>主演: 摩根·弗里曼 Morgan Freeman / 布...
+                            1995<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 犯罪 悬疑 惊悚
+                        " "8.7" "415443人评价" "https://movie.douban.com/subject/1292223/"
+"54" "钢琴家" "
+                            导演: 罗曼·波兰斯基 Roman Polanski<U+00A0><U+00A0><U+00A0>主演: 艾德里安·布洛迪 Adrien Brod...
+                            2002<U+00A0>/<U+00A0>法国 德国 英国 波兰<U+00A0>/<U+00A0>剧情 传记 历史 战争
+                        " "9.0" "192600人评价" "https://movie.douban.com/subject/1296736/"
+"55" "狮子王" "
+                            导演: Roger Allers / 罗伯·明可夫 Rob Minkoff<U+00A0><U+00A0><U+00A0>主演: 乔纳森·泰勒·托马...
+                            1994<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 动画 冒险 歌舞 家庭
+                        " "8.9" "266879人评价" "https://movie.douban.com/subject/1301753/"
+"56" "被嫌弃的松子的一生" "
+                            导演: 中岛哲也 Tetsuya Nakashima<U+00A0><U+00A0><U+00A0>主演: 中谷美纪 Miki Nakatani / 瑛太 E...
+                            2006<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情 歌舞
+                        " "8.9" "259725人评价" "https://movie.douban.com/subject/1787291/"
+"57" "致命魔术" "
+                            导演: 克里斯托弗·诺兰 Christopher Nolan<U+00A0><U+00A0><U+00A0>主演: 克里斯蒂安·贝尔 Christ...
+                            2006<U+00A0>/<U+00A0>美国 英国<U+00A0>/<U+00A0>剧情 悬疑 惊悚
+                        " "8.8" "320741人评价" "https://movie.douban.com/subject/1780330/"
+"58" "辩护人" "
+                            导演: 杨宇硕 Woo-seok Yang<U+00A0><U+00A0><U+00A0>主演: 宋康昊 Kang-ho Song / 吴达洙 Dal-su O...
+                            2013<U+00A0>/<U+00A0>韩国<U+00A0>/<U+00A0>剧情
+                        " "9.1" "183368人评价" "https://movie.douban.com/subject/21937445/"
+"59" "勇敢的心" "
+                            导演: 梅尔·吉布森 Mel Gibson<U+00A0><U+00A0><U+00A0>主演: 梅尔·吉布森 Mel Gibson / 苏菲·玛...
+                            1995<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>动作 传记 剧情 历史 战争
+                        " "8.8" "283588人评价" "https://movie.douban.com/subject/1294639/"
+"60" "控方证人" "
+                            导演: 比利·怀尔德 Billy Wilder<U+00A0><U+00A0><U+00A0>主演: 查尔斯·劳顿 Charles Laughton / ...
+                            1957<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 犯罪 悬疑
+                        " "9.6" "73025人评价" "https://movie.douban.com/subject/1296141/"
+"61" "剪刀手爱德华" "
+                            导演: Tim Burton<U+00A0><U+00A0><U+00A0>主演: 约翰尼·德普 Johnny Depp / 薇诺娜·瑞德 Winona ...
+                            1990<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 奇幻 爱情
+                        " "8.7" "459907人评价" "https://movie.douban.com/subject/1292370/"
+"62" "小鞋子" "
+                            导演: 马基德·马基迪 Majid Majidi<U+00A0><U+00A0><U+00A0>主演: Amir Farrokh Hashemian / 默罕...
+                            1999<U+00A0>/<U+00A0>伊朗<U+00A0>/<U+00A0>剧情 家庭 儿童
+                        " "9.2" "127117人评价" "https://movie.douban.com/subject/1303021/"
+"63" "饮食男女" "
+                            导演: 李安 Ang Lee<U+00A0><U+00A0><U+00A0>主演: 吴倩莲 Chien-lien Wu / 杨贵媚 Kuei-Mei Yang /...
+                            1994<U+00A0>/<U+00A0>台湾 美国<U+00A0>/<U+00A0>剧情 家庭
+                        " "9.0" "176247人评价" "https://movie.douban.com/subject/1291818/"
+"64" "音乐之声" "
+                            导演: Robert Wise<U+00A0><U+00A0><U+00A0>主演: 朱丽·安德鲁斯 Julie Andrews / 克里斯托弗·普...
+                            1965<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 爱情 歌舞 家庭 传记
+                        " "8.9" "220377人评价" "https://movie.douban.com/subject/1294408/"
+"65" "低俗小说" "
+                            导演: 昆汀·塔伦蒂诺 Quentin Tarantino<U+00A0><U+00A0><U+00A0>主演: 约翰·特拉沃尔塔 John Tra...
+                            1994<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 喜剧 犯罪
+                        " "8.7" "312657人评价" "https://movie.douban.com/subject/1291832/"
+"66" "入殓师" "
+                            导演: 泷田洋二郎 Y<U+00F4>jir<U+00F4> Takita<U+00A0><U+00A0><U+00A0>主演: 本木雅弘 Masahiro Motoki / ...
+                            2008<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情
+                        " "8.8" "304475人评价" "https://movie.douban.com/subject/2149806/"
+"67" "本杰明·巴顿奇事" "
+                            导演: 大卫·芬奇 David Fincher<U+00A0><U+00A0><U+00A0>主演: 凯特·布兰切特 Cate Blanchett / ...
+                            2008<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 爱情 奇幻
+                        " "8.7" "372937人评价" "https://movie.douban.com/subject/1485260/"
+"68" "沉默的羔羊" "
+                            导演: 乔纳森·戴米 Jonathan Demme<U+00A0><U+00A0><U+00A0>主演: 朱迪·福斯特 Jodie Foster / 安...
+                            1991<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 犯罪 惊悚
+                        " "8.7" "331182人评价" "https://movie.douban.com/subject/1293544/"
+"69" "蝴蝶效应" "
+                            导演: 埃里克·布雷斯 Eric Bress / J·麦基·格鲁伯 J. Mackye Gruber<U+00A0><U+00A0><U+00A0>主...
+                            2004<U+00A0>/<U+00A0>美国 加拿大<U+00A0>/<U+00A0>剧情 悬疑 科幻 惊悚
+                        " "8.7" "360557人评价" "https://movie.douban.com/subject/1292343/"
+"70" "黑客帝国" "
+                            导演: 安迪·沃卓斯基 Andy Wachowski / 拉娜·沃卓斯基 Lana Wachowski<U+00A0><U+00A0><U+00A0>主...
+                            1999<U+00A0>/<U+00A0>美国 澳大利亚<U+00A0>/<U+00A0>动作 科幻
+                        " "8.8" "262648人评价" "https://movie.douban.com/subject/1291843/"
+"71" "拯救大兵瑞恩" "
+                            导演: 史蒂文·斯皮尔伯格 Steven Spielberg<U+00A0><U+00A0><U+00A0>主演: 汤姆·汉克斯 Tom Hanks...
+                            1998<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 历史 战争
+                        " "8.8" "220825人评价" "https://movie.douban.com/subject/1292849/"
+"72" "玛丽和马克思" "
+                            导演: Adam Elliot<U+00A0><U+00A0><U+00A0>主演: 托妮·科莱特 Toni Collette / 菲利普·塞默·霍...
+                            2009<U+00A0>/<U+00A0>澳大利亚<U+00A0>/<U+00A0>剧情 爱情 动画
+                        " "8.9" "223799人评价" "https://movie.douban.com/subject/3072124/"
+"73" "西西里的美丽传说" "
+                            导演: 朱塞佩·托纳多雷 Giuseppe Tornatore<U+00A0><U+00A0><U+00A0>主演: 莫妮卡·贝鲁奇 Monica ...
+                            2000<U+00A0>/<U+00A0>意大利 美国<U+00A0>/<U+00A0>剧情 战争 情色
+                        " "8.7" "320746人评价" "https://movie.douban.com/subject/1292402/"
+"74" "素媛" "
+                            导演: 李濬益 Jun-ik Lee<U+00A0><U+00A0><U+00A0>主演: 薛景求 Kyung-gu Sol / 严志媛 Ji-won Uhm ...
+                            2013<U+00A0>/<U+00A0>韩国<U+00A0>/<U+00A0>剧情 家庭
+                        " "9.1" "158515人评价" "https://movie.douban.com/subject/21937452/"
+"75" "心灵捕手" "
+                            导演: 格斯·范·桑特 Gus Van Sant<U+00A0><U+00A0><U+00A0>主演: 马特·达蒙 Matt Damon / 罗宾·...
+                            1997<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情
+                        " "8.7" "252093人评价" "https://movie.douban.com/subject/1292656/"
+"76" "幽灵公主" "
+                            导演: 宫崎骏<U+00A0><U+00A0><U+00A0>主演: 松田洋治 / 石田百合子 / 田中裕子
+                            1997<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>动画 冒险 奇幻
+                        " "8.8" "220359人评价" "https://movie.douban.com/subject/1297359/"
+"77" "第六感" "
+                            导演: M·奈特·沙马兰 M. Night Shyamalan<U+00A0><U+00A0><U+00A0>主演: 布鲁斯·威利斯 Bruce Wi...
+                            1999<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 悬疑 恐怖
+                        " "8.8" "218854人评价" "https://movie.douban.com/subject/1297630/"
+"78" "阳光灿烂的日子" "
+                            导演: 姜文 Wen Jiang<U+00A0><U+00A0><U+00A0>主演: 夏雨 Yu Xia / 宁静 Jing Ning / 陶虹 Hong Tao
+                            1994<U+00A0>/<U+00A0>中国大陆 香港<U+00A0>/<U+00A0>剧情
+                        " "8.7" "253476人评价" "https://movie.douban.com/subject/1291875/"
+"79" "让子弹飞" "
+                            导演: 姜文 Wen Jiang<U+00A0><U+00A0><U+00A0>主演: 姜文 Wen Jiang / 葛优 You Ge / 周润发 Yun-F...
+                            2010<U+00A0>/<U+00A0>中国大陆 香港<U+00A0>/<U+00A0>剧情 喜剧 动作 西部
+                        " "8.7" "590153人评价" "https://movie.douban.com/subject/3742360/"
+"80" "春光乍泄" "
+                            导演: 王家卫<U+00A0><U+00A0><U+00A0>主演: 张国荣 / 梁朝伟 / 张震
+                            1997<U+00A0>/<U+00A0>香港 日本 韩国<U+00A0>/<U+00A0>剧情 爱情 同性
+                        " "8.8" "225500人评价" "https://movie.douban.com/subject/1292679/"
+"81" "大鱼" "
+                            导演: 蒂姆·波顿 Tim Burton<U+00A0><U+00A0><U+00A0>主演: 伊万·麦克格雷格 Ewan McGregor / 阿...
+                            2003<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 家庭 奇幻 冒险
+                        " "8.7" "235882人评价" "https://movie.douban.com/subject/1291545/"
+"82" "大闹天宫" "
+                            导演: 万籁鸣 Laiming Wan / 唐澄 Cheng  Tang<U+00A0><U+00A0><U+00A0>主演: 邱岳峰 Yuefeng Qiu /...
+                            1961(上集) / 1964(下集) / 1978(全本) / 2004(纪念版)<U+00A0>/<U+00A0>中国大陆<U+00A0>/<U+00A0>动画 奇幻
+                        " "9.2" "89937人评价" "https://movie.douban.com/subject/1418019/"
+"83" "射雕英雄传之东成西就" "
+                            导演: 刘镇伟 Jeffrey Lau<U+00A0><U+00A0><U+00A0>主演: 梁朝伟 Tony Leung Chiu Wai / 林青霞 Bri...
+                            1993<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>喜剧 古装
+                        " "8.7" "258201人评价" "https://movie.douban.com/subject/1316510/"
+"84" "重庆森林" "
+                            导演: 王家卫 Kar Wai Wong<U+00A0><U+00A0><U+00A0>主演: 林青霞 Brigitte Lin / 金城武 Takeshi K...
+                            1994<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.6" "303359人评价" "https://movie.douban.com/subject/1291999/"
+"85" "阳光姐妹淘" "
+                            导演: 姜炯哲 Hyeong-Cheol Kang<U+00A0><U+00A0><U+00A0>主演: 沈恩京 Eun-kyung Shim / 闵孝琳 Hy...
+                            2011<U+00A0>/<U+00A0>韩国<U+00A0>/<U+00A0>剧情 喜剧
+                        " "8.8" "251165人评价" "https://movie.douban.com/subject/4917726/"
+"86" "上帝之城" "
+                            导演: Kátia Lund / Fernando Meirelles<U+00A0><U+00A0><U+00A0>主演: Alexandre Rodrigues / Lea...
+                            2002<U+00A0>/<U+00A0>巴西 法国<U+00A0>/<U+00A0>犯罪 剧情
+                        " "8.9" "149580人评价" "https://movie.douban.com/subject/1292208/"
+"87" "甜蜜蜜" "
+                            导演: 陈可辛 Peter Chan<U+00A0><U+00A0><U+00A0>主演: 黎明 Leon Lai / 张曼玉 Maggie Cheung / ...
+                            1996<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.7" "218595人评价" "https://movie.douban.com/subject/1305164/"
+"88" "禁闭岛" "
+                            导演: Martin Scorsese<U+00A0><U+00A0><U+00A0>主演: 莱昂纳多·迪卡普里奥 Leonardo DiCaprio / ...
+                            2010<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 悬疑 惊悚
+                        " "8.6" "332964人评价" "https://movie.douban.com/subject/2334904/"
+"89" "致命ID" "
+                            导演: James Mangold<U+00A0><U+00A0><U+00A0>主演: John Cusack / Ray Liotta / Amanda Peet
+                            2003<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 悬疑 惊悚
+                        " "8.6" "294709人评价" "https://movie.douban.com/subject/1297192/"
+"90" "告白" "
+                            导演: 中岛哲也 Tetsuya Nakashima<U+00A0><U+00A0><U+00A0>主演: 松隆子 Takako Matsu / 冈田将生 ...
+                            2010<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情 惊悚
+                        " "8.6" "318030人评价" "https://movie.douban.com/subject/4268598/"
+"91" "一一" "
+                            导演: 杨德昌<U+00A0><U+00A0><U+00A0>主演: 吴念真 / 李凯莉 Kelly Lee / 金燕玲 Elaine Jin
+                            2000<U+00A0>/<U+00A0>台湾 日本<U+00A0>/<U+00A0>剧情 爱情 家庭
+                        " "8.9" "143332人评价" "https://movie.douban.com/subject/1292434/"
+"92" "加勒比海盗" "
+                            导演: 戈尔·维宾斯基 Gore Verbinski<U+00A0><U+00A0><U+00A0>主演: 约翰尼·德普 Johnny Depp / ...
+                            2003<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>动作 冒险 奇幻
+                        " "8.6" "311640人评价" "https://movie.douban.com/subject/1298070/"
+"93" "爱在黎明破晓前" "
+                            导演: 理查德·林克莱特 Richard Linklater<U+00A0><U+00A0><U+00A0>主演: 伊桑·霍克 Ethan Hawke ...
+                            1995<U+00A0>/<U+00A0>美国 奥地利 瑞士<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.7" "203347人评价" "https://movie.douban.com/subject/1296339/"
+"94" "狩猎" "
+                            导演: 托马斯·温特伯格 Thomas Vinterberg<U+00A0><U+00A0><U+00A0>主演: 麦斯·米科尔森 Mads Mik...
+                            2012<U+00A0>/<U+00A0>丹麦 瑞典<U+00A0>/<U+00A0>剧情
+                        " "9.0" "111818人评价" "https://movie.douban.com/subject/6985810/"
+"95" "布达佩斯大饭店" "
+                            导演: 韦斯·安德森 Wes Anderson<U+00A0><U+00A0><U+00A0>主演: 拉尔夫·费因斯 Ralph Fiennes / ...
+                            2014<U+00A0>/<U+00A0>美国 德国 英国<U+00A0>/<U+00A0>剧情 喜剧
+                        " "8.7" "282061人评价" "https://movie.douban.com/subject/11525673/"
+"96" "阿凡达" "
+                            导演: 詹姆斯·卡梅隆 James Cameron<U+00A0><U+00A0><U+00A0>主演: 萨姆·沃辛顿 Sam Worthington ...
+                            2009<U+00A0>/<U+00A0>美国 英国<U+00A0>/<U+00A0>动作 冒险 奇幻 科幻
+                        " "8.6" "499111人评价" "https://movie.douban.com/subject/1652587/"
+"97" "断背山" "
+                            导演: 李安 Ang Lee<U+00A0><U+00A0><U+00A0>主演: 希斯·莱杰 Heath Ledger / 杰克·吉伦哈尔 Jake...
+                            2005<U+00A0>/<U+00A0>美国 加拿大<U+00A0>/<U+00A0>剧情 爱情 同性 家庭
+                        " "8.6" "298033人评价" "https://movie.douban.com/subject/1418834/"
+"98" "风之谷" "
+                            导演: 宫崎骏 Hayao Miyazaki<U+00A0><U+00A0><U+00A0>主演: 岛本须美 Sumi Shimamoto / 京田尚子 H...
+                            1984<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>科幻 动画 奇幻 冒险
+                        " "8.8" "164489人评价" "https://movie.douban.com/subject/1291585/"
+"99" "萤火虫之墓" "
+                            导演: 高畑勋 Isao Takahata<U+00A0><U+00A0><U+00A0>主演: 辰己努 / 白石绫乃 / 志乃原良子
+                            1988<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>动画 剧情 战争
+                        " "8.7" "191022人评价" "https://movie.douban.com/subject/1293318/"
+"100" "摩登时代" "
+                            导演: 查理·卓别林 Charles Chaplin<U+00A0><U+00A0><U+00A0>主演: 查理·卓别林 Charles Chaplin ...
+                            1936<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 剧情 爱情
+                        " "9.2" "79747人评价" "https://movie.douban.com/subject/1294371/"
+"101" "爱在日落黄昏时" "
+                            导演: 理查德·林克莱特 Richard Linklater<U+00A0><U+00A0><U+00A0>主演: 伊桑·霍克 Ethan Hawke ...
+                            2004<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.7" "185639人评价" "https://movie.douban.com/subject/1291990/"
+"102" "猫鼠游戏" "
+                            导演: 史蒂文·斯皮尔伯格 Steven Spielberg<U+00A0><U+00A0><U+00A0>主演: 莱昂纳多·迪卡普里奥 L...
+                            2002<U+00A0>/<U+00A0>美国 加拿大<U+00A0>/<U+00A0>传记 犯罪 剧情
+                        " "8.7" "201168人评价" "https://movie.douban.com/subject/1305487/"
+"103" "侧耳倾听" "
+                            导演: 近藤喜文 Yoshifumi Kondo<U+00A0><U+00A0><U+00A0>主演: 本名阳子 Youko Honna / 小林桂树 K...
+                            1995<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情 爱情 动画 音乐
+                        " "8.8" "154853人评价" "https://movie.douban.com/subject/1297052/"
+"104" "末代皇帝" "
+                            导演: 贝纳尔多·贝托鲁奇 Bernardo Bertolucci<U+00A0><U+00A0><U+00A0>主演: 尊龙 John Lone / 陈...
+                            1987<U+00A0>/<U+00A0>意大利 中国大陆 英国 法国<U+00A0>/<U+00A0>剧情 传记 历史
+                        " "8.8" "146869人评价" "https://movie.douban.com/subject/1293172/"
+"105" "驯龙高手" "
+                            导演: 迪恩·德布洛斯 Dean DeBlois / 克里斯·桑德斯 Chris Sanders<U+00A0><U+00A0><U+00A0>主演:...
+                            2010<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 动画 奇幻 冒险 家庭
+                        " "8.7" "266149人评价" "https://movie.douban.com/subject/2353023/"
+"106" "哈利·波特与魔法石" "
+                            导演: Chris Columbus<U+00A0><U+00A0><U+00A0>主演: Daniel Radcliffe / Emma Watson / Rupert Grint
+                            2001<U+00A0>/<U+00A0>美国 英国<U+00A0>/<U+00A0>奇幻 冒险
+                        " "8.6" "228266人评价" "https://movie.douban.com/subject/1295038/"
+"107" "超脱" "
+                            导演: 托尼·凯耶 Tony Kaye<U+00A0><U+00A0><U+00A0>主演: 艾德里安·布洛迪 Adrien Brody / 克里...
+                            2011<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情
+                        " "8.7" "158980人评价" "https://movie.douban.com/subject/5322596/"
+"108" "疯狂动物城" "
+                            导演: 拜伦·霍华德 Byron Howard / 瑞奇·摩尔 Rich Moore<U+00A0><U+00A0><U+00A0>主演: 金妮弗·...
+                            2016<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 动作 动画 冒险
+                        " "9.2" "453217人评价" "https://movie.douban.com/subject/25662329/"
+"109" "海洋" "
+                            导演: 雅克·贝汉 Jacques Perrin / 雅克·克鲁奥德 Jacques Cluzaud<U+00A0><U+00A0><U+00A0>主演:...
+                            2009<U+00A0>/<U+00A0>法国 瑞士 西班牙 美国 阿联酋<U+00A0>/<U+00A0>纪录片
+                        " "9.0" "94740人评价" "https://movie.douban.com/subject/3443389/"
+"110" "幸福终点站" "
+                            导演: 史蒂文·斯皮尔伯格 Steven Spielberg<U+00A0><U+00A0><U+00A0>主演: 汤姆·汉克斯 Tom Hanks...
+                            2004<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 剧情 爱情
+                        " "8.6" "212927人评价" "https://movie.douban.com/subject/1292274/"
+"111" "穿条纹睡衣的男孩" "
+                            导演: 马克·赫门 Mark Herman<U+00A0><U+00A0><U+00A0>主演: 阿沙·巴特菲尔德 Asa Butterfield / ...
+                            2008<U+00A0>/<U+00A0>英国 美国<U+00A0>/<U+00A0>剧情 战争
+                        " "8.8" "126515人评价" "https://movie.douban.com/subject/3008247/"
+"112" "燃情岁月" "
+                            导演: 爱德华·兹威克 Edward Zwick<U+00A0><U+00A0><U+00A0>主演: 安东尼·霍普金斯 Anthony Hopki...
+                            1994<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 爱情 西部 家庭
+                        " "8.8" "141935人评价" "https://movie.douban.com/subject/1295865/"
+"113" "菊次郎的夏天" "
+                            导演: 北野武 Takeshi Kitano<U+00A0><U+00A0><U+00A0>主演: 北野武 Takeshi Kitano / 关口雄介 Yus...
+                            1999<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情 喜剧
+                        " "8.7" "164618人评价" "https://movie.douban.com/subject/1293359/"
+"114" "倩女幽魂" "
+                            导演: 程小东 Siu-Tung Ching<U+00A0><U+00A0><U+00A0>主演: 张国荣 Leslie Cheung / 王祖贤 Joey W...
+                            1987<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>剧情 爱情 武侠 古装
+                        " "8.6" "227613人评价" "https://movie.douban.com/subject/1297447/"
+"115" "消失的爱人" "
+                            导演: 大卫·芬奇 David Fincher<U+00A0><U+00A0><U+00A0>主演: 本·阿弗莱克 Ben Affleck / 罗莎蒙...
+                            2014<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 犯罪 悬疑 惊悚
+                        " "8.7" "321707人评价" "https://movie.douban.com/subject/21318488/"
+"116" "神偷奶爸" "
+                            导演: 皮艾尔·柯芬 Pierre Coffin / 克里斯·雷纳德 Chris Renaud<U+00A0><U+00A0><U+00A0>主演: ...
+                            2010<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>儿童 喜剧 动画
+                        " "8.5" "344007人评价" "https://movie.douban.com/subject/3287562/"
+"117" "电锯惊魂" "
+                            导演: 詹姆斯·温 James Wan<U+00A0><U+00A0><U+00A0>主演: 雷·沃纳尔 Leigh Whannell / 加利·艾...
+                            2004<U+00A0>/<U+00A0>美国 澳大利亚<U+00A0>/<U+00A0>犯罪 悬疑 惊悚
+                        " "8.6" "185373人评价" "https://movie.douban.com/subject/1417598/"
+"118" "谍影重重3" "
+                            导演: 保罗·格林格拉斯 Paul Greengrass<U+00A0><U+00A0><U+00A0>主演: 马特·达蒙 Matt Damon / ...
+                            2007<U+00A0>/<U+00A0>美国 德国<U+00A0>/<U+00A0>动作 悬疑 冒险
+                        " "8.7" "168725人评价" "https://movie.douban.com/subject/1578507/"
+"119" "真爱至上" "
+                            导演: 理查德·柯蒂斯 Richard Curtis<U+00A0><U+00A0><U+00A0>主演: 休·格兰特 Hugh Grant / 柯林...
+                            2003<U+00A0>/<U+00A0>英国 美国 法国<U+00A0>/<U+00A0>喜剧 剧情 爱情
+                        " "8.5" "291451人评价" "https://movie.douban.com/subject/1292401/"
+"120" "岁月神偷" "
+                            导演: 罗启锐 Alex Law<U+00A0><U+00A0><U+00A0>主演: 吴君如 Sandra Ng / 任达华 Simon Yam / 钟绍...
+                            2010<U+00A0>/<U+00A0>香港 中国大陆<U+00A0>/<U+00A0>剧情 家庭
+                        " "8.6" "288371人评价" "https://movie.douban.com/subject/3792799/"
+"121" "借东西的小人阿莉埃蒂" "
+                            导演: 米林宏昌 Hiromasa Yonebayashi<U+00A0><U+00A0><U+00A0>主演: 志田未来 Mirai Shida / 神木...
+                            2010<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>动画 奇幻 冒险
+                        " "8.7" "201022人评价" "https://movie.douban.com/subject/4202302/"
+"122" "雨人" "
+                            导演: 巴瑞·莱文森 Barry Levinson<U+00A0><U+00A0><U+00A0>主演: 达斯汀·霍夫曼 Dustin Hoffman ...
+                            1988<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情
+                        " "8.6" "197568人评价" "https://movie.douban.com/subject/1291870/"
+"123" "虎口脱险" "
+                            导演: 杰拉尔·乌里 Gérard Oury<U+00A0><U+00A0><U+00A0>主演: 路易·德·菲耐斯 Louis de Funès...
+                            1966<U+00A0>/<U+00A0>法国 英国<U+00A0>/<U+00A0>喜剧 战争
+                        " "8.9" "100707人评价" "https://movie.douban.com/subject/1296909/"
+"124" "七武士" "
+                            导演: 黑泽明 Akira Kurosawa<U+00A0><U+00A0><U+00A0>主演: 三船敏郎 Toshir<U+00F4> Mifune / 志村乔 ...
+                            1954<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>动作 冒险 剧情
+                        " "9.1" "69731人评价" "https://movie.douban.com/subject/1295399/"
+"125" "恐怖直播" "
+                            导演: 金秉祐 Byeong-woo Kim<U+00A0><U+00A0><U+00A0>主演: 河正宇 Jung-woo Ha / 李璟荣 Kyeong-y...
+                            2013<U+00A0>/<U+00A0>韩国<U+00A0>/<U+00A0>剧情 犯罪 悬疑
+                        " "8.7" "193674人评价" "https://movie.douban.com/subject/21360417/"
+"126" "贫民窟的百万富翁" "
+                            导演: 丹尼·鲍尔 Danny Boyle / 洛芙琳·坦丹 Loveleen Tandan<U+00A0><U+00A0><U+00A0>主演: 戴夫...
+                            2008<U+00A0>/<U+00A0>英国 美国<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.5" "375307人评价" "https://movie.douban.com/subject/2209573/"
+"127" "东邪西毒" "
+                            导演: 王家卫 Kar Wai Wong<U+00A0><U+00A0><U+00A0>主演: 张国荣 Leslie Cheung / 张曼玉 Maggie C...
+                            1994<U+00A0>/<U+00A0>香港 台湾<U+00A0>/<U+00A0>剧情 动作 爱情 武侠 古装
+                        " "8.6" "233057人评价" "https://movie.douban.com/subject/1292328/"
+"128" "记忆碎片" "
+                            导演: 克里斯托弗·诺兰 Christopher Nolan<U+00A0><U+00A0><U+00A0>主演: 盖·皮尔斯 Guy Pearce /...
+                            2000<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>犯罪 剧情 悬疑 惊悚
+                        " "8.5" "257701人评价" "https://movie.douban.com/subject/1304447/"
+"129" "疯狂原始人" "
+                            导演: 科克·德·米科 Kirk De Micco / 克里斯·桑德斯 Chris Sanders<U+00A0><U+00A0><U+00A0>主演...
+                            2013<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 动画 冒险
+                        " "8.7" "347957人评价" "https://movie.douban.com/subject/1907966/"
+"130" "杀人回忆" "
+                            导演: 奉俊昊 Joon-ho Bong<U+00A0><U+00A0><U+00A0>主演: 宋康昊 Kang-ho Song / 金相庆 Sang-kyun...
+                            2003<U+00A0>/<U+00A0>韩国<U+00A0>/<U+00A0>犯罪 剧情 悬疑 惊悚
+                        " "8.6" "189892人评价" "https://movie.douban.com/subject/1300299/"
+"131" "怪兽电力公司" "
+                            导演: 彼特·道格特 Pete Docter / 大卫·斯沃曼 David Silverman<U+00A0><U+00A0><U+00A0>主演: 约...
+                            2001<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 动画 儿童 奇幻
+                        " "8.6" "220085人评价" "https://movie.douban.com/subject/1291579/"
+"132" "红辣椒" "
+                            导演: 今敏 Satoshi Kon<U+00A0><U+00A0><U+00A0>主演: 林原惠美 Megumi Hayashibara / 古谷彻 T...
+                            2006<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>动画 悬疑 科幻 惊悚
+                        " "8.8" "114929人评价" "https://movie.douban.com/subject/1865703/"
+"133" "卢旺达饭店" "
+                            导演: 特瑞·乔治 Terry George<U+00A0><U+00A0><U+00A0>主演: 唐·钱德尔 Don Cheadle / 苏菲·奥...
+                            2004<U+00A0>/<U+00A0>英国 南非 意大利 美国<U+00A0>/<U+00A0>剧情 历史 战争
+                        " "8.8" "109189人评价" "https://movie.douban.com/subject/1291822/"
+"134" "穿越时空的少女" "
+                            导演: 细田守 Mamoru Hosoda<U+00A0><U+00A0><U+00A0>主演: 仲里依纱 Riisa Naka / 石田卓也 Takuya...
+                            2006<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情 爱情 科幻 动画
+                        " "8.6" "172590人评价" "https://movie.douban.com/subject/1937946/"
+"135" "黑天鹅" "
+                            导演: 达伦·阿罗诺夫斯基 Darren Aronofsky<U+00A0><U+00A0><U+00A0>主演: 娜塔丽·波曼 Natalie P...
+                            2010<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 惊悚
+                        " "8.5" "389455人评价" "https://movie.douban.com/subject/1978709/"
+"136" "魂断蓝桥" "
+                            导演: Mervyn LeRoy<U+00A0><U+00A0><U+00A0>主演: Vivien Leigh / Robert Taylor / Lucile Watson
+                            1940<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 战争 爱情
+                        " "8.8" "121835人评价" "https://movie.douban.com/subject/1293964/"
+"137" "恋恋笔记本" "
+                            导演: 尼克·卡索维茨 Nick Cassavetes<U+00A0><U+00A0><U+00A0>主演: 瑞恩·高斯林 Ryan Gosling /...
+                            2004<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.5" "258624人评价" "https://movie.douban.com/subject/1309163/"
+"138" "猜火车" "
+                            导演: 丹尼·鲍尔 Danny Boyle<U+00A0><U+00A0><U+00A0>主演: 伊万·麦克格雷格 Ewan McGregor / 艾...
+                            1996<U+00A0>/<U+00A0>英国<U+00A0>/<U+00A0>犯罪 剧情
+                        " "8.5" "228530人评价" "https://movie.douban.com/subject/1292528/"
+"139" "喜宴" "
+                            导演: 李安<U+00A0><U+00A0><U+00A0>主演: 赵文瑄 / 归亚蕾 / 金素梅
+                            1993<U+00A0>/<U+00A0>台湾 美国<U+00A0>/<U+00A0>剧情 喜剧 爱情 同性 家庭
+                        " "8.8" "124373人评价" "https://movie.douban.com/subject/1303037/"
+"140" "英雄本色" "
+                            导演: 吴宇森 John Woo<U+00A0><U+00A0><U+00A0>主演: 周润发 Yun-Fat Chow / 狄龙 Lung Ti / 张国...
+                            1986<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>动作 犯罪
+                        " "8.7" "135631人评价" "https://movie.douban.com/subject/1297574/"
+"141" "傲慢与偏见" "
+                            导演: 乔·怀特 Joe Wright<U+00A0><U+00A0><U+00A0>主演: 凯拉·奈特莉 Keira Knightley / 马修·...
+                            2005<U+00A0>/<U+00A0>法国 英国 美国<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.4" "277405人评价" "https://movie.douban.com/subject/1418200/"
+"142" "雨中曲" "
+                            导演: Stanley Donen / Gene Kelly<U+00A0><U+00A0><U+00A0>主演: Gene Kelly / Donald O'Connor / ...
+                            1952<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 歌舞 爱情
+                        " "8.9" "86646人评价" "https://movie.douban.com/subject/1293460/"
+"143" "教父3" "
+                            导演: 弗朗西斯·福特·科波拉 Francis Ford Coppola<U+00A0><U+00A0><U+00A0>主演: 阿尔·帕西诺 A...
+                            1990<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 犯罪
+                        " "8.7" "119125人评价" "https://movie.douban.com/subject/1294240/"
+"144" "小森林 夏秋篇" "
+                            导演: 森淳一 Junichi Mori<U+00A0><U+00A0><U+00A0>主演: 桥本爱 Ai Hashimoto / 三浦贵大 Takahir...
+                            2014<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情
+                        " "8.9" "110028人评价" "https://movie.douban.com/subject/25814705/"
+"145" "完美的世界" "
+                            导演: 克林特·伊斯特伍德 Clint Eastwood<U+00A0><U+00A0><U+00A0>主演: 凯文·科斯特纳 Kevin Cos...
+                            1993<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 犯罪
+                        " "9.0" "72322人评价" "https://movie.douban.com/subject/1300992/"
+"146" "喜剧之王" "
+                            导演: 周星驰 Stephen Chow / 李力持 Lik-Chi Lee<U+00A0><U+00A0><U+00A0>主演: 周星驰 Stephen Ch...
+                            1999<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>喜剧 剧情 爱情
+                        " "8.4" "278438人评价" "https://movie.douban.com/subject/1302425/"
+"147" "纵横四海" "
+                            导演: 吴宇森 John Woo<U+00A0><U+00A0><U+00A0>主演: 周润发 Yun-Fat Chow / 张国荣 Leslie Cheung...
+                            1991<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>剧情 喜剧 动作 犯罪
+                        " "8.7" "129956人评价" "https://movie.douban.com/subject/1295409/"
+"148" "玩具总动员3" "
+                            导演: 李·昂克里奇 Lee Unkrich<U+00A0><U+00A0><U+00A0>主演: 汤姆·汉克斯 Tom Hanks / 蒂姆·艾...
+                            2010<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 动画 奇幻 冒险
+                        " "8.7" "181109人评价" "https://movie.douban.com/subject/1858711/"
+"149" "萤火之森" "
+                            导演: 大森贵弘 Takahiro Omori<U+00A0><U+00A0><U+00A0>主演: 佐仓绫音 Ayane Sakura / 内山昂辉 K...
+                            2011<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情 爱情 动画 奇幻
+                        " "8.7" "140549人评价" "https://movie.douban.com/subject/5989818/"
+"150" "人工智能" "
+                            导演: 史蒂文·斯皮尔伯格 Steven Spielberg<U+00A0><U+00A0><U+00A0>主演: 海利·乔·奥斯蒙 Haley...
+                            2001<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>冒险 剧情 科幻
+                        " "8.6" "176711人评价" "https://movie.douban.com/subject/1302827/"
+"151" "我是山姆" "
+                            导演: 杰茜·尼尔森 Jessie Nelson<U+00A0><U+00A0><U+00A0>主演: Sean Penn / Dakota Fanning / Mi...
+                            2001<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 家庭
+                        " "8.8" "92990人评价" "https://movie.douban.com/subject/1306861/"
+"152" "香水" "
+                            导演: 汤姆·提克威 Tom Tykwer<U+00A0><U+00A0><U+00A0>主演: 本·卫肖 Ben Whishaw / 艾伦·瑞克...
+                            2006<U+00A0>/<U+00A0>德国 法国 西班牙 美国<U+00A0>/<U+00A0>剧情 犯罪 奇幻
+                        " "8.4" "255651人评价" "https://movie.douban.com/subject/1760622/"
+"153" "浪潮" "
+                            导演: 丹尼斯·甘塞尔 Dennis Gansel<U+00A0><U+00A0><U+00A0>主演: 尤尔根·沃格尔 Jürgen Vogel ...
+                            2008<U+00A0>/<U+00A0>德国<U+00A0>/<U+00A0>剧情 惊悚
+                        " "8.7" "119450人评价" "https://movie.douban.com/subject/2297265/"
+"154" "冰川时代" "
+                            导演: 卡洛斯·沙尔丹哈 Carlos Saldanha / 克里斯·韦奇 Chris Wedge<U+00A0><U+00A0><U+00A0>主演...
+                            2002<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 动画 冒险
+                        " "8.4" "251136人评价" "https://movie.douban.com/subject/1291578/"
+"155" "7号房的礼物" "
+                            导演: 李焕庆 Hwan-kyeong Lee<U+00A0><U+00A0><U+00A0>主演: 柳承龙 Seung-yong Ryoo / 朴信惠 Shi...
+                            2013<U+00A0>/<U+00A0>韩国<U+00A0>/<U+00A0>剧情 喜剧 家庭
+                        " "8.7" "154401人评价" "https://movie.douban.com/subject/10777687/"
+"156" "撞车" "
+                            导演: 保罗·哈吉斯 Paul Haggis<U+00A0><U+00A0><U+00A0>主演: 桑德拉·布洛克 Sandra Bullock / ...
+                            2004<U+00A0>/<U+00A0>美国 德国<U+00A0>/<U+00A0>犯罪 剧情
+                        " "8.6" "163074人评价" "https://movie.douban.com/subject/1388216/"
+"157" "哈利·波特与死亡圣器(下)" "
+                            导演: 大卫·叶茨 David Yates<U+00A0><U+00A0><U+00A0>主演: 丹尼尔·雷德克里夫 Daniel Radcliffe...
+                            2011<U+00A0>/<U+00A0>美国 英国<U+00A0>/<U+00A0>剧情 悬疑 奇幻 冒险
+                        " "8.6" "252350人评价" "https://movie.douban.com/subject/3011235/"
+"158" "花样年华" "
+                            导演: 王家卫 Kar Wai Wong<U+00A0><U+00A0><U+00A0>主演: 梁朝伟 Tony Leung Chiu Wai / 张曼玉 Ma...
+                            2000<U+00A0>/<U+00A0>香港 法国<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.4" "223393人评价" "https://movie.douban.com/subject/1291557/"
+"159" "朗读者" "
+                            导演: 史蒂芬·戴德利 Stephen Daldry<U+00A0><U+00A0><U+00A0>主演: 凯特·温丝莱特 Kate Winslet ...
+                            2008<U+00A0>/<U+00A0>美国 德国<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.5" "262102人评价" "https://movie.douban.com/subject/2213597/"
+"160" "追随" "
+                            导演: 克里斯托弗·诺兰 Christopher Nolan<U+00A0><U+00A0><U+00A0>主演: 杰里米·西奥伯德 Jeremy...
+                            1998<U+00A0>/<U+00A0>英国<U+00A0>/<U+00A0>犯罪 悬疑 惊悚
+                        " "9.0" "72378人评价" "https://movie.douban.com/subject/1397546/"
+"161" "一次别离" "
+                            导演: 阿斯哈·法哈蒂  Asghar Farhadi<U+00A0><U+00A0><U+00A0>主演: 佩曼·莫阿迪 Peyman Moadi /...
+                            2011<U+00A0>/<U+00A0>伊朗 法国<U+00A0>/<U+00A0>剧情 家庭
+                        " "8.7" "121707人评价" "https://movie.douban.com/subject/5964718/"
+"162" "碧海蓝天" "
+                            导演: Luc Besson<U+00A0><U+00A0><U+00A0>主演: Jean-Marc Barr / Jean Reno / Rosanna Arquette
+                            1988<U+00A0>/<U+00A0>法国 美国 意大利<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.7" "102928人评价" "https://movie.douban.com/subject/1300960/"
+"163" "秒速5厘米" "
+                            导演: 新海诚 Makoto Shinkai<U+00A0><U+00A0><U+00A0>主演: 水桥研二 Kenji Mizuhashi / 近藤好美 ...
+                            2007<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>动画 剧情 爱情
+                        " "8.4" "268376人评价" "https://movie.douban.com/subject/2043546/"
+"164" "罗生门" "
+                            导演: 黑泽明 Akira Kurosawa<U+00A0><U+00A0><U+00A0>主演: 三船敏郎 Toshir<U+00F4> Mifune / 千秋实 ...
+                            1950<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>犯罪 剧情 悬疑
+                        " "8.7" "111794人评价" "https://movie.douban.com/subject/1291879/"
+"165" "梦之安魂曲" "
+                            导演: 达伦·阿伦诺夫斯基 Darren Aronofsky<U+00A0><U+00A0><U+00A0>主演: 艾伦·伯斯汀 Ellen Bur...
+                            2000<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情
+                        " "8.7" "102008人评价" "https://movie.douban.com/subject/1292270/"
+"166" "战争之王" "
+                            导演: 安德鲁·尼科尔 Andrew Niccol<U+00A0><U+00A0><U+00A0>主演: 尼古拉斯·凯奇 Nicolas Cage /...
+                            2005<U+00A0>/<U+00A0>美国 法国<U+00A0>/<U+00A0>剧情 犯罪
+                        " "8.5" "161870人评价" "https://movie.douban.com/subject/1419936/"
+"167" "可可西里" "
+                            导演: 陆川 Chuan Lu<U+00A0><U+00A0><U+00A0>主演: 多布杰 Duobujie / 张磊 Lei Zhang / 亓亮 Qi L...
+                            2004<U+00A0>/<U+00A0>中国大陆 香港<U+00A0>/<U+00A0>剧情 犯罪
+                        " "8.6" "118905人评价" "https://movie.douban.com/subject/1308857/"
+"168" "心迷宫" "
+                            导演: 忻钰坤 Yukun Xin<U+00A0><U+00A0><U+00A0>主演: 霍卫民 Weimin Huo / 王笑天 Xiaotian Wang ...
+                            2014<U+00A0>/<U+00A0>中国大陆<U+00A0>/<U+00A0>剧情 犯罪 悬疑
+                        " "8.6" "137474人评价" "https://movie.douban.com/subject/25917973/"
+"169" "唐伯虎点秋香" "
+                            导演: 李力持 Lik-Chi Lee<U+00A0><U+00A0><U+00A0>主演: 周星驰 Stephen Chow / 巩俐 Li Gong / 陈...
+                            1993<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>喜剧 爱情 古装
+                        " "8.3" "287491人评价" "https://movie.douban.com/subject/1306249/"
+"170" "超能陆战队" "
+                            导演: 唐·霍尔 Don Hall / 克里斯·威廉姆斯 Chris Williams<U+00A0><U+00A0><U+00A0>主演: 斯科特...
+                            2014<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 动作 科幻 动画 冒险
+                        " "8.6" "334613人评价" "https://movie.douban.com/subject/11026735/"
+"171" "时空恋旅人" "
+                            导演: 理查德·柯蒂斯 Richard Curtis<U+00A0><U+00A0><U+00A0>主演: 多姆纳尔·格利森 Domhnall Gl...
+                            2013<U+00A0>/<U+00A0>英国<U+00A0>/<U+00A0>剧情 爱情 奇幻
+                        " "8.6" "174949人评价" "https://movie.douban.com/subject/10577869/"
+"172" "海盗电台" "
+                            导演: 理查德·柯蒂斯 Richard Curtis<U+00A0><U+00A0><U+00A0>主演: 比尔·奈伊 Bill Nighy / 肯尼...
+                            2009<U+00A0>/<U+00A0>英国 德国 法国<U+00A0>/<U+00A0>剧情 喜剧 音乐
+                        " "8.6" "157085人评价" "https://movie.douban.com/subject/3007773/"
+"173" "谍影重重2" "
+                            导演: 保罗·格林格拉斯 Paul Greengrass<U+00A0><U+00A0><U+00A0>主演: 马特·达蒙 Matt Damon / ...
+                            2004<U+00A0>/<U+00A0>美国 德国<U+00A0>/<U+00A0>动作 悬疑 冒险
+                        " "8.5" "146612人评价" "https://movie.douban.com/subject/1308767/"
+"174" "谍影重重" "
+                            导演: 道格·里曼 Doug Liman<U+00A0><U+00A0><U+00A0>主演: 马特·达蒙 Matt Damon / 弗兰卡·波坦...
+                            2002<U+00A0>/<U+00A0>美国 德国 捷克<U+00A0>/<U+00A0>动作 悬疑 冒险
+                        " "8.5" "177174人评价" "https://movie.douban.com/subject/1304102/"
+"175" "蝙蝠侠：黑暗骑士崛起" "
+                            导演: 克里斯托弗·诺兰 Christopher Nolan<U+00A0><U+00A0><U+00A0>主演: 克里斯蒂安·贝尔 Christ...
+                            2012<U+00A0>/<U+00A0>美国 英国<U+00A0>/<U+00A0>剧情 动作 科幻 犯罪 惊悚
+                        " "8.5" "270717人评价" "https://movie.douban.com/subject/3395373/"
+"176" "阿飞正传" "
+                            导演: 王家卫 Kar Wai Wong<U+00A0><U+00A0><U+00A0>主演: 张国荣 Leslie Cheung / 张曼玉 Maggie C...
+                            1990<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>犯罪 剧情 爱情
+                        " "8.5" "162297人评价" "https://movie.douban.com/subject/1305690/"
+"177" "荒蛮故事" "
+                            导演: Damián Szifron<U+00A0><U+00A0><U+00A0>主演: 里卡杜·达林 Ricardo Darín / 艾丽卡·里瓦...
+                            2014<U+00A0>/<U+00A0>阿根廷 西班牙<U+00A0>/<U+00A0>剧情 喜剧 犯罪
+                        " "8.7" "113021人评价" "https://movie.douban.com/subject/24750126/"
+"178" "地球上的星星" "
+                            导演: 阿米尔·汗 Aamir Khan / 阿莫尔·古普特 Amole Gupte<U+00A0><U+00A0><U+00A0>主演: 达席尔...
+                            2007<U+00A0>/<U+00A0>印度<U+00A0>/<U+00A0>剧情 儿童 家庭
+                        " "8.8" "72731人评价" "https://movie.douban.com/subject/2363506/"
+"179" "小森林 冬春篇" "
+                            导演: 森淳一 Junichi Mori<U+00A0><U+00A0><U+00A0>主演: 桥本爱 Ai Hashimoto / 三浦贵大 Takahir...
+                            2015<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情
+                        " "8.9" "94997人评价" "https://movie.douban.com/subject/25814707/"
+"180" "迁徙的鸟" "
+                            导演: 雅克·贝汉 Jacques Perrin / 雅克·克鲁奥德 Jacques Cluzaud<U+00A0><U+00A0><U+00A0>主演:...
+                            2001<U+00A0>/<U+00A0>法国 德国 意大利 西班牙 瑞士<U+00A0>/<U+00A0>纪录片
+                        " "9.1" "49104人评价" "https://movie.douban.com/subject/1292281/"
+"181" "荒野生存" "
+                            导演: 西恩·潘 Sean Penn<U+00A0><U+00A0><U+00A0>主演: 埃米尔·赫斯基 Emile Hirsch / 马西娅·...
+                            2007<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>冒险 传记 剧情
+                        " "8.6" "118022人评价" "https://movie.douban.com/subject/1905462/"
+"182" "恐怖游轮" "
+                            导演: 克里斯托弗·史密斯 Christopher Smith<U+00A0><U+00A0><U+00A0>主演: 梅利莎·乔治 Melissa ...
+                            2009<U+00A0>/<U+00A0>英国 澳大利亚<U+00A0>/<U+00A0>剧情 悬疑 惊悚
+                        " "8.3" "283608人评价" "https://movie.douban.com/subject/3011051/"
+"183" "绿里奇迹" "
+                            导演: Frank Darabont<U+00A0><U+00A0><U+00A0>主演: 汤姆·汉克斯 Tom Hanks / 大卫·摩斯 David M...
+                            1999<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>犯罪 剧情 奇幻 悬疑
+                        " "8.7" "97501人评价" "https://movie.douban.com/subject/1300374/"
+"184" "勇闯夺命岛" "
+                            导演: 迈克尔·贝 Michael Bay<U+00A0><U+00A0><U+00A0>主演: 肖恩·康纳利 Sean Connery / 尼古拉...
+                            1996<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>动作 冒险
+                        " "8.5" "131610人评价" "https://movie.douban.com/subject/1292728/"
+"185" "惊魂记" "
+                            导演: Alfred Hitchcock<U+00A0><U+00A0><U+00A0>主演: Janet Leigh / Anthony Perkins / Vera Miles
+                            1960<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>悬疑 恐怖
+                        " "8.8" "74014人评价" "https://movie.douban.com/subject/1293181/"
+"186" "达拉斯买家俱乐部" "
+                            导演: 让-马克·瓦雷 Jean-Marc Vallée<U+00A0><U+00A0><U+00A0>主演: 马修·麦康纳 Matthew McCon...
+                            2013<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 传记 同性
+                        " "8.6" "152234人评价" "https://movie.douban.com/subject/1793929/"
+"187" "魔女宅急便" "
+                            导演: 宫崎骏 Hayao Miyazaki<U+00A0><U+00A0><U+00A0>主演: 高山南 / 佐久间玲 / 山口胜平
+                            1989<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>动画 奇幻 冒险
+                        " "8.4" "175678人评价" "https://movie.douban.com/subject/1307811/"
+"188" "再次出发之纽约遇见你" "
+                            导演: 约翰·卡尼 John Carney<U+00A0><U+00A0><U+00A0>主演: 凯拉·奈特莉 Keira Knightley / 马克...
+                            2013<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 爱情 音乐
+                        " "8.5" "148184人评价" "https://movie.douban.com/subject/6874403/"
+"189" "卡萨布兰卡" "
+                            导演: Michael Curtiz<U+00A0><U+00A0><U+00A0>主演: 亨弗莱·鲍嘉 Humphrey Bogart / 英格丽·褒曼...
+                            1942<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 爱情 战争
+                        " "8.6" "114715人评价" "https://movie.douban.com/subject/1296753/"
+"190" "爆裂鼓手" "
+                            导演: 达米安·沙泽勒 Damien Chazelle<U+00A0><U+00A0><U+00A0>主演: 迈尔斯·特勒 Miles Teller /...
+                            2014<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 音乐
+                        " "8.6" "211207人评价" "https://movie.douban.com/subject/25773932/"
+"191" "燕尾蝶" "
+                            导演: 岩井俊二 Shunji Iwai<U+00A0><U+00A0><U+00A0>主演: 三上博史 / 恰拉 / 伊藤步
+                            1996<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>犯罪 剧情
+                        " "8.6" "102089人评价" "https://movie.douban.com/subject/1307793/"
+"192" "未麻的部屋" "
+                            导演: 今敏 Satoshi Kon<U+00A0><U+00A0><U+00A0>主演: 岩男润子 Junko Iwao / 松本梨香 Rica Matsu...
+                            1997<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>动画 奇幻 惊悚
+                        " "8.8" "80843人评价" "https://movie.douban.com/subject/1395091/"
+"193" "东京物语" "
+                            导演: 小津安二郎 Yasujir<U+00F4> Ozu<U+00A0><U+00A0><U+00A0>主演: 笠智众 Chish<U+00FB> Ry<U+00FB> / 原节...
+                            1953<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情 家庭
+                        " "9.2" "45093人评价" "https://movie.douban.com/subject/1291568/"
+"194" "牯岭街少年杀人事件" "
+                            导演: 杨德昌 Edward Yang<U+00A0><U+00A0><U+00A0>主演: 张震 Chen Chang / 杨静怡 Lisa Yang / 张...
+                            1991<U+00A0>/<U+00A0>台湾<U+00A0>/<U+00A0>剧情 犯罪
+                        " "8.7" "93514人评价" "https://movie.douban.com/subject/1292329/"
+"195" "这个男人来自地球" "
+                            导演: 理查德·沙因克曼 Richard Schenkman<U+00A0><U+00A0><U+00A0>主演: 大卫·李·史密斯 David ...
+                            2007<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 科幻
+                        " "8.5" "160117人评价" "https://movie.douban.com/subject/2300586/"
+"196" "英国病人" "
+                            导演: 安东尼·明格拉 Anthony Minghella<U+00A0><U+00A0><U+00A0>主演: 拉尔夫·费因斯 Ralph Fien...
+                            1996<U+00A0>/<U+00A0>美国 英国<U+00A0>/<U+00A0>爱情 剧情 战争
+                        " "8.4" "163680人评价" "https://movie.douban.com/subject/1291853/"
+"197" "变脸" "
+                            导演: 吴宇森 John Woo<U+00A0><U+00A0><U+00A0>主演: 约翰·特拉沃尔塔 John Travolta / 尼古拉斯...
+                            1997<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>动作 科幻 犯罪
+                        " "8.4" "198447人评价" "https://movie.douban.com/subject/1292659/"
+"198" "被解救的姜戈" "
+                            导演: 昆汀·塔伦蒂诺 Quentin Tarantino<U+00A0><U+00A0><U+00A0>主演: 杰米·福克斯 Jamie Foxx /...
+                            2012<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 动作 西部 冒险
+                        " "8.5" "239646人评价" "https://movie.douban.com/subject/6307447/"
+"199" "终结者2：审判日" "
+                            导演: 詹姆斯·卡梅隆 James Cameron<U+00A0><U+00A0><U+00A0>主演: 阿诺·施瓦辛格 Arnold Schwarz...
+                            1991<U+00A0>/<U+00A0>美国 法国<U+00A0>/<U+00A0>动作 科幻
+                        " "8.5" "129532人评价" "https://movie.douban.com/subject/1291844/"
+"200" "末路狂花" "
+                            导演: 雷德利·斯科特 Ridley Scott<U+00A0><U+00A0><U+00A0>主演: 吉娜·戴维斯 Geena Davis / 苏...
+                            1991<U+00A0>/<U+00A0>美国 法国<U+00A0>/<U+00A0>犯罪 剧情 惊悚
+                        " "8.7" "94144人评价" "https://movie.douban.com/subject/1291992/"
+"201" "E.T. 外星人" "
+                            导演: Steven Spielberg<U+00A0><U+00A0><U+00A0>主演: Henry Thomas / Dee Wallace / Robert MacNa...
+                            1982<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 科幻 奇幻 冒险
+                        " "8.5" "140069人评价" "https://movie.douban.com/subject/1294638/"
+"202" "叫我第一名" "
+                            导演: 彼得·维纳 Peter Werner<U+00A0><U+00A0><U+00A0>主演: 詹姆斯·沃克 James Wolk / 特里特·...
+                            2008<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 传记
+                        " "8.6" "100343人评价" "https://movie.douban.com/subject/4798888/"
+"203" "忠犬八公物语" "
+                            导演: Seijir<U+00F4> K<U+00F4>yama<U+00A0><U+00A0><U+00A0>主演: 山本圭 Kei Yamamoto / 井川比佐志 Hisa...
+                            1987<U+00A0>/<U+00A0>日本<U+00A0>/<U+00A0>剧情
+                        " "9.0" "49466人评价" "https://movie.douban.com/subject/1959195/"
+"204" "哪吒闹海" "
+                            导演: 严定宪 Dingxian Yan / 王树忱 Shuchen Wang<U+00A0><U+00A0><U+00A0>主演: 梁正晖 / 邱岳峰 ...
+                            1979<U+00A0>/<U+00A0>中国大陆<U+00A0>/<U+00A0>冒险 动画 奇幻
+                        " "8.8" "71595人评价" "https://movie.douban.com/subject/1307315/"
+"205" "发条橙" "
+                            导演: Stanley Kubrick<U+00A0><U+00A0><U+00A0>主演: Malcolm McDowell / Patrick Magee / Michael...
+                            1971<U+00A0>/<U+00A0>英国 美国<U+00A0>/<U+00A0>犯罪 剧情 科幻
+                        " "8.4" "171684人评价" "https://movie.douban.com/subject/1292233/"
+"206" "青蛇" "
+                            导演: 徐克 Hark Tsui<U+00A0><U+00A0><U+00A0>主演: 张曼玉 Maggie Cheung / 王祖贤 Joey Wang / ...
+                            1993<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>剧情 奇幻 古装
+                        " "8.4" "198185人评价" "https://movie.douban.com/subject/1303394/"
+"207" "穆赫兰道" "
+                            导演: 大卫·林奇 David Lynch<U+00A0><U+00A0><U+00A0>主演: 娜奥米·沃茨 Naomi Watts / 劳拉·哈...
+                            2001<U+00A0>/<U+00A0>法国 美国<U+00A0>/<U+00A0>剧情 悬疑 惊悚
+                        " "8.3" "214133人评价" "https://movie.douban.com/subject/1292217/"
+"208" "源代码" "
+                            导演: 邓肯·琼斯 Duncan Jones<U+00A0><U+00A0><U+00A0>主演: 杰克·吉伦哈尔 Jake Gyllenhaal / ...
+                            2011<U+00A0>/<U+00A0>美国 加拿大<U+00A0>/<U+00A0>剧情 动作 科幻 犯罪 惊悚
+                        " "8.3" "377390人评价" "https://movie.douban.com/subject/3075287/"
+"209" "新龙门客栈" "
+                            导演: 李惠民 Raymond Lee<U+00A0><U+00A0><U+00A0>主演: 张曼玉 Maggie Cheung / 林青霞 Brigitte ...
+                            1992<U+00A0>/<U+00A0>香港 中国大陆<U+00A0>/<U+00A0>剧情 动作 武侠 古装
+                        " "8.4" "166366人评价" "https://movie.douban.com/subject/1292287/"
+"210" "黑客帝国3：矩阵革命" "
+                            导演: Andy Wachowski / Larry Wachowski<U+00A0><U+00A0><U+00A0>主演: Keanu Reeves / Laurence F...
+                            2003<U+00A0>/<U+00A0>美国 澳大利亚<U+00A0>/<U+00A0>动作 科幻
+                        " "8.5" "140513人评价" "https://movie.douban.com/subject/1302467/"
+"211" "黄金三镖客" "
+                            导演: Sergio Leone<U+00A0><U+00A0><U+00A0>主演: Clint Eastwood / Eli Wallach / Lee Van Cleef
+                            1966<U+00A0>/<U+00A0>意大利 西班牙 西德<U+00A0>/<U+00A0>冒险 西部
+                        " "9.1" "45950人评价" "https://movie.douban.com/subject/1401118/"
+"212" "非常嫌疑犯" "
+                            导演: 布莱恩·辛格 Bryan Singer<U+00A0><U+00A0><U+00A0>主演: 史蒂芬·鲍德温 Stephen Baldwin /...
+                            1995<U+00A0>/<U+00A0>德国 美国<U+00A0>/<U+00A0>剧情 犯罪 悬疑 惊悚
+                        " "8.6" "105645人评价" "https://movie.douban.com/subject/1292214/"
+"213" "美国丽人" "
+                            导演: 萨姆·门德斯 Sam Mendes<U+00A0><U+00A0><U+00A0>主演: 凯文·史佩西 Kevin Spacey / 安妮特...
+                            1999<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 家庭
+                        " "8.4" "169550人评价" "https://movie.douban.com/subject/1292062/"
+"214" "上帝也疯狂" "
+                            导演: Jamie Uys<U+00A0><U+00A0><U+00A0>主演: Marius Weyers / Sandra Prinsloo / N!xau
+                            1980<U+00A0>/<U+00A0>博茨瓦纳 南非<U+00A0>/<U+00A0>喜剧
+                        " "8.6" "88603人评价" "https://movie.douban.com/subject/1297478/"
+"215" "城市之光" "
+                            导演: Charles Chaplin<U+00A0><U+00A0><U+00A0>主演: 查理·卓别林 Charles Chaplin / 弗吉尼亚·...
+                            1931<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 剧情 爱情
+                        " "9.2" "38128人评价" "https://movie.douban.com/subject/1293908/"
+"216" "无耻混蛋" "
+                            导演: Quentin Tarantino<U+00A0><U+00A0><U+00A0>主演: 布拉德·皮特 Brad Pitt / 梅拉尼·罗兰 M...
+                            2009<U+00A0>/<U+00A0>美国 德国<U+00A0>/<U+00A0>剧情 犯罪
+                        " "8.4" "205227人评价" "https://movie.douban.com/subject/1438652/"
+"217" "初恋这件小事" "
+                            导演: Puttipong Promsaka Na Sakolnakorn / Wasin pokpong<U+00A0><U+00A0><U+00A0>主演: 马里奥·...
+                            2010<U+00A0>/<U+00A0>泰国<U+00A0>/<U+00A0>喜剧 爱情
+                        " "8.2" "419934人评价" "https://movie.douban.com/subject/4739952/"
+"218" "勇士" "
+                            导演: 加文·欧康诺 Gavin O'Connor<U+00A0><U+00A0><U+00A0>主演: 汤姆·哈迪 Tom Hardy / 乔尔·...
+                            2011<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 运动 家庭
+                        " "8.9" "80290人评价" "https://movie.douban.com/subject/3217169/"
+"219" "爱·回家" "
+                            导演: 李廷香 Jeong-hyang Lee<U+00A0><U+00A0><U+00A0>主演: 金艺芬 Eul-boon Kim / 俞承豪 Seung-...
+                            2002<U+00A0>/<U+00A0>韩国<U+00A0>/<U+00A0>剧情 儿童 家庭
+                        " "9.0" "43473人评价" "https://movie.douban.com/subject/1299361/"
+"220" "蓝色大门" "
+                            导演: 易智言 Chih-yen Yee<U+00A0><U+00A0><U+00A0>主演: 桂纶镁 Lunmei Kwai / 陈柏霖 Bo-lin Che...
+                            2002<U+00A0>/<U+00A0>台湾 法国<U+00A0>/<U+00A0>剧情 爱情 同性
+                        " "8.2" "255739人评价" "https://movie.douban.com/subject/1308575/"
+"221" "曾经" "
+                            导演: 约翰·卡尼 John Carney<U+00A0><U+00A0><U+00A0>主演: 格伦·汉塞德 Glen Hansard / 玛可塔...
+                            2006<U+00A0>/<U+00A0>爱尔兰<U+00A0>/<U+00A0>剧情 音乐 爱情
+                        " "8.3" "190274人评价" "https://movie.douban.com/subject/2053515/"
+"222" "无敌破坏王" "
+                            导演: 瑞奇·莫尔 Rich Moore<U+00A0><U+00A0><U+00A0>主演: 简·林奇 Jane Lynch / 约翰·C·赖利 ...
+                            2012<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>喜剧 动画 冒险
+                        " "8.6" "170664人评价" "https://movie.douban.com/subject/6534248/"
+"223" "麦兜故事" "
+                            导演: 袁建滔 Toe Yuen<U+00A0><U+00A0><U+00A0>主演: 李晋纬 / 林海峰 Jan Lamb / 吴君如 Sandra Ng
+                            2001<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>剧情 喜剧 动画
+                        " "8.5" "118201人评价" "https://movie.douban.com/subject/1302476/"
+"224" "暖暖内含光" "
+                            导演: 米歇尔·冈瑞 Michel Gondry<U+00A0><U+00A0><U+00A0>主演: 金·凯瑞 Jim Carrey / 凯特·温...
+                            2004<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 爱情 奇幻
+                        " "8.4" "133201人评价" "https://movie.douban.com/subject/1308777/"
+"225" "蝴蝶" "
+                            导演: 菲利普·穆伊尔 Philippe Muyl<U+00A0><U+00A0><U+00A0>主演: 米歇尔·塞罗 Michel Serrault ...
+                            2002<U+00A0>/<U+00A0>法国<U+00A0>/<U+00A0>剧情 儿童 喜剧
+                        " "8.6" "89989人评价" "https://movie.douban.com/subject/1292056/"
+"226" "大卫·戈尔的一生" "
+                            导演: Alan Parker<U+00A0><U+00A0><U+00A0>主演: 凯文·史派西 Kevin Spacey / 凯特·温丝莱特 Kat...
+                            2003<U+00A0>/<U+00A0>美国 德国 英国<U+00A0>/<U+00A0>剧情 犯罪 悬疑
+                        " "8.7" "78292人评价" "https://movie.douban.com/subject/1305725/"
+"227" "与狼共舞" "
+                            导演: Kevin Costner<U+00A0><U+00A0><U+00A0>主演: Kevin Costner / Mary McDonnell / Graham Greene
+                            1990<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>冒险 剧情 西部
+                        " "8.9" "52505人评价" "https://movie.douban.com/subject/1293764/"
+"228" "血钻" "
+                            导演: Edward Zwick<U+00A0><U+00A0><U+00A0>主演: Leonardo DiCaprio / Jennifer Connelly / Djimo...
+                            2006<U+00A0>/<U+00A0>美国 德国<U+00A0>/<U+00A0>剧情 惊悚 冒险
+                        " "8.5" "116783人评价" "https://movie.douban.com/subject/1428175/"
+"229" "模仿游戏" "
+                            导演: 莫腾·泰杜姆 Morten Tyldum<U+00A0><U+00A0><U+00A0>主演: 本尼迪克特·康伯巴奇 Benedict C...
+                            2014<U+00A0>/<U+00A0>英国 美国<U+00A0>/<U+00A0>剧情 传记 战争 同性
+                        " "8.5" "227600人评价" "https://movie.douban.com/subject/10463953/"
+"230" "国王的演讲" "
+                            导演: 汤姆·霍珀 Tom Hooper<U+00A0><U+00A0><U+00A0>主演: 柯林·菲尔斯 Colin Firth / 杰弗里·...
+                            2010<U+00A0>/<U+00A0>英国 澳大利亚 美国<U+00A0>/<U+00A0>剧情 传记 历史
+                        " "8.3" "310885人评价" "https://movie.douban.com/subject/4023638/"
+"231" "遗愿清单" "
+                            导演: 罗伯·莱纳 Rob Reiner<U+00A0><U+00A0><U+00A0>主演: 杰克·尼科尔森 Jack Nicholson / 摩根...
+                            2007<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>冒险 喜剧 剧情
+                        " "8.5" "113635人评价" "https://movie.douban.com/subject/1867345/"
+"232" "巴黎淘气帮" "
+                            导演: Laurent Tirard<U+00A0><U+00A0><U+00A0>主演: 马克西姆·戈达尔 Maxime Godart / 瓦莱丽·勒...
+                            2009<U+00A0>/<U+00A0>法国 比利时<U+00A0>/<U+00A0>儿童 喜剧 家庭
+                        " "8.6" "98509人评价" "https://movie.douban.com/subject/3157605/"
+"233" "偷拐抢骗" "
+                            导演: 盖·里奇 Guy Ritchie<U+00A0><U+00A0><U+00A0>主演: 布拉德·皮特 Brad Pitt / 本尼西奥·德...
+                            2000<U+00A0>/<U+00A0>英国 美国<U+00A0>/<U+00A0>喜剧 犯罪
+                        " "8.5" "106746人评价" "https://movie.douban.com/subject/1301171/"
+"234" "荒岛余生" "
+                            导演: 罗伯特·泽米吉斯 Robert Zemeckis<U+00A0><U+00A0><U+00A0>主演: 汤姆·汉克斯 Tom Hanks / ...
+                            2000<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>冒险 剧情
+                        " "8.4" "120198人评价" "https://movie.douban.com/subject/1298653/"
+"235" "夜访吸血鬼" "
+                            导演: 尼尔·乔丹 Neil Jordan<U+00A0><U+00A0><U+00A0>主演: 布拉德·皮特 Brad Pitt / 汤姆·克鲁...
+                            1994<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 奇幻 惊悚
+                        " "8.3" "183409人评价" "https://movie.douban.com/subject/1299327/"
+"236" "疯狂的石头" "
+                            导演: 宁浩 Hao Ning<U+00A0><U+00A0><U+00A0>主演: 郭涛 Tao Guo / 刘桦 Hua Liu / 连晋 Teddy Lin
+                            2006<U+00A0>/<U+00A0>中国大陆 香港<U+00A0>/<U+00A0>喜剧 犯罪
+                        " "8.2" "279948人评价" "https://movie.douban.com/subject/1862151/"
+"237" "枪火" "
+                            导演: 杜琪峰 Johnnie To<U+00A0><U+00A0><U+00A0>主演: 吴镇宇 Francis Ng / 任达华 Simon Yam / ...
+                            1999<U+00A0>/<U+00A0>香港<U+00A0>/<U+00A0>剧情 动作 犯罪
+                        " "8.6" "88175人评价" "https://movie.douban.com/subject/1300741/"
+"238" "千钧一发" "
+                            导演: 安德鲁·尼科尔 Andrew Niccol<U+00A0><U+00A0><U+00A0>主演: 伊桑·霍克 Ethan Hawke / 乌玛...
+                            1997<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 科幻
+                        " "8.7" "74153人评价" "https://movie.douban.com/subject/1300117/"
+"239" "中央车站" "
+                            导演: Walter Salles<U+00A0><U+00A0><U+00A0>主演: Fernanda Montenegro / Marília Pêra / Viní...
+                            1998<U+00A0>/<U+00A0>巴西 法国<U+00A0>/<U+00A0>剧情
+                        " "8.7" "71460人评价" "https://movie.douban.com/subject/1292218/"
+"240" "爱在暹罗" "
+                            导演: 楚克<U+2027>萨克瑞科 Chukiat Sakveerakul<U+00A0><U+00A0><U+00A0>主演: 维特维斯特·海伦亚沃...
+                            2007<U+00A0>/<U+00A0>泰国<U+00A0>/<U+00A0>剧情 爱情 同性 家庭
+                        " "8.3" "207549人评价" "https://movie.douban.com/subject/2365260/"
+"241" "爱在午夜降临前" "
+                            导演: 理查德·林克莱特 Richard Linklater<U+00A0><U+00A0><U+00A0>主演: 伊桑·霍克 Ethan Hawke ...
+                            2013<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.7" "102134人评价" "https://movie.douban.com/subject/10808442/"
+"242" "月球" "
+                            导演: 邓肯·琼斯 Duncan Jones<U+00A0><U+00A0><U+00A0>主演: 山姆·洛克威尔 Sam Rockwell / 凯文...
+                            2009<U+00A0>/<U+00A0>英国<U+00A0>/<U+00A0>剧情 科幻 悬疑
+                        " "8.5" "129889人评价" "https://movie.douban.com/subject/3073124/"
+"243" "寿司之神" "
+                            导演: 大卫·贾柏 David Gelb<U+00A0><U+00A0><U+00A0>主演: 小野二郎  Jiro Ono / 小野祯一 Yoshik...
+                            2011<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>纪录片
+                        " "8.8" "73673人评价" "https://movie.douban.com/subject/6146955/"
+"244" "我爱你" "
+                            导演: 秋昌民 Chang-min Choo<U+00A0><U+00A0><U+00A0>主演: 宋在河 Jae-ho Song / 李顺载 Soon-jae...
+                            2011<U+00A0>/<U+00A0>韩国<U+00A0>/<U+00A0>剧情 爱情
+                        " "9.0" "49504人评价" "https://movie.douban.com/subject/5908478/"
+"245" "两小无猜" "
+                            导演: 杨·塞谬尔 Yann Samuell<U+00A0><U+00A0><U+00A0>主演: 吉约姆·卡内 Guillaume Canet / 玛...
+                            2003<U+00A0>/<U+00A0>法国 比利时<U+00A0>/<U+00A0>喜剧 剧情 爱情
+                        " "8.1" "299544人评价" "https://movie.douban.com/subject/1308817/"
+"246" "罪恶之城" "
+                            导演: 弗兰克·米勒 Frank Miller / 罗伯特·罗德里格兹 Robert Rodriguez<U+00A0><U+00A0><U+00A0>...
+                            2005<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>动作 犯罪 惊悚
+                        " "8.4" "131207人评价" "https://movie.douban.com/subject/1309027/"
+"247" "廊桥遗梦" "
+                            导演: 克林特·伊斯特伍德 Clint Eastwood<U+00A0><U+00A0><U+00A0>主演: 克林特·伊斯特伍德 Clint...
+                            1995<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.5" "88969人评价" "https://movie.douban.com/subject/1293929/"
+"248" "假如爱有天意" "
+                            导演: 郭在容 Jae-young Kwak<U+00A0><U+00A0><U+00A0>主演: 孙艺珍 Ye-jin Son / 曹承佑 Seung-woo...
+                            2003<U+00A0>/<U+00A0>韩国<U+00A0>/<U+00A0>剧情 爱情
+                        " "8.2" "213079人评价" "https://movie.douban.com/subject/1304073/"
+"249" "黑鹰坠落" "
+                            导演: 雷德利·斯科特 Ridley Scott<U+00A0><U+00A0><U+00A0>主演: 乔什·哈奈特 Josh Hartnett / ...
+                            2001<U+00A0>/<U+00A0>美国<U+00A0>/<U+00A0>动作 历史 战争
+                        " "8.5" "99323人评价" "https://movie.douban.com/subject/1291824/"
+"250" "角斗士" "
+                            导演: Ridley Scott<U+00A0><U+00A0><U+00A0>主演: Russell Crowe / Joaquin Phoenix / Connie Nielsen
+                            2000<U+00A0>/<U+00A0>英国 美国<U+00A0>/<U+00A0>剧情 动作 历史 冒险
+                        " "8.4" "119654人评价" "https://movie.douban.com/subject/1293530/"
