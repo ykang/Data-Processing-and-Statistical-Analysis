@@ -1,0 +1,257 @@
+---
+title: 'Lecture 5: Supervised Methods'
+author: "<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn"
+date: "School of Economics and Management <br> Beihang University"
+output:
+  slidy_presentation:
+    footer: "Lecture 7: Supervised methods"
+    css: ../styles/ykstyle.css
+logo: buaalogo.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.align = 'center', warning = FALSE, message = FALSE, cache = TRUE)
+```
+
+# Packages required in this lecture
+
+- `caret` and its dependences
+
+
+# Unsupervised methods
+
+#### Clustering: working without known targets
+
+- Suppose you want to segment your customers into general categories of people with similar buying patterns. 
+- You might not know in advance what these groups should be.
+
+
+#  Supervised methods
+
+#### Classification: deciding how to assign (known) labels to an object.
+
+- Supervised learning
+- To learn how to classify objects, you need a dataset of objects that have already been classified (training set)
+
+# Examples of classification problems
+
+- Identifying spam email
+- Sorting products in a product catalog
+- Identifying loans that are about to default
+- Assigning customers to customer clusters
+
+
+
+# Some common classification methods
+#### Logistic regression
+
+- Logistic regression is appropriate when you want to estimate class probabilities (the probability that an object is in a given class).
+
+- An example use of a logistic regression–based classifier is estimating the probability of fraud in credit card purchases. 
+
+- Logistic regression is also a good choice when you want an idea of the relative impact of different input variables on the output. For example, you might find out that a $100 increase in transaction size increases the odds that the transaction is fraud by 2%, all else being equal.
+
+# Some common classification methods
+#### K nearest neighbours (KNN)
+
+- In k-NN classification, the output is a class membership. An object is classified by a majority vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors (k is a positive integer, typically small). 
+- If k = 1, then the object is simply assigned to the class of that single nearest neighbor.
+
+
+# Some common classification methods
+#### Naive Bayes
+
+Naive Bayes classifiers are especially useful for problems with many input variables, categorical input variables with a very large number of possible values, and text classification. 
+
+
+
+# Some common classification methods
+#### Decision trees
+
+- Decision trees are useful when input vari- ables interact with the output in “if-then” kinds of ways (such as IF age > 65, THEN has.health.insurance=T). 
+- They are also suitable when inputs have an AND relationship to each other (such as IF age < 25 AND student=T, THEN...) or when input variables are redundant or correlated. 
+- The decision rules that come from a decision tree are in principle easier for nontechnical users to understand than the decision processes that come from other classifiers. 
+- Random forests are important extensions of decision trees.
+
+
+# Some common classification methods
+#### Support vector machines
+
+- Support vector machines (SVMs) are useful when there are very many input variables or when input variables interact with the outcome or with each other in complicated (nonlinear) ways. 
+- SVMs make fewer assumptions about variable distribution than do many other methods, which makes them especially useful when the training data isn’t completely representative of the way the data is distributed in production.
+
+# Case study: [Titanic disaster](https://www.kaggle.com/c/titanic/)
+
+- The sinking of the Titanic is one of the most infamous shipwrecks in history. 
+
+- One of the reasons that the shipwreck led to such loss of life was that there were not enough lifeboats for the passengers and crew. 
+- Although there was some element of luck involved in surviving the sinking, some groups of people were more likely to survive than others, such as women, children, and the upper-class.
+
+# Our data
+
+Each record in the dataset describes a passenger. The attributes are defined as follows:
+
+1. PassengerId: Unique passenger identification number
+
+2. Survived: Did a passenger survive or not (0 = died, 1 = survived)
+
+3. Pclass: Passenger Class (1 = 1st; 2 = 2nd; 3 = 3rd)
+
+4. Name: Name of Passenger
+
+5. Sex: Sex of Passenger
+
+6. Age: Passenger Age
+
+7. SibSp: Number of Siblings/Spouses Aboard
+
+8. Parch: Number of Parents/Children Aboard
+
+9. Ticket: Ticket Number
+
+10. Fare: Passenger Fare
+
+11. Cabin: Cabin
+
+12. Embarked: Port of Embarkation (C = Cherbourg; Q = Queenstown; S = Southampton)
+
+
+# Data preparation
+
+```{r}
+library(caret)
+# load the CSV file from the local directory
+datasetTrain <- read.csv("train.csv", header=TRUE, sep = ",")
+datasetTest <- read.csv("test.csv", header=TRUE, sep = ",")
+```
+
+Our problem to solve is to predict the survival of the passengers in the test dataset.
+
+# Data summarization
+
+```{r}
+# dimension
+dim(datasetTrain)
+
+# attribute class type
+sapply(datasetTrain, class)
+
+head(datasetTrain)
+
+# remove redundant variables
+datasetTrain <- datasetTrain[, c(-1, -4, -9, -11, -12)]
+
+# summary
+summary(datasetTrain)
+
+# convert survived to factor
+datasetTrain[,1] <- as.factor((datasetTrain[,1]))
+data <- datasetTrain
+data[,3] <- as.numeric((data[,3]))
+complete_cases <- complete.cases(data)
+```
+
+# Data visualization
+
+```{r}
+library(corrplot)
+corrplot(cor(data[complete_cases,2:5]))
+
+# barplot of males and females who survived
+barplot(table(datasetTrain$Survived,
+              datasetTrain$Sex))
+legend("topleft", legend = c("Died", "Survived"))
+```
+
+
+# Build models
+
+```{r}
+# Model evaluation methods
+# 10-fold cross validation with 3 repeats
+trainControl <- 
+  trainControl(method = "repeatedcv", 
+               number = 10, 
+               repeats = 3)
+metric <- "Accuracy"
+
+# logistic regression
+fit.glm <- train(Survived~.,
+                 data=datasetTrain,
+                 method="glm", 
+                 metric=metric, 
+                 na.action = na.exclude,
+                 trControl=trainControl)
+
+# KNN
+fit.knn <- train(Survived~.,
+                 data=datasetTrain,
+                 method="knn", 
+                 metric=metric, 
+                 na.action = na.exclude,
+                 trControl=trainControl)
+
+# Naive Bayes
+fit.nb <- train(Survived~.,
+                data=datasetTrain,
+                method="nb", 
+                metric=metric, 
+                na.action = na.exclude,
+                trControl=trainControl)
+
+# Decision tree
+fit.cart <- train(Survived~.,
+                  data=datasetTrain,
+                  method="rpart",
+                  metric=metric, 
+                  na.action = na.exclude,
+                  trControl=trainControl)
+
+# SVM
+fit.svm <- train(Survived~.,
+                 data=datasetTrain,
+                 method="svmRadial",
+                 metric=metric, 
+                 na.action = na.exclude,
+                 trControl=trainControl)
+```
+
+#### Cross validation
+
+- The samples are randomly partitioned into k sets of roughly equal size. A model is fit using the all samples except the first subset (called the first fold). The held-out samples are predicted by this model and used to estimate performance measures. 
+- The first subset is returned to the training set and procedure repeats with the second subset held out, and so on. 
+- The k resampled estimates of performance are summarized and used to understand the relationship between the tuning parameter(s) and model utility. 
+
+# Algorithm comparison
+
+```{r}
+# Compare algorithms
+results <- resamples(list(LG=fit.glm,
+                          KNN=fit.knn,
+                          CART=fit.cart,
+                          NB=fit.nb,
+                          SVM=fit.svm))
+summary(results)
+dotplot(results)
+```
+
+# Finalize model
+
+```{r}
+model <- train(Survived~., 
+               data=datasetTrain,
+               method="svmRadial",
+               metric=metric, 
+               na.action = na.exclude, 
+               trControl=trainControl)
+testData <- datasetTest[,c(-1, -8, -10, -11)]
+testData$Age[is.na(testData$Age)] <- 0
+testData$Fare[is.na(testData$Fare)] <- 0
+predictions <- predict(model, testData)
+```
+
+
+# References
+
+1. Nina Zumel and John Mount (2014). Data Science with R. Manning.
+

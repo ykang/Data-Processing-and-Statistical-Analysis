@@ -1,0 +1,174 @@
+---
+title: 'Lecture 6: Time Series Forecasting'
+author: "<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn"
+date: "School of Economics and Management <br> Beihang University"
+output:
+  slidy_presentation:
+    footer: "Lecture 6: Forecasting"
+    css: ../styles/ykstyle.css
+logo: buaalogo.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.align = 'center', warning = FALSE, message = FALSE)
+```
+
+
+#  In this lecture we are going to learn...
+
+- Forecasters' toolbox
+- Trend and seasonality
+- ARIMA 
+
+
+
+# Packages required in this lecture
+
+- `fpp`
+- `ggplot2`
+- `forecast`
+
+
+# Examples of time series
+
+```{r}
+library(fpp)
+library(ggplot2)
+library(forecast)
+
+autoplot(beer, main = 'Australian quarterly beer production')
+
+autoplot(pigs, main = 'Number of pigs slaughtered in Victoria')
+
+autoplot(dowjones, main = 'Dow−Jones index')
+```
+
+# {.alert}
+<br>
+<br>
+Forecasters' toolbox
+
+
+
+# Forecasting
+
+- Forecasting is estimating how the sequence of observations will continue into the future.
+- We usually think probabilistically about future sample paths
+- What range of values covers the possible sample paths with 80% probability?
+
+```{r}
+beer <-  window(ausbeer, start = 1992, end = c(2005,4))
+beer.ets <- ets(beer)
+autoplot(forecast(beer.ets))
+```
+
+
+
+# Some simple forecasting methods
+
+1. Average method: forecast of all future values is equal to mean of historical data.
+
+2. Naïve method: forecasts equal to last observed value.
+
+3. Seasonal naïve method: forecasts equal to last value from same season.
+
+```{r}
+# average method
+beerfit.mean <- meanf(beer, h = 11)
+
+# naive method
+beerfit.naive <- naive(beer, h = 11)
+
+# seasonal naive method
+beerfit.snaive <- snaive(beer, h = 11)
+
+cols <- c("mean" = "#0000ee","naive" = "#ee0000","snaive" = "green")
+
+# plot
+autoplot(beerfit.mean, PI = FALSE, main ='Forecasts for quarterly beer production') +
+  geom_line(aes(x=time(beerfit.mean$mean),y=beerfit.mean$mean,colour='mean')) + 
+  geom_line(aes(x=time(beerfit.naive$mean),y=beerfit.naive$mean,colour='naive')) + 
+  geom_line(aes(x=time(beerfit.snaive$mean),y=beerfit.snaive$mean,colour='snaive')) +
+  guides(fill=FALSE) +
+  scale_colour_manual(name="Forecasts",values=cols)
+```
+
+# Check residuals
+
+```{r}
+# check whether the residuals are random
+checkresiduals(beerfit.mean)
+checkresiduals(beerfit.naive)
+checkresiduals(beerfit.snaive)
+```
+
+# Measures of forecast accuracy
+
+```{r}
+# check accuracy of forecasting
+beer2 <- window(ausbeer, start=2006)
+accuracy(beerfit.mean, beer2) 
+accuracy(beerfit.naive, beer2) 
+accuracy(beerfit.snaive, beer2)
+```
+
+
+# {.alert}
+<br>
+<br>
+Trend and Seasonality
+
+# Time series components
+
+1. Trend: pattern exists when there is a long-term increase or decrease in the data.
+2. Seasonal: pattern exists when a series is influenced by seasonal factors (e.g., the quarter of the year, the month, or day of the week).
+3. Cyclic: pattern exists when data exhibit rises and falls that are not of fixed period (duration usually of at least 2 years).
+
+# Time series decomposition
+
+```{r}
+fit <- stl(elecequip, t.window=15, s.window="periodic", robust=TRUE)
+autoplot(fit)
+
+fcast <- forecast(fit, method="naive", h=24)
+autoplot(fcast) + ylab("New orders index")
+```
+
+# {.alert}
+<br>
+<br>
+ARIMA models
+
+# ARIMA models
+
+#### ARMA models
+$y_t =  c + \phi_1 y_{t-1} + \cdots + \phi_p y_{t-p} + \theta_1 e_{t-1} + \cdots + \theta_1 e_{t-q}$
+
+#### ARIMA models
+
+$(1-B)^dy_t$ follows an ARMA model.
+
+
+# ARIMA forecasting
+
+#### Nonseasonal 
+```{r}
+fit <- auto.arima(internet)
+autoplot(forecast(fit))
+checkresiduals(fit)
+```
+
+
+#### Seasonal 
+```{r}
+fit <- auto.arima(h02)
+autoplot(forecast(fit))
+checkresiduals(fit)
+```
+
+
+# References
+
+
+<center><a href="https://www.otexts.org/fpp"><img src="./fppcover-small.jpg" width="200px" height="300px"/></a></center>
+
