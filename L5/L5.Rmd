@@ -4,7 +4,7 @@ author: "<br> <br >Yanfei Kang <br> yanfeikang@buaa.edu.cn"
 date: "School of Economics and Management <br> Beihang University"
 output:
   slidy_presentation:
-    footer: "Lecture 7: Supervised methods"
+    footer: "Lecture 5: Supervised methods"
     css: ../styles/ykstyle.css
 logo: buaalogo.png
 ---
@@ -68,7 +68,7 @@ Naive Bayes classifiers are especially useful for problems with many input varia
 # Some common classification methods
 #### Decision trees
 
-- Decision trees are useful when input vari- ables interact with the output in “if-then” kinds of ways (such as IF age > 65, THEN has.health.insurance=T). 
+- Decision trees are useful when input variables interact with the output in "if-then"" kinds of ways (such as IF age > 65, THEN has.health.insurance=T). 
 - They are also suitable when inputs have an AND relationship to each other (such as IF age < 25 AND student=T, THEN...) or when input variables are redundant or correlated. 
 - The decision rules that come from a decision tree are in principle easier for nontechnical users to understand than the decision processes that come from other classifiers. 
 - Random forests are important extensions of decision trees.
@@ -82,9 +82,9 @@ Naive Bayes classifiers are especially useful for problems with many input varia
 
 # Case study: [Titanic disaster](https://www.kaggle.com/c/titanic/)
 
-- The sinking of the Titanic is one of the most infamous shipwrecks in history. 
 
-- One of the reasons that the shipwreck led to such loss of life was that there were not enough lifeboats for the passengers and crew. 
+- The sinking of the Titanic is one of the most infamous shipwrecks in history. One of the reasons that the shipwreck led to such loss of life was that there were not enough lifeboats for the passengers and crew.
+
 - Although there was some element of luck involved in surviving the sinking, some groups of people were more likely to survive than others, such as women, children, and the upper-class.
 
 # Our data
@@ -121,8 +121,8 @@ Each record in the dataset describes a passenger. The attributes are defined as 
 ```{r}
 library(caret)
 # load the CSV file from the local directory
-datasetTrain <- read.csv("train.csv", header=TRUE, sep = ",")
-datasetTest <- read.csv("test.csv", header=TRUE, sep = ",")
+datasetTrain <- read.csv("https://yanfei.site/docs/dpsa/train.csv", header=TRUE, sep = ",")
+datasetTest <- read.csv("https://yanfei.site/docs/dpsa/test.csv", header=TRUE, sep = ",")
 ```
 
 Our problem to solve is to predict the survival of the passengers in the test dataset.
@@ -144,6 +144,10 @@ datasetTrain <- datasetTrain[, c(-1, -4, -9, -11, -12)]
 # summary
 summary(datasetTrain)
 
+# Percentage of survived
+table(datasetTrain$Survived)
+prop.table(table(datasetTrain$Survived))
+
 # convert survived to factor
 datasetTrain[,1] <- as.factor((datasetTrain[,1]))
 data <- datasetTrain
@@ -154,13 +158,27 @@ complete_cases <- complete.cases(data)
 # Data visualization
 
 ```{r}
-library(corrplot)
-corrplot(cor(data[complete_cases,2:5]))
+# survival bar chart
+ggplot(datasetTrain, aes(x = Survived)) + geom_bar() + ggtitle("Survived Bar Chart")
 
-# barplot of males and females who survived
-barplot(table(datasetTrain$Survived,
-              datasetTrain$Sex))
-legend("topleft", legend = c("Died", "Survived"))
+# Pclass distribution
+ggplot(datasetTrain, aes(x = Pclass)) + geom_bar() + ggtitle("Survived Bar Chart")
+
+
+# barplot of males and females in each class
+ggplot(datasetTrain, aes(x = factor(Pclass), fill = factor(Sex))) +
+geom_bar(position = "dodge")
+
+# barplot of males and females who survived in each class
+ggplot(datasetTrain, aes(x = factor(Pclass), fill = factor(Sex))) +
+geom_bar(position = "dodge") +
+facet_grid(". ~ Survived")
+
+
+
+library(corrplot)
+corrplot(cor(data[complete_cases, 2:5]))
+
 ```
 
 
@@ -254,4 +272,4 @@ predictions <- predict(model, testData)
 # References
 
 1. Nina Zumel and John Mount (2014). Data Science with R. Manning.
-
+2. The [caret](https://topepo.github.io/caret/index.html) package in **R**.

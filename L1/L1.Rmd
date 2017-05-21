@@ -220,47 +220,47 @@ for(i in x) {
 1. Write a function `MySummary()` where the input argument is x can be any vector and the output is a list that contains the basic summary (mean, variance, length, max and minimum values) of the vector you have supplied to the function.
 2. Test your function with some vectors (that you make up by yourself).
 
-# Answer (2)
+<!-- # Answer (1) -->
 
-```{r}
-MySummary <- function(x){
-  x.mean <- mean(x)
-  x.var <- var(x)
-  x.length <- length(x)
-  x.max <- max(x)
-  x.min <- min(x)
-  x.summary <- list(mean = x.mean,
-                    var = x.var,
-                    length = x.length,
-                    max = x.max,
-                    min = x.min)
-  return(x.summary)
-}
+<!-- ```{r} -->
+<!-- MySummary <- function(x){ -->
+<!--   x.mean <- mean(x) -->
+<!--   x.var <- var(x) -->
+<!--   x.length <- length(x) -->
+<!--   x.max <- max(x) -->
+<!--   x.min <- min(x) -->
+<!--   x.summary <- list(mean = x.mean, -->
+<!--                     var = x.var, -->
+<!--                     length = x.length, -->
+<!--                     max = x.max, -->
+<!--                     min = x.min) -->
+<!--   return(x.summary) -->
+<!-- } -->
 
-# some tests
-MySummary(c(1:10))
-MySummary(seq(1, 100, 5))
-```
+<!-- # some tests -->
+<!-- MySummary(c(1:10)) -->
+<!-- MySummary(seq(1, 100, 5)) -->
+<!-- ``` -->
 
-# Another option of Answer (2)
+<!-- # Another option of Answer (2) -->
 
-```{r}
-MySummary <- function(x){
-  # firstly create a list 
-  x.summary <- list()
-  # assigning values
-  x.summary$mean <- mean(x)
-  x.summary$var <- var(x)
-  x.summary$length <- length(x)
-  x.summary$max <- max(x)
-  x.summary$min <- min(x)
-  return(x.summary)
-}
+<!-- ```{r} -->
+<!-- MySummary <- function(x){ -->
+<!--   # firstly create a list  -->
+<!--   x.summary <- list() -->
+<!--   # assigning values -->
+<!--   x.summary$mean <- mean(x) -->
+<!--   x.summary$var <- var(x) -->
+<!--   x.summary$length <- length(x) -->
+<!--   x.summary$max <- max(x) -->
+<!--   x.summary$min <- min(x) -->
+<!--   return(x.summary) -->
+<!-- } -->
 
-# some tests
-MySummary(c(1:10))
-MySummary(seq(1, 100, 5))
-```
+<!-- # some tests -->
+<!-- MySummary(c(1:10)) -->
+<!-- MySummary(seq(1, 100, 5)) -->
+<!-- ``` -->
 
 # {.alert}
 <br>
@@ -510,34 +510,34 @@ RSiteSearch("arima")
 
 - Keep in mind the styles we have learnt.
 
-# Answer (2)
+<!-- # Answer (2) -->
 
-```{r}
-FindRoots <- function(a = 1, b = 1, c = 0) {
-  # Computes the roots of a quadratic equation.
-  #
-  # Args:
-  #   a: The coeffienct of x^2. Default is 1.
-  #   b: The coeffienct of x. Default is 1.
-  #   c: The constanct. Default is 0.
-  #
-  # Returns:
-  #   Roots.
-  if (b ^ 2 - 4 * a * c < 0) {
-    return("No real roots")
-  } else {
-    root1 <- (-b + sqrt(b ^ 2 - 4 * a * c)) / (2 * a)
-    root2 <- (-b - sqrt(b ^ 2 - 4 * a * c)) / (2 * a)
-    roots <- c(root1, root2)
-    return(roots)
-  }
-}
+<!-- ```{r} -->
+<!-- FindRoots <- function(a = 1, b = 1, c = 0) { -->
+<!--   # Computes the roots of a quadratic equation. -->
+<!--   # -->
+<!--   # Args: -->
+<!--   #   a: The coeffienct of x^2. Default is 1. -->
+<!--   #   b: The coeffienct of x. Default is 1. -->
+<!--   #   c: The constanct. Default is 0. -->
+<!--   # -->
+<!--   # Returns: -->
+<!--   #   Roots. -->
+<!--   if (b ^ 2 - 4 * a * c < 0) { -->
+<!--     return("No real roots") -->
+<!--   } else { -->
+<!--     root1 <- (-b + sqrt(b ^ 2 - 4 * a * c)) / (2 * a) -->
+<!--     root2 <- (-b - sqrt(b ^ 2 - 4 * a * c)) / (2 * a) -->
+<!--     roots <- c(root1, root2) -->
+<!--     return(roots) -->
+<!--   } -->
+<!-- } -->
 
-# some tests
-FindRoots()   # using default values of arguments
-FindRoots(1, 2, 0)
-FindRoots(1, 2, 3)
-```
+<!-- # some tests -->
+<!-- FindRoots()   # using default values of arguments -->
+<!-- FindRoots(1, 2, 0) -->
+<!-- FindRoots(1, 2, 3) -->
+<!-- ``` -->
 
 # Your turn (3) 💓
 

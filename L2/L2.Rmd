@@ -171,37 +171,38 @@ substr(x,4,7)
 
 <!-- 8. Create a function that takes a string and returns it in reversed order by words (Hint: split the string according to a blank space ` '. Then count the number of components resulting from the splitting step. Re-arrenge them in reverse order and paste them in a single string.) -->
 
-# Answer (1)
+<!-- # Answer (1) -->
 
-```{r, eval = FALSE}
-# 1
-baba.news <- readLines("https://yanfei.site/docs/dpsa/BABAnews.txt",
-                       encoding = 'UTF-8')
-noquote(baba.news)
+<!-- ```{r, eval = FALSE} -->
+<!-- # 1 -->
+<!-- baba.news <- readLines("https://yanfei.site/docs/dpsa/BABAnews.txt", -->
+<!--                        encoding = 'UTF-8') -->
+<!-- noquote(baba.news) -->
 
-# 2
-length(baba.news)
+<!-- # 2 -->
+<!-- length(baba.news) -->
 
-# 3
-baba.news <- str_trim(baba.news)
+<!-- # 3 -->
+<!-- baba.news <- str_trim(baba.news) -->
 
-# 4
-nchar(baba.news)
+<!-- # 4 -->
+<!-- nchar(baba.news) -->
 
-# 5
-baba.news.collapsed <- paste(baba.news, collapse = "")
-cat(baba.news.collapsed)
+<!-- # 5 -->
+<!-- baba.news.collapsed <- paste(baba.news, collapse = "") -->
+<!-- cat(baba.news.collapsed) -->
 
-# 6
-grepl("技术架构", baba.news.collapsed)
-grep('技术架构', baba.news)
+<!-- # 6 -->
+<!-- grepl("技术架构", baba.news.collapsed) -->
+<!-- grep('技术架构', baba.news) -->
 
-# 7
-strsplit(baba.news.collapsed, "。")
+<!-- # 7 -->
+<!-- strsplit(baba.news.collapsed, "。") -->
 
-# 8
-gsub("双11", "双十一", baba.news.collapsed)
-```
+<!-- # 8 -->
+<!-- gsub("双11", "双十一", baba.news.collapsed) -->
+<!-- ``` -->
+
 # Reference and further reading 
 
 Please see [Text processing on Wiki](https://en.wikibooks.org/wiki/R_Programming/Text_Processing) for more details, examples, **R** packages and **R** functions used for text processing in **R**.
@@ -557,16 +558,16 @@ Please choose one from the following exercises.
 3. Email attachments:
     1. DPSA_姓名_学号.R
     2. DPSA_姓名_学号.csv
-    
-# Resubmit your assignment
 
-Improve your assignments and resubmit. 
+<!-- # Resubmit your assignment -->
 
-1. Subject: "DPSA_R1_姓名_学号"
-2. Describe what you have improved in the new version
-3. Attachements:
-    1. DPSA_R1_姓名_学号.R
-    2. DPSA_R1_姓名_学号.csv
+<!-- Improve your assignments and resubmit.  -->
+
+<!-- 1. Subject: "DPSA_R1_姓名_学号" -->
+<!-- 2. Describe what you have improved in the new version -->
+<!-- 3. Attachements: -->
+<!--     1. DPSA_R1_姓名_学号.R -->
+<!--     2. DPSA_R1_姓名_学号.csv -->
 
 
     

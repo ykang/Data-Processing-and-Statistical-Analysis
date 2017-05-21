@@ -270,44 +270,42 @@ for(i in x) {
 <li>Write a function <code>MySummary()</code> where the input argument is x can be any vector and the output is a list that contains the basic summary (mean, variance, length, max and minimum values) of the vector you have supplied to the function.</li>
 <li>Test your function with some vectors (that you make up by yourself).</li>
 </ol>
-</div>
-<div id="answer-2" class="slide section level1">
-<h1>Answer (2)</h1>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">MySummary &lt;-<span class="st"> </span>function(x){
-  x.mean &lt;-<span class="st"> </span><span class="kw">mean</span>(x)
-  x.var &lt;-<span class="st"> </span><span class="kw">var</span>(x)
-  x.length &lt;-<span class="st"> </span><span class="kw">length</span>(x)
-  x.max &lt;-<span class="st"> </span><span class="kw">max</span>(x)
-  x.min &lt;-<span class="st"> </span><span class="kw">min</span>(x)
-  x.summary &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="dt">mean =</span> x.mean,
-                    <span class="dt">var =</span> x.var,
-                    <span class="dt">length =</span> x.length,
-                    <span class="dt">max =</span> x.max,
-                    <span class="dt">min =</span> x.min)
-  <span class="kw">return</span>(x.summary)
-}
-
-<span class="co"># some tests</span>
-<span class="kw">MySummary</span>(<span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">10</span>))
-<span class="kw">MySummary</span>(<span class="kw">seq</span>(<span class="dv">1</span>, <span class="dv">100</span>, <span class="dv">5</span>))</code></pre></div>
-</div>
-<div id="another-option-of-answer-2" class="slide section level1">
-<h1>Another option of Answer (2)</h1>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">MySummary &lt;-<span class="st"> </span>function(x){
-  <span class="co"># firstly create a list </span>
-  x.summary &lt;-<span class="st"> </span><span class="kw">list</span>()
-  <span class="co"># assigning values</span>
-  x.summary$mean &lt;-<span class="st"> </span><span class="kw">mean</span>(x)
-  x.summary$var &lt;-<span class="st"> </span><span class="kw">var</span>(x)
-  x.summary$length &lt;-<span class="st"> </span><span class="kw">length</span>(x)
-  x.summary$max &lt;-<span class="st"> </span><span class="kw">max</span>(x)
-  x.summary$min &lt;-<span class="st"> </span><span class="kw">min</span>(x)
-  <span class="kw">return</span>(x.summary)
-}
-
-<span class="co"># some tests</span>
-<span class="kw">MySummary</span>(<span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">10</span>))
-<span class="kw">MySummary</span>(<span class="kw">seq</span>(<span class="dv">1</span>, <span class="dv">100</span>, <span class="dv">5</span>))</code></pre></div>
+<!-- # Answer (1) -->
+<!-- ```{r} -->
+<!-- MySummary <- function(x){ -->
+<!--   x.mean <- mean(x) -->
+<!--   x.var <- var(x) -->
+<!--   x.length <- length(x) -->
+<!--   x.max <- max(x) -->
+<!--   x.min <- min(x) -->
+<!--   x.summary <- list(mean = x.mean, -->
+<!--                     var = x.var, -->
+<!--                     length = x.length, -->
+<!--                     max = x.max, -->
+<!--                     min = x.min) -->
+<!--   return(x.summary) -->
+<!-- } -->
+<!-- # some tests -->
+<!-- MySummary(c(1:10)) -->
+<!-- MySummary(seq(1, 100, 5)) -->
+<!-- ``` -->
+<!-- # Another option of Answer (2) -->
+<!-- ```{r} -->
+<!-- MySummary <- function(x){ -->
+<!--   # firstly create a list  -->
+<!--   x.summary <- list() -->
+<!--   # assigning values -->
+<!--   x.summary$mean <- mean(x) -->
+<!--   x.summary$var <- var(x) -->
+<!--   x.summary$length <- length(x) -->
+<!--   x.summary$max <- max(x) -->
+<!--   x.summary$min <- min(x) -->
+<!--   return(x.summary) -->
+<!-- } -->
+<!-- # some tests -->
+<!-- MySummary(c(1:10)) -->
+<!-- MySummary(seq(1, 100, 5)) -->
+<!-- ``` -->
 </div>
 <div id="section-2" class="slide section level1 alert">
 <h1></h1>
@@ -541,33 +539,32 @@ x.var =<span class="st"> </span><span class="kw">var</span>(x)</code></pre></div
 <li><p>Test your function on some simple equations.</p></li>
 <li><p>Keep in mind the styles we have learnt.</p></li>
 </ul>
-</div>
-<div id="answer-2-1" class="slide section level1">
-<h1>Answer (2)</h1>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">FindRoots &lt;-<span class="st"> </span>function(<span class="dt">a =</span> <span class="dv">1</span>, <span class="dt">b =</span> <span class="dv">1</span>, <span class="dt">c =</span> <span class="dv">0</span>) {
-  <span class="co"># Computes the roots of a quadratic equation.</span>
-  <span class="co">#</span>
-  <span class="co"># Args:</span>
-  <span class="co">#   a: The coeffienct of x^2. Default is 1.</span>
-  <span class="co">#   b: The coeffienct of x. Default is 1.</span>
-  <span class="co">#   c: The constanct. Default is 0.</span>
-  <span class="co">#</span>
-  <span class="co"># Returns:</span>
-  <span class="co">#   Roots.</span>
-  if (b ^<span class="st"> </span><span class="dv">2</span> -<span class="st"> </span><span class="dv">4</span> *<span class="st"> </span>a *<span class="st"> </span>c &lt;<span class="st"> </span><span class="dv">0</span>) {
-    <span class="kw">return</span>(<span class="st">&quot;No real roots&quot;</span>)
-  } else {
-    root1 &lt;-<span class="st"> </span>(-b +<span class="st"> </span><span class="kw">sqrt</span>(b ^<span class="st"> </span><span class="dv">2</span> -<span class="st"> </span><span class="dv">4</span> *<span class="st"> </span>a *<span class="st"> </span>c)) /<span class="st"> </span>(<span class="dv">2</span> *<span class="st"> </span>a)
-    root2 &lt;-<span class="st"> </span>(-b -<span class="st"> </span><span class="kw">sqrt</span>(b ^<span class="st"> </span><span class="dv">2</span> -<span class="st"> </span><span class="dv">4</span> *<span class="st"> </span>a *<span class="st"> </span>c)) /<span class="st"> </span>(<span class="dv">2</span> *<span class="st"> </span>a)
-    roots &lt;-<span class="st"> </span><span class="kw">c</span>(root1, root2)
-    <span class="kw">return</span>(roots)
-  }
-}
-
-<span class="co"># some tests</span>
-<span class="kw">FindRoots</span>()   <span class="co"># using default values of arguments</span>
-<span class="kw">FindRoots</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">0</span>)
-<span class="kw">FindRoots</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</code></pre></div>
+<!-- # Answer (2) -->
+<!-- ```{r} -->
+<!-- FindRoots <- function(a = 1, b = 1, c = 0) { -->
+<!--   # Computes the roots of a quadratic equation. -->
+<!--   # -->
+<!--   # Args: -->
+<!--   #   a: The coeffienct of x^2. Default is 1. -->
+<!--   #   b: The coeffienct of x. Default is 1. -->
+<!--   #   c: The constanct. Default is 0. -->
+<!--   # -->
+<!--   # Returns: -->
+<!--   #   Roots. -->
+<!--   if (b ^ 2 - 4 * a * c < 0) { -->
+<!--     return("No real roots") -->
+<!--   } else { -->
+<!--     root1 <- (-b + sqrt(b ^ 2 - 4 * a * c)) / (2 * a) -->
+<!--     root2 <- (-b - sqrt(b ^ 2 - 4 * a * c)) / (2 * a) -->
+<!--     roots <- c(root1, root2) -->
+<!--     return(roots) -->
+<!--   } -->
+<!-- } -->
+<!-- # some tests -->
+<!-- FindRoots()   # using default values of arguments -->
+<!-- FindRoots(1, 2, 0) -->
+<!-- FindRoots(1, 2, 3) -->
+<!-- ``` -->
 </div>
 <div id="your-turn-3" class="slide section level1">
 <h1>Your turn (3) 💓</h1>

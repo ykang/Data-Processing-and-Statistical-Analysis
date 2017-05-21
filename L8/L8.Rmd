@@ -7,6 +7,7 @@ output:
     theme: united
     toc: yes
   pdf_document:
+    latex_engine: xelatex
     toc: yes
   word_document: default
 bibliography: L8.bib
@@ -70,7 +71,7 @@ Write inline **R** code using backtick quotes: `forecast()`
 
 See @hyndman2014forecasting.
 
-```{r RcodeDemoPlot}
+```{r RcodeDemoPlot, fig.width=12, fig.height=12, fig.align='center', echo=FALSE, eval=FALSE}
 library(forecast)
 plot(stlf(AirPassengers, lambda=0))
 ```
