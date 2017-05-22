@@ -220,47 +220,47 @@ for(i in x) {
 1. Write a function `MySummary()` where the input argument is x can be any vector and the output is a list that contains the basic summary (mean, variance, length, max and minimum values) of the vector you have supplied to the function.
 2. Test your function with some vectors (that you make up by yourself).
 
-<!-- # Answer (1) -->
+# Answer (1)
 
-<!-- ```{r} -->
-<!-- MySummary <- function(x){ -->
-<!--   x.mean <- mean(x) -->
-<!--   x.var <- var(x) -->
-<!--   x.length <- length(x) -->
-<!--   x.max <- max(x) -->
-<!--   x.min <- min(x) -->
-<!--   x.summary <- list(mean = x.mean, -->
-<!--                     var = x.var, -->
-<!--                     length = x.length, -->
-<!--                     max = x.max, -->
-<!--                     min = x.min) -->
-<!--   return(x.summary) -->
-<!-- } -->
+```{r}
+MySummary <- function(x){
+  x.mean <- mean(x)
+  x.var <- var(x)
+  x.length <- length(x)
+  x.max <- max(x)
+  x.min <- min(x)
+  x.summary <- list(mean = x.mean,
+                    var = x.var,
+                    length = x.length,
+                    max = x.max,
+                    min = x.min)
+  return(x.summary)
+}
 
-<!-- # some tests -->
-<!-- MySummary(c(1:10)) -->
-<!-- MySummary(seq(1, 100, 5)) -->
-<!-- ``` -->
+# some tests
+MySummary(c(1:10))
+MySummary(seq(1, 100, 5))
+```
 
-<!-- # Another option of Answer (2) -->
+# Another option of Answer (2)
 
-<!-- ```{r} -->
-<!-- MySummary <- function(x){ -->
-<!--   # firstly create a list  -->
-<!--   x.summary <- list() -->
-<!--   # assigning values -->
-<!--   x.summary$mean <- mean(x) -->
-<!--   x.summary$var <- var(x) -->
-<!--   x.summary$length <- length(x) -->
-<!--   x.summary$max <- max(x) -->
-<!--   x.summary$min <- min(x) -->
-<!--   return(x.summary) -->
-<!-- } -->
+```{r}
+MySummary <- function(x){
+  # firstly create a list
+  x.summary <- list()
+  # assigning values
+  x.summary$mean <- mean(x)
+  x.summary$var <- var(x)
+  x.summary$length <- length(x)
+  x.summary$max <- max(x)
+  x.summary$min <- min(x)
+  return(x.summary)
+}
 
-<!-- # some tests -->
-<!-- MySummary(c(1:10)) -->
-<!-- MySummary(seq(1, 100, 5)) -->
-<!-- ``` -->
+# some tests
+MySummary(c(1:10))
+MySummary(seq(1, 100, 5))
+```
 
 # {.alert}
 <br>
