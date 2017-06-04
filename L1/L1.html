@@ -541,32 +541,33 @@ x.var =<span class="st"> </span><span class="kw">var</span>(x)</code></pre></div
 <li><p>Test your function on some simple equations.</p></li>
 <li><p>Keep in mind the styles we have learnt.</p></li>
 </ul>
-<!-- # Answer (2) -->
-<!-- ```{r} -->
-<!-- FindRoots <- function(a = 1, b = 1, c = 0) { -->
-<!--   # Computes the roots of a quadratic equation. -->
-<!--   # -->
-<!--   # Args: -->
-<!--   #   a: The coeffienct of x^2. Default is 1. -->
-<!--   #   b: The coeffienct of x. Default is 1. -->
-<!--   #   c: The constanct. Default is 0. -->
-<!--   # -->
-<!--   # Returns: -->
-<!--   #   Roots. -->
-<!--   if (b ^ 2 - 4 * a * c < 0) { -->
-<!--     return("No real roots") -->
-<!--   } else { -->
-<!--     root1 <- (-b + sqrt(b ^ 2 - 4 * a * c)) / (2 * a) -->
-<!--     root2 <- (-b - sqrt(b ^ 2 - 4 * a * c)) / (2 * a) -->
-<!--     roots <- c(root1, root2) -->
-<!--     return(roots) -->
-<!--   } -->
-<!-- } -->
-<!-- # some tests -->
-<!-- FindRoots()   # using default values of arguments -->
-<!-- FindRoots(1, 2, 0) -->
-<!-- FindRoots(1, 2, 3) -->
-<!-- ``` -->
+</div>
+<div id="answer-2" class="slide section level1">
+<h1>Answer (2)</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">FindRoots &lt;-<span class="st"> </span>function(<span class="dt">a =</span> <span class="dv">1</span>, <span class="dt">b =</span> <span class="dv">1</span>, <span class="dt">c =</span> <span class="dv">0</span>) {
+  <span class="co"># Computes the roots of a quadratic equation.</span>
+  <span class="co">#</span>
+  <span class="co"># Args:</span>
+  <span class="co">#   a: The coeffienct of x^2. Default is 1.</span>
+  <span class="co">#   b: The coeffienct of x. Default is 1.</span>
+  <span class="co">#   c: The constanct. Default is 0.</span>
+  <span class="co">#</span>
+  <span class="co"># Returns:</span>
+  <span class="co">#   Roots.</span>
+  if (b ^<span class="st"> </span><span class="dv">2</span> -<span class="st"> </span><span class="dv">4</span> *<span class="st"> </span>a *<span class="st"> </span>c &lt;<span class="st"> </span><span class="dv">0</span>) {
+    <span class="kw">return</span>(<span class="st">&quot;No real roots&quot;</span>)
+  } else {
+    root1 &lt;-<span class="st"> </span>(-b +<span class="st"> </span><span class="kw">sqrt</span>(b ^<span class="st"> </span><span class="dv">2</span> -<span class="st"> </span><span class="dv">4</span> *<span class="st"> </span>a *<span class="st"> </span>c)) /<span class="st"> </span>(<span class="dv">2</span> *<span class="st"> </span>a)
+    root2 &lt;-<span class="st"> </span>(-b -<span class="st"> </span><span class="kw">sqrt</span>(b ^<span class="st"> </span><span class="dv">2</span> -<span class="st"> </span><span class="dv">4</span> *<span class="st"> </span>a *<span class="st"> </span>c)) /<span class="st"> </span>(<span class="dv">2</span> *<span class="st"> </span>a)
+    roots &lt;-<span class="st"> </span><span class="kw">c</span>(root1, root2)
+    <span class="kw">return</span>(roots)
+  }
+}
+
+<span class="co"># some tests</span>
+<span class="kw">FindRoots</span>()   <span class="co"># using default values of arguments</span>
+<span class="kw">FindRoots</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">0</span>)
+<span class="kw">FindRoots</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</code></pre></div>
 </div>
 <div id="your-turn-3" class="slide section level1">
 <h1>Your turn (3) 💓</h1>

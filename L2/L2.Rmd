@@ -171,37 +171,37 @@ substr(x,4,7)
 
 <!-- 8. Create a function that takes a string and returns it in reversed order by words (Hint: split the string according to a blank space ` '. Then count the number of components resulting from the splitting step. Re-arrenge them in reverse order and paste them in a single string.) -->
 
-<!-- # Answer (1) -->
+# Answer (1)
 
-<!-- ```{r, eval = FALSE} -->
-<!-- # 1 -->
-<!-- baba.news <- readLines("https://yanfei.site/docs/dpsa/BABAnews.txt", -->
-<!--                        encoding = 'UTF-8') -->
-<!-- noquote(baba.news) -->
+```{r, eval = FALSE}
+# 1
+baba.news <- readLines("https://yanfei.site/docs/dpsa/BABAnews.txt",
+                       encoding = 'UTF-8')
+noquote(baba.news)
 
-<!-- # 2 -->
-<!-- length(baba.news) -->
+# 2
+length(baba.news)
 
-<!-- # 3 -->
-<!-- baba.news <- str_trim(baba.news) -->
+# 3
+baba.news <- str_trim(baba.news)
 
-<!-- # 4 -->
-<!-- nchar(baba.news) -->
+# 4
+nchar(baba.news)
 
-<!-- # 5 -->
-<!-- baba.news.collapsed <- paste(baba.news, collapse = "") -->
-<!-- cat(baba.news.collapsed) -->
+# 5
+baba.news.collapsed <- paste(baba.news, collapse = "")
+cat(baba.news.collapsed)
 
-<!-- # 6 -->
-<!-- grepl("技术架构", baba.news.collapsed) -->
-<!-- grep('技术架构', baba.news) -->
+# 6
+grepl("技术架构", baba.news.collapsed)
+grep('技术架构', baba.news)
 
-<!-- # 7 -->
-<!-- strsplit(baba.news.collapsed, "。") -->
+# 7
+strsplit(baba.news.collapsed, "。")
 
-<!-- # 8 -->
-<!-- gsub("双11", "双十一", baba.news.collapsed) -->
-<!-- ``` -->
+# 8
+gsub("双11", "双十一", baba.news.collapsed)
+```
 
 # Reference and further reading 
 
@@ -542,13 +542,22 @@ kable(head(subset(alibaba_job_details, select = -description)), format = "html")
 
 Please choose one from the following exercises.
 
-- Extract names, research interests, emails and links  of all BUAA SEM Professors (http://sem.buaa.edu.cn/szdw/jsbd.htm)
+<!-- - Extract names, research interests, emails and links  of all BUAA SEM Professors (http://sem.buaa.edu.cn/szdw/jsbd.htm) -->
 
-- Extract at least 5 attributes of the movies listed on Douban top 250 (https://movie.douban.com/top250)
+<!-- - Extract at least 5 attributes of the movies listed on Douban top 250 (https://movie.douban.com/top250) -->
 
-- Extract the top 5 pages of hotel information including the newest reviews from TripAdvisor (https://www.tripadvisor.com/Hotels-g294212-Beijing-Hotels.html)
+<!-- - Extract the top 5 pages of hotel information including the newest reviews from TripAdvisor (https://www.tripadvisor.com/Hotels-g294212-Beijing-Hotels.html) -->
 
-- Extract the top 5 pages of book information from Amazon (https://www.amazon.cn/s/ref=nb_sb_noss?__mk_zh_CN=亚马逊网站&field-keywords=大数据)
+<!-- - Extract the top 5 pages of book information from Amazon (https://www.amazon.cn/s/ref=nb_sb_noss?__mk_zh_CN=亚马逊网站&field-keywords=大数据) -->
+
+
+- Extract at least 5 attributes of the books listed on Douban top 250 (https://book.douban.com/top250) 
+
+- Extract at least 5 pages of news articles about '阿里巴巴' by searching for its name on sina news (http://search.sina.com.cn)
+
+- Extract the top 5 pages of hotel information including the newest reviews from TripAdvisor (https://www.tripadvisor.com/Hotels-g294212-Beijing-Hotels.html) 
+
+- Extract the top 5 pages of book information from Amazon (https://www.amazon.cn/s/ref=nb_sb_noss?__mk_zh_CN=亚马逊网站&field-keywords=大数据) 
 
 
 # About assignments

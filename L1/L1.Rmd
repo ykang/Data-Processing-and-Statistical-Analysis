@@ -510,34 +510,34 @@ RSiteSearch("arima")
 
 - Keep in mind the styles we have learnt.
 
-<!-- # Answer (2) -->
+# Answer (2)
 
-<!-- ```{r} -->
-<!-- FindRoots <- function(a = 1, b = 1, c = 0) { -->
-<!--   # Computes the roots of a quadratic equation. -->
-<!--   # -->
-<!--   # Args: -->
-<!--   #   a: The coeffienct of x^2. Default is 1. -->
-<!--   #   b: The coeffienct of x. Default is 1. -->
-<!--   #   c: The constanct. Default is 0. -->
-<!--   # -->
-<!--   # Returns: -->
-<!--   #   Roots. -->
-<!--   if (b ^ 2 - 4 * a * c < 0) { -->
-<!--     return("No real roots") -->
-<!--   } else { -->
-<!--     root1 <- (-b + sqrt(b ^ 2 - 4 * a * c)) / (2 * a) -->
-<!--     root2 <- (-b - sqrt(b ^ 2 - 4 * a * c)) / (2 * a) -->
-<!--     roots <- c(root1, root2) -->
-<!--     return(roots) -->
-<!--   } -->
-<!-- } -->
+```{r}
+FindRoots <- function(a = 1, b = 1, c = 0) {
+  # Computes the roots of a quadratic equation.
+  #
+  # Args:
+  #   a: The coeffienct of x^2. Default is 1.
+  #   b: The coeffienct of x. Default is 1.
+  #   c: The constanct. Default is 0.
+  #
+  # Returns:
+  #   Roots.
+  if (b ^ 2 - 4 * a * c < 0) {
+    return("No real roots")
+  } else {
+    root1 <- (-b + sqrt(b ^ 2 - 4 * a * c)) / (2 * a)
+    root2 <- (-b - sqrt(b ^ 2 - 4 * a * c)) / (2 * a)
+    roots <- c(root1, root2)
+    return(roots)
+  }
+}
 
-<!-- # some tests -->
-<!-- FindRoots()   # using default values of arguments -->
-<!-- FindRoots(1, 2, 0) -->
-<!-- FindRoots(1, 2, 3) -->
-<!-- ``` -->
+# some tests
+FindRoots()   # using default values of arguments
+FindRoots(1, 2, 0)
+FindRoots(1, 2, 3)
+```
 
 # Your turn (3) 💓
 
