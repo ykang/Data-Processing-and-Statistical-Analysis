@@ -568,7 +568,29 @@ Please choose one from the following exercises.
     1. DPSA_姓名_学号.R
     2. DPSA_姓名_学号.csv
 
-<!-- # Resubmit your assignment -->
+# Hints
+
+```{r}
+
+link = 'https://book.douban.com/top250?start=175'
+web = read_html(link)
+
+quote_extractor <- function(x) {
+  trimws(html_node(x, xpath = ".//p[2]")  %>%
+           html_text())
+}
+
+# # or if we use html_nodes()
+# quote_extractor <- function(x) {
+#   myNode <- html_nodes(x, xpath = ".//p[2]")
+#   ifelse(length(myNode) == 0, 'NA', trimws(myNode %>% html_text()))
+# }
+
+items = web %>% html_nodes(xpath = '//tr[@class="item"]')
+unlist(lapply(items, quote_extractor))
+```
+
+<!-- # Resubmit your assignment  -->
 
 <!-- Improve your assignments and resubmit.  -->
 
