@@ -71,7 +71,7 @@ Write inline **R** code using backtick quotes: `forecast()`
 
 See @hyndman2014forecasting.
 
-```{r RcodeDemoPlot, fig.width=12, fig.height=12, fig.align='center', echo=FALSE, eval=FALSE}
+```{r RcodeDemoPlot, fig.width=12, fig.height=12, fig.align='center', echo=FALSE, eval=TRUE}
 library(forecast)
 plot(stlf(AirPassengers, lambda=0))
 ```
